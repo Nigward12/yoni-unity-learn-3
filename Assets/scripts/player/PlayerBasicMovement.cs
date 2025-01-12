@@ -4,18 +4,32 @@ using UnityEngine.Experimental.GlobalIllumination;
 
 public class PlayerBasicMovement : MonoBehaviour
 {
+    [Header("Movement variables")]
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private float walljumpPowerX;
     [SerializeField] private float walljumpPowerY;
-    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private BoxCollider2D feetCollider;
     [SerializeField] private float defaultGravityScale;
     [SerializeField] private float defaultLocalScale;
-    [SerializeField] private float maxWalkableHeightDifference;
-    private bool onSlope; 
-    private Vector2 slopeNormal; 
+
+    [Header ("GroundAndSlopeCheck")]
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private BoxCollider2D feetCollider;
+    [SerializeField] private PhysicsMaterial2D noFriction;
+    [SerializeField] private PhysicsMaterial2D fullFriction;
+    private bool isGrounded;
+    private RaycastHit2D underFeetRaycastHit;
+
+    [SerializeField] private float slopeCheckDistance;
+    [SerializeField] private float maxSlopeAngle;
+    [SerializeField] private float wallAngle;
+    private bool onSlope;
+    private Vector2 slopeNormal;
+    private float slopeDownAngle;
+    private float slopeSideAngle;
+    private bool canWalkOnSlope;
+
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D bodyCollider;
@@ -33,16 +47,20 @@ public class PlayerBasicMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
 
+        isGrounded = IsGrounded();
+
         FlipPlayerLeftRight();
 
         SetAnimatorParams();
 
-        if(WallJumpReady())
+        SlopeCheck();
+
+        if (WallJumpReady())
         {
             UpdateMovement();
             if (Input.GetKey(KeyCode.Space))
                 Jump();
-        }
+        }  
     }
 
     #region updateMethods
@@ -58,33 +76,33 @@ public class PlayerBasicMovement : MonoBehaviour
 
     private void SetAnimatorParams()
     {
-        bool isGrounded = IsGrounded();
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded);
-        if (!isGrounded && !OnWall() && body.linearVelocityY < 0 && !onSlope)
+        if (falling(isGrounded))
         {
-            anim.SetTrigger("fall");
+            anim.SetBool("falling", true);
             body.gravityScale = defaultGravityScale * 1.5f;
         }
         else
+        {
+            anim.SetBool("falling", false);
             body.gravityScale = defaultGravityScale;
+        }
     }
 
     private void UpdateMovement()
     {
-        if (onSlope)
+
+        if (isGrounded && !onSlope)
         {
-            if (onSlope)
-            {
-                Vector2 slopeDirection = new Vector2(slopeNormal.x, slopeNormal.y).normalized;
-
-                if (horizontalInput < 0)
-                    slopeDirection.x = -Mathf.Abs(slopeDirection.x);
-
-                body.linearVelocity = slopeDirection * Mathf.Abs(horizontalInput) * speed;
-            }
+            body.linearVelocity = new Vector2(horizontalInput * speed, 0f);
         }
-        else
+        else if (isGrounded && onSlope && canWalkOnSlope)
+        {
+            body.linearVelocity = new Vector2(speed * slopeNormal.x * -horizontalInput,
+                speed * slopeNormal.y * -horizontalInput);
+        }
+        else if (!isGrounded)
         {
             body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocityY);
         }
@@ -97,7 +115,7 @@ public class PlayerBasicMovement : MonoBehaviour
         if (wallJumpCooldown > 0.2f)
         {
 
-            if (OnWall() && !IsGrounded())
+            if (OnWall() && !isGrounded)
             {
                 body.gravityScale = 0;
                 body.linearVelocity = Vector2.zero;
@@ -113,7 +131,7 @@ public class PlayerBasicMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (IsGrounded())
+        if (isGrounded)
         {
             RegularJump();
         }
@@ -133,8 +151,9 @@ public class PlayerBasicMovement : MonoBehaviour
     {
         if (horizontalInput == 0)
         {
-            body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * walljumpPowerX + walljumpPowerY, 0);
-            transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+            body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * (walljumpPowerX + walljumpPowerY), 0);
+            transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x) * defaultLocalScale, transform.localScale.y,
+                transform.localScale.z);
         }
         else
             body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * walljumpPowerX, walljumpPowerY);
@@ -148,35 +167,84 @@ public class PlayerBasicMovement : MonoBehaviour
     #region playerStateIndicators
     private bool IsGrounded()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
+        underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
             feetCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
-        if (raycastHit.collider != null)
-        {
-            slopeNormal = raycastHit.normal;
-            float slopeAngle = Vector2.Angle(Vector2.up, slopeNormal);
+        return underFeetRaycastHit.collider != null;
+        
+    }
 
-            onSlope = slopeAngle > 0;
+    private void SlopeCheck()
+    {
+        SlopeCheckVertical();
+        SlopeCheckHorizontal();
+    }
+
+    private void SlopeCheckVertical()
+    {
+        underFeetRaycastHit = Physics2D.Raycast(feetCollider.bounds.center, Vector2.down, slopeCheckDistance, groundLayer);
+
+        if (underFeetRaycastHit)
+        {
+            slopeNormal = Vector2.Perpendicular(underFeetRaycastHit.normal).normalized;
+
+            slopeDownAngle = Vector2.Angle(underFeetRaycastHit.normal, Vector2.up);
+
+            if (slopeDownAngle != 0 || slopeSideAngle != 0)
+                onSlope = true;
+            else
+                onSlope = false;
+
+
+            Debug.DrawRay(underFeetRaycastHit.point, slopeNormal, Color.red);
+            Debug.DrawRay(underFeetRaycastHit.point, underFeetRaycastHit.normal, Color.green);
         }
+
+        canWalkOnSlope = slopeDownAngle <= maxSlopeAngle && slopeSideAngle <= maxSlopeAngle;
+
+        //print(onSlope + ", canwalk: " + canWalkOnSlope + ", horizontalinput: " + horizontalInput + ", slope side:" + slopeSideAngle);
+
+        if (onSlope && horizontalInput == 0f && canWalkOnSlope)
+            body.sharedMaterial = fullFriction;
         else
-            onSlope = false;
+            body.sharedMaterial = noFriction;
+    }
 
-        float direction = Mathf.Sign(transform.localScale.x);
+    private void SlopeCheckHorizontal()
+    {
+        Vector2 rayDirectionFront = transform.right * (slopeCheckDistance * 0.75f);
+        Vector2 rayDirectionBack = -transform.right * (slopeCheckDistance * 0.75f);
 
-        Vector2 rayOrigin = new Vector2(transform.position.x + direction * 0.5f, transform.position.y); 
-        RaycastHit2D raycastHitForward = Physics2D.Raycast(rayOrigin, Vector2.down, 1.5f, groundLayer); 
+        RaycastHit2D slopeHitFront = Physics2D.Raycast(feetCollider.bounds.center,
+            transform.right, (slopeCheckDistance * 0.75f), groundLayer);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(feetCollider.bounds.center,
+            -transform.right, (slopeCheckDistance * 0.75f), groundLayer);
 
-        if (raycastHit.collider != null)
+        Debug.DrawRay(feetCollider.bounds.center, rayDirectionFront, Color.cyan);
+        Debug.DrawRay(feetCollider.bounds.center, rayDirectionBack, Color.cyan);
+        if (slopeHitFront)
         {
-            float heightDifference = Mathf.Abs(raycastHit.point.y - transform.position.y);
-            print(heightDifference);
-            if (heightDifference <= maxWalkableHeightDifference)
+            if (Vector2.Angle(slopeHitFront.normal, Vector2.up) < wallAngle)
             {
-                return true; 
+                onSlope = true;
+                slopeSideAngle = Vector2.Angle(slopeHitFront.normal, Vector2.up);
             }
         }
-
-        return false;
+        else if (slopeHitBack)
+        {
+            if (Vector2.Angle(slopeHitFront.normal, Vector2.up) < wallAngle)
+            {
+                onSlope = true;
+                slopeSideAngle = Vector2.Angle(slopeHitBack.normal, Vector2.up);
+            }
+        }
+        else
+        {
+            slopeSideAngle = 0f;
+            onSlope = false;
+        }
     }
+
+    
     private bool OnWall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(bodyCollider.bounds.center,
@@ -185,7 +253,16 @@ public class PlayerBasicMovement : MonoBehaviour
     }
     public bool CanAttack()
     {
-        return horizontalInput == 0 && IsGrounded() && !OnWall();
+        return horizontalInput == 0 && isGrounded && !OnWall();
+    }
+
+    private bool falling(bool isGrounded)
+    {
+        underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
+            feetCollider.bounds.size, 0, Vector2.down, slopeCheckDistance, groundLayer);
+        if (!isGrounded && !OnWall() && body.linearVelocityY < 0 && !underFeetRaycastHit.collider)
+           return true;
+        return false;
     }
     #endregion
 }
