@@ -1,14 +1,19 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BasicAttack : MonoBehaviour
 {
     [SerializeField] float damage;
     [SerializeField] private LayerMask enemyLayers;
-    private BoxCollider2D boxCollider;
+    private PolygonCollider2D polCollider;
+    private ContactFilter2D contactFilter;
 
     private void Awake()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        polCollider = GetComponent<PolygonCollider2D>();
+        contactFilter = new ContactFilter2D();
+        contactFilter.SetLayerMask(enemyLayers);
+        contactFilter.useTriggers = true;
     }
 
     private void OnEnable()
@@ -19,9 +24,13 @@ public class BasicAttack : MonoBehaviour
 
     public void TryDamageEnemy()
     {
-        Collider2D[] hits = Physics2D.OverlapBoxAll(boxCollider.bounds.center, boxCollider.bounds.size, 0f, enemyLayers);
+        List<Collider2D> hits = new List<Collider2D>();
+
+        polCollider.Overlap(contactFilter, hits);
+
         foreach (Collider2D hit in hits)
         {
+            print(hit.gameObject.name + "  " + gameObject.name);
             Health health = hit.GetComponent<Health>();
             if (health != null)
             {
