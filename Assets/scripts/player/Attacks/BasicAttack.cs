@@ -31,11 +31,8 @@ public class BasicAttack : MonoBehaviour
         foreach (Collider2D hit in hits)
         {
             print(hit.gameObject.name + "  " + gameObject.name);
-            Health health = hit.GetComponent<Health>();
-            if (health != null)
-            {
-                health.TakeDamage(damage);
-            }
+
+            hit.GetComponent<Health>().TakeDamage(damage); ;
         }
     }
 }

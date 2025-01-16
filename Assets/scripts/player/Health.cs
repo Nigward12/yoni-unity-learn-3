@@ -4,7 +4,7 @@ using System.Collections;
 public class Health : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
+        dead = false;
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();

@@ -60,7 +60,10 @@ public class PlayerBasicMovement : MonoBehaviour
             UpdateMovement();
             if (Input.GetKey(KeyCode.Space))
                 Jump();
-        }  
+        }
+
+        //if (Input.GetKey(KeyCode.E))
+        //    GetComponent<Health>().TakeDamage(1);
     }
 
     #region updateMethods
