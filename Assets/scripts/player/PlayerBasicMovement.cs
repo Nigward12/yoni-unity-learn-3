@@ -12,6 +12,7 @@ public class PlayerBasicMovement : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private float defaultGravityScale;
     [SerializeField] private float defaultLocalScale;
+    [SerializeField] private float maxFallSpeed;
 
     [Header ("GroundAndSlopeCheck")]
     [SerializeField] private LayerMask groundLayer;
@@ -107,7 +108,8 @@ public class PlayerBasicMovement : MonoBehaviour
         }
         else if (!isGrounded)
         {
-            body.linearVelocity = new Vector2(horizontalInput * speed, body.linearVelocityY);
+            body.linearVelocity = new Vector2(horizontalInput * speed,
+                Mathf.Clamp(body.linearVelocity.y, -maxFallSpeed, float.MaxValue));
         }
     }
 
@@ -198,8 +200,8 @@ public class PlayerBasicMovement : MonoBehaviour
                 onSlope = false;
 
 
-            Debug.DrawRay(underFeetRaycastHit.point, slopeNormal, Color.red);
-            Debug.DrawRay(underFeetRaycastHit.point, underFeetRaycastHit.normal, Color.green);
+            //Debug.DrawRay(underFeetRaycastHit.point, slopeNormal, Color.red);
+            //Debug.DrawRay(underFeetRaycastHit.point, underFeetRaycastHit.normal, Color.green);
         }
 
         canWalkOnSlope = slopeDownAngle <= maxSlopeAngle && slopeSideAngle <= maxSlopeAngle;
@@ -222,8 +224,8 @@ public class PlayerBasicMovement : MonoBehaviour
         RaycastHit2D slopeHitBack = Physics2D.Raycast(feetCollider.bounds.center,
             -transform.right, (slopeCheckDistance * 0.75f), groundLayer);
 
-        Debug.DrawRay(feetCollider.bounds.center, rayDirectionFront, Color.cyan);
-        Debug.DrawRay(feetCollider.bounds.center, rayDirectionBack, Color.cyan);
+        //Debug.DrawRay(feetCollider.bounds.center, rayDirectionFront, Color.cyan);
+        //Debug.DrawRay(feetCollider.bounds.center, rayDirectionBack, Color.cyan);
         if (slopeHitFront)
         {
             if (Vector2.Angle(slopeHitFront.normal, Vector2.up) < wallAngle)

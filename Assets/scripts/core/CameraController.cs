@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;
-    public Vector2 offset;
-
+    [SerializeField] private Transform target;
+    [SerializeField] private Vector2 offset;
+    public float defaultSize;
     public float minX ;
     public float maxX ;
     public float minY ;
@@ -15,8 +15,7 @@ public class CameraController : MonoBehaviour
 
     private void Awake()
     {
-        camHalfHeight = Camera.main.orthographicSize;
-        camHalfWidth = camHalfHeight * Camera.main.aspect;
+        SetCameraDimensions();
     }
 
     private void Update()
@@ -36,5 +35,11 @@ public class CameraController : MonoBehaviour
         float clampedY = Mathf.Clamp(desiredPosition.y, minCamY, maxCamY);
 
         transform.position = new Vector3(clampedX, clampedY, desiredPosition.z);
+    }
+
+    public void SetCameraDimensions()
+    {
+        camHalfHeight = Camera.main.orthographicSize;
+        camHalfWidth = camHalfHeight * Camera.main.aspect;
     }
 }

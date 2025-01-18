@@ -2601,16 +2601,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: env_ground_24
+      name: wall_brown_grass
       rect:
         serializedVersion: 2
-        x: 224
+        x: 272
         y: 160
-        width: 78
-        height: 124
+        width: 19
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 60}
       customData: 
       outline: []
       physicsShape: []
@@ -3027,7 +3027,6 @@ TextureImporter:
       env_ground_21: 21300042
       env_ground_22: 21300044
       env_ground_23: 21300046
-      env_ground_24: 21300048
       env_ground_25: 21300050
       env_ground_26: 21300052
       env_ground_27: 21300054
@@ -3052,6 +3051,7 @@ TextureImporter:
       env_ground_7: 21300014
       env_ground_8: 21300016
       env_ground_9: 21300018
+      wall_brown_grass: 21300048
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
