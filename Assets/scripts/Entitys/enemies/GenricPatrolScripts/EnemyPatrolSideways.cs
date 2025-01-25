@@ -44,22 +44,7 @@ public class EnemyPatrolSideways : EnemyPatrol
     }
 
     private void FixedUpdate()
-    {
-        //if (movingLeft)
-        //{
-        //    if (transform.position.x >= leftEdge.position.x)
-        //        MoveInDirection(leftScaleDirection, -1);
-        //    else
-        //        DirectionChange();
-        //}
-        //else
-        //{
-        //    if (transform.position.x <= rightEdge.position.x)
-        //        MoveInDirection(-leftScaleDirection, 1);
-        //    else
-        //        DirectionChange();
-        //}
-
+    { 
         body.linearVelocity = new Vector2(movingDirection * speed, 0f);
     }
 
