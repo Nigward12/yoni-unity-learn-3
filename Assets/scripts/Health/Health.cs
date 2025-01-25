@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Health : MonoBehaviour
 {
     [Header("Health")]
     [SerializeField] public float startingHealth;
-    [SerializeField] private MonoBehaviour movementScript;
+    [SerializeField] private List<MonoBehaviour> disableOnDeath;
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
@@ -14,7 +15,10 @@ public class Health : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     [SerializeField] Color flashColor;
+    [SerializeField] int enemyLayerCode;
+    [SerializeField] int playerLayerCode;
     private SpriteRenderer spriteRend;
+
 
     private void Awake()
     {
@@ -39,19 +43,23 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("death");
-                movementScript.enabled = false;
+                disableScriptsOnDeath();
                 dead = true;
             }
         }
     }
-
+    public void disableScriptsOnDeath()
+    {
+        foreach(MonoBehaviour script in disableOnDeath)
+            script.enabled = false;
+    }
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
     private IEnumerator Invunerability()
     {
-        Physics2D.IgnoreLayerCollision(8, 9, true);
+        Physics2D.IgnoreLayerCollision(playerLayerCode, enemyLayerCode, true);
         for (int i = 0; i < numberOfFlashes; i++)
         {
             spriteRend.color = flashColor;
@@ -59,6 +67,6 @@ public class Health : MonoBehaviour
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
-        Physics2D.IgnoreLayerCollision(8, 9, false);
+        Physics2D.IgnoreLayerCollision(playerLayerCode, enemyLayerCode, false);
     }
 }

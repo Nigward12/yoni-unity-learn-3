@@ -17,8 +17,8 @@ TagManager:
   - player
   - enemy
   - non-WJ-wall
-  - 
-  - 
+  - enemyPhysicalBody
+  - patrolEdge
   - 
   - 
   - 

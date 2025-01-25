@@ -148,3 +148,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  targetCollider: {fileID: 3883556119592258690}
