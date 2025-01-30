@@ -11,7 +11,7 @@ public class EnemyPatrolEdge : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.transform == patrolEnemy && enemyPatrol.enabled)
+        if(collision.transform == patrolEnemy && enemyPatrol.enabled && !enemyPatrol.isReturningToPatrol())
         {
             enemyPatrol.OnReachedPatrolEdge();
         }

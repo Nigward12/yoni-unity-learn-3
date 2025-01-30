@@ -5,6 +5,7 @@ public class BasicAttack : MonoBehaviour
 {
     [SerializeField] float damage;
     [SerializeField] private LayerMask enemyLayers;
+    public Sound attackSound;
     private PolygonCollider2D polCollider;
     private ContactFilter2D contactFilter;
 
@@ -21,6 +22,11 @@ public class BasicAttack : MonoBehaviour
         TryDamageEnemy();
     }
 
+    public void PlayAttackSound()
+    {
+        SoundManager.instance.PlaySound(attackSound);
+    }
+
 
     public void TryDamageEnemy()
     {
@@ -29,9 +35,6 @@ public class BasicAttack : MonoBehaviour
         polCollider.Overlap(contactFilter, hits);
 
         foreach (Collider2D hit in hits)
-        {
-            print(hit.transform.name);
             hit.GetComponent<Health>().TakeDamage(damage);
-        }
     }
 }

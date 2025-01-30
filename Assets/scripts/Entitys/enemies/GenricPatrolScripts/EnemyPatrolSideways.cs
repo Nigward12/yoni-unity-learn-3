@@ -10,10 +10,8 @@ public class EnemyPatrolSideways : EnemyPatrol
     [Header("Movement parameters")]
     [SerializeField] private float speed;
     [SerializeField] private string patrolMovementAnimVar;
-    [SerializeField] private bool facingLeftOnStart;
     private Vector3 initScale;
     private bool movingLeft;
-    private int leftScaleDirection;
     private int movingDirection;
 
     [Header("Idle Behaviour")]
@@ -25,14 +23,22 @@ public class EnemyPatrolSideways : EnemyPatrol
 
     private Animator anim;
     private Rigidbody2D body;
+    private MovementScript enemyMovement;
+    //private float patrolCenterX;
 
     private void Awake()
     {
         initScale = transform.localScale;
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
-        movingLeft = facingLeftOnStart;
-        leftScaleDirection = (int)Mathf.Sign(initScale.x)*1;
+        enemyMovement = GetComponent<MovementScript>();
+        //patrolCenterX = (rightEdge.position.x - leftEdge.position.x) / 2;
+        returningToPatrol = false;
+    }
+
+    private void Start()
+    {
+        movingLeft = enemyMovement.isFacingLeft();
         movingDirection = 0;
         startPatrol();
     }
@@ -46,12 +52,19 @@ public class EnemyPatrolSideways : EnemyPatrol
     private void FixedUpdate()
     { 
         body.linearVelocity = new Vector2(movingDirection * speed, 0f);
+
+        if (returningToPatrol)
+        {
+            if (transform.position.x >= leftEdge.position.x
+                && transform.position.x <= rightEdge.position.x)
+                returningToPatrol = false;
+        }
     }
 
     private void OnEnable()
     {
-        startPatrol();
         Physics2D.IgnoreLayerCollision(edgeLayerCode, enemyLayerCode, false);
+        Start();
     }
 
 
@@ -60,16 +73,16 @@ public class EnemyPatrolSideways : EnemyPatrol
         if (movingLeft)
         {
             if (transform.position.x > leftEdge.position.x)
-                MoveInDirection(leftScaleDirection, -1);
+                MoveInDirection(enemyMovement.getLeftScaleDirection(), -1);
             else
-                DirectionChange();
+                StartCoroutine(DirectionChange());
         }
         else
         {
             if (transform.position.x < rightEdge.position.x)
-                MoveInDirection(-leftScaleDirection, 1);
+                MoveInDirection(-enemyMovement.getLeftScaleDirection(), 1);
             else
-                DirectionChange();
+                StartCoroutine(DirectionChange());
         }
     }
 
@@ -88,11 +101,11 @@ public class EnemyPatrolSideways : EnemyPatrol
 
         if (movingLeft)
         {
-            MoveInDirection(leftScaleDirection, -1);
+            MoveInDirection(enemyMovement.getLeftScaleDirection(), -1);
         }
         else
         {
-            MoveInDirection(-leftScaleDirection, 1);
+            MoveInDirection(-enemyMovement.getLeftScaleDirection(), 1);
         }
     }
 
@@ -100,14 +113,10 @@ public class EnemyPatrolSideways : EnemyPatrol
     {
         anim.SetBool(patrolMovementAnimVar, true);
 
-        //Make enemy face direction
         transform.localScale = new Vector3(Mathf.Abs(initScale.x) * ScaleDirection,
             initScale.y, initScale.z);
 
-        //Move in that direction
-        //body.linearVelocity = new Vector2(_movingDirection * speed, 0f);
         movingDirection = _movingDirection;
-        //transform.position = new Vector3(transform.position.x + Time.deltaTime * movingDirection * speed,
-        //    transform.position.y, transform.position.z);
+      
     }
 }

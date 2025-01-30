@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 
-public class PlayerBasicMovement : MonoBehaviour
+public class PlayerBasicMovement : MovementScript
 {
     [Header("Movement variables")]
     [SerializeField] private float speed;
@@ -10,8 +10,7 @@ public class PlayerBasicMovement : MonoBehaviour
     [SerializeField] private float walljumpPowerX;
     [SerializeField] private float walljumpPowerY;
     [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private float defaultGravityScale;
-    [SerializeField] private float defaultLocalScale;
+    private float leftScale;
     [SerializeField] private float maxFallSpeed;
 
     [Header ("GroundAndSlopeCheck")]
@@ -37,15 +36,19 @@ public class PlayerBasicMovement : MonoBehaviour
     private float wallJumpCooldown;
     private float horizontalInput;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         bodyCollider = GetComponent<BoxCollider2D>();
+        leftScale = defaultLocalScale * leftScaleDirection;
     }
 
-    private void Update()
+    protected override void Update()
     {
+        base.Update();
+
         horizontalInput = Input.GetAxis("Horizontal");
 
         isGrounded = IsGrounded();
@@ -72,10 +75,9 @@ public class PlayerBasicMovement : MonoBehaviour
     private void FlipPlayerLeftRight()
     {
         if (horizontalInput > 0.01f)
-            transform.localScale = new Vector3(defaultLocalScale,defaultLocalScale,defaultLocalScale);
+            transform.localScale = new Vector3(-leftScale, defaultLocalScale, defaultLocalScale);
         else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-defaultLocalScale,
-                defaultLocalScale, defaultLocalScale);
+            transform.localScale = new Vector3(leftScale, defaultLocalScale, defaultLocalScale);
     }
 
     private void SetAnimatorParams()
