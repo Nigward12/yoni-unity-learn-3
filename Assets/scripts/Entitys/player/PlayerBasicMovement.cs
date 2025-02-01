@@ -12,13 +12,16 @@ public class PlayerBasicMovement : MovementScript
     [SerializeField] private LayerMask wallLayer;
     private float leftScale;
     [SerializeField] private float maxFallSpeed;
+    [SerializeField] private float jumpBufferTime = 0.1f;
+    private float lastJumpTime;
+    private bool jumping;
 
     [Header ("GroundAndSlopeCheck")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private BoxCollider2D feetCollider;
     [SerializeField] private PhysicsMaterial2D noFriction;
     [SerializeField] private PhysicsMaterial2D fullFriction;
-    private bool isGrounded;
+    private bool isGrounded, onWall;
     private RaycastHit2D underFeetRaycastHit;
 
     [SerializeField] private float slopeCheckDistance;
@@ -29,6 +32,11 @@ public class PlayerBasicMovement : MovementScript
     private float slopeDownAngle;
     private float slopeSideAngle;
     private bool canWalkOnSlope;
+
+    [Header("SFX")]
+    [SerializeField] private Sound jumpSound;
+    [SerializeField] private Sound jumpLandingSound;
+    private bool landingSoundPlayed;
 
     private Rigidbody2D body;
     private Animator anim;
@@ -53,21 +61,28 @@ public class PlayerBasicMovement : MovementScript
 
         isGrounded = IsGrounded();
 
+        onWall = OnWall();
+
         FlipPlayerLeftRight();
 
         SetAnimatorParams();
 
         SlopeCheck();
 
+        if (jumping)
+            updateJumpState();
+
         if (WallJumpReady())
         {
             UpdateMovement();
             if (Input.GetKey(KeyCode.Space))
-                Jump();
+            {
+                if(Input.GetKeyDown(KeyCode.Space) || Time.time - lastJumpTime > jumpBufferTime)
+                    Jump(true);
+                else
+                    Jump(false);
+            }    
         }
-
-        //if (Input.GetKey(KeyCode.E))
-        //    GetComponent<Health>().TakeDamage(1);
     }
 
     #region updateMethods
@@ -84,7 +99,7 @@ public class PlayerBasicMovement : MovementScript
     {
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded);
-        if (falling(isGrounded))
+        if (Falling())
         {
             anim.SetBool("falling", true);
             body.gravityScale = defaultGravityScale * 1.5f;
@@ -136,15 +151,41 @@ public class PlayerBasicMovement : MovementScript
         return false;
     }
 
-    private void Jump()
+    private void Jump(bool playSound)
     {
         if (isGrounded)
         {
+            if (playSound)
+                SoundManager.instance.PlaySound(jumpSound);
+
+            jumping = true;
+
             RegularJump();
+
+            lastJumpTime = Time.time;
         }
-        else if (OnWall())
+        else if (onWall)
         {
+            jumping = true;
+
             WallJump();
+
+            lastJumpTime = Time.time;
+        }
+    }
+
+    private void updateJumpState()
+    {
+        if (isGrounded || onWall)
+        {
+            jumping = false;
+            landingSoundPlayed = false;
+        }
+        else if (almostGrounded() && body.linearVelocityY < 0
+            && !landingSoundPlayed)
+        {
+            SoundManager.instance.PlaySound(jumpLandingSound);
+            landingSoundPlayed = true;
         }
     }
 
@@ -177,6 +218,13 @@ public class PlayerBasicMovement : MovementScript
     #endregion
 
     #region playerStateIndicators
+
+    private bool almostGrounded()
+    {
+        underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
+            feetCollider.bounds.size, 0, Vector2.down, 0.5f, groundLayer);
+        return underFeetRaycastHit.collider != null;
+    }
     private bool IsGrounded()
     {
         underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
@@ -268,7 +316,7 @@ public class PlayerBasicMovement : MovementScript
         return horizontalInput == 0 && isGrounded && !OnWall();
     }
 
-    private bool falling(bool isGrounded)
+    private bool Falling()
     {
         underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
             feetCollider.bounds.size, 0, Vector2.down, slopeCheckDistance, groundLayer);

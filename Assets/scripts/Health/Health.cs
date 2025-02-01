@@ -19,6 +19,9 @@ public class Health : MonoBehaviour
     [SerializeField] int playerLayerCode;
     private SpriteRenderer spriteRend;
 
+    [Header("SFX")]
+    [SerializeField] private Sound hurtSound;
+
 
     private void Awake()
     {
@@ -35,6 +38,10 @@ public class Health : MonoBehaviour
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
+
+            if (hurtSound.audioClip)
+                SoundManager.instance.PlaySound(hurtSound);
+
             if (iFramesDuration > 0)
                 StartCoroutine(Invunerability());
         }

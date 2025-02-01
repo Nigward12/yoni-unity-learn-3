@@ -12,6 +12,11 @@ public abstract class EnemyPatrol : MonoBehaviour
         this.enabled = true;
     }
 
+    protected virtual void OnDisable()
+    {
+        returningToPatrol = false;
+    }
+
     public bool isReturningToPatrol()
     {
         return returningToPatrol;

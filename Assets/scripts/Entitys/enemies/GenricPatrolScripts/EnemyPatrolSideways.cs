@@ -42,8 +42,9 @@ public class EnemyPatrolSideways : EnemyPatrol
         movingDirection = 0;
         startPatrol();
     }
-    private void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         anim.SetBool(patrolMovementAnimVar, false);
         StopAllCoroutines();
         Physics2D.IgnoreLayerCollision(edgeLayerCode, enemyLayerCode, true);

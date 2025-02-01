@@ -5,7 +5,6 @@ public class EnemyMeleeMovement : MovementScript
 {
     [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
-    [SerializeField] private int damage;
     private float attackCooldownTimer = Mathf.Infinity;
 
     [Header("attack range")]
@@ -28,15 +27,18 @@ public class EnemyMeleeMovement : MovementScript
     private Animator anim;
     private EnemyPatrol enemyPatrol;
     private Rigidbody2D body;
+    private Health health;
     private bool chasing;
+    private float lastFrameHealth;
 
     protected override void Awake()
     {
         base.Awake();
-
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         enemyPatrol = GetComponent<EnemyPatrol>();
+        health = GetComponent<Health>();
+        lastFrameHealth = health.currentHealth;
     }
 
     protected override void Update()
@@ -58,7 +60,7 @@ public class EnemyMeleeMovement : MovementScript
 
         if (!PlayerInAttackRange())
         {
-            if (PlayerDetected())
+            if (PlayerDetected() || lastFrameHealth > health.currentHealth)
             {
                 enemyPatrol.enabled = false;
                 ChasePlayer();
@@ -68,6 +70,8 @@ public class EnemyMeleeMovement : MovementScript
             else
                 enemyPatrol.enabled = true;
         }
+
+        lastFrameHealth = health.currentHealth;
     }
 
     private void ChasePlayer()

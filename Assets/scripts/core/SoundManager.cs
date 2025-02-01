@@ -1,11 +1,10 @@
 using Unity.VisualScripting;
 using UnityEngine;
-
 [System.Serializable]
 public class Sound
 {
-    public AudioClip audio;
-    public float pitch;
+    public AudioClip audioClip;
+    public float pitch = 1f;
 }
 public class SoundManager : MonoBehaviour
 {
@@ -26,11 +25,13 @@ public class SoundManager : MonoBehaviour
         //source.PlayOneShot(_sound.audio);
 
         //source.pitch = originalPitch;
+
         AudioSource tempSource = gameObject.AddComponent<AudioSource>();
-        tempSource.clip = _sound.audio;
+        tempSource.clip = _sound.audioClip;
         tempSource.pitch = _sound.pitch;
         tempSource.Play();
 
-        Destroy(tempSource, _sound.audio.length / _sound.pitch);
+        Destroy(tempSource, _sound.audioClip.length / _sound.pitch);
+
     }
 }
