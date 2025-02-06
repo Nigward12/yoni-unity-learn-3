@@ -13,8 +13,15 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
         source = GetComponent<AudioSource>();
+
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != null && instance != this)
+            Destroy(gameObject);
     }
 
     public void PlaySound(Sound _sound)
@@ -33,5 +40,19 @@ public class SoundManager : MonoBehaviour
 
         Destroy(tempSource, _sound.audioClip.length / _sound.pitch);
 
+    }
+
+    public AudioSource PlayLoopingSound(Sound _sound)
+    {
+        GameObject soundObject = new GameObject("LoopingSound");
+        soundObject.transform.SetParent(transform);
+
+        AudioSource tempSource = soundObject.AddComponent<AudioSource>();
+        tempSource.clip = _sound.audioClip;
+        tempSource.pitch = _sound.pitch;
+        tempSource.loop = true;
+        tempSource.Play();
+
+        return tempSource;
     }
 }

@@ -43,9 +43,13 @@ public class BasicAttack : MonoBehaviour
 
         foreach (Collider2D hit in hits)
         {
-            hit.GetComponent<Health>().TakeDamage(damage);
-            if (hitSound.audioClip)
-                SoundManager.instance.PlaySound(hitSound);
+            if (hit != null)
+            {
+                print(hit.transform.name);
+                hit.GetComponent<Health>().TakeDamage(damage);
+                if (hitSound.audioClip)
+                    SoundManager.instance.PlaySound(hitSound);
+            }
         }
     }
 }

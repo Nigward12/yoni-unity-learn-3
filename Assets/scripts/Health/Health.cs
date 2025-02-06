@@ -49,8 +49,8 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
-                anim.SetTrigger("death");
                 disableScriptsOnDeath();
+                anim.SetTrigger("death");
                 dead = true;
             }
         }

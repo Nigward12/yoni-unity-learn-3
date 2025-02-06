@@ -1,20 +1,27 @@
-using Unity.VisualScripting;
+
 using UnityEngine;
-using UnityEngine.Experimental.GlobalIllumination;
+using System.Linq;
 
 public class PlayerBasicMovement : MovementScript
 {
     [Header("Movement variables")]
     [SerializeField] private float speed;
-    [SerializeField] private float jumpPower;
-    [SerializeField] private float walljumpPowerX;
-    [SerializeField] private float walljumpPowerY;
     [SerializeField] private LayerMask wallLayer;
     private float leftScale;
     [SerializeField] private float maxFallSpeed;
+
+    [Header("Jump variables")]
+    [SerializeField] private float jumpPower;
+    [SerializeField] private float walljumpForceX;
+    [SerializeField] private float walljumpForceY;
+    [SerializeField] private float coyoteTime;
     [SerializeField] private float jumpBufferTime = 0.1f;
-    private float lastJumpTime;
+    [SerializeField] private int extraJumpsAvailable;
+    private int extraJumpsCurrent;
+    private float jumpBufferTimer;
+    //private float lastJumpTime;
     private bool jumping;
+    private float coyoteTimer = Mathf.Infinity;
 
     [Header ("GroundAndSlopeCheck")]
     [SerializeField] private LayerMask groundLayer;
@@ -36,12 +43,14 @@ public class PlayerBasicMovement : MovementScript
     [Header("SFX")]
     [SerializeField] private Sound jumpSound;
     [SerializeField] private Sound jumpLandingSound;
+    [SerializeField] private Sound runningSound;
     private bool landingSoundPlayed;
+    private AudioSource runningAudioSource;
 
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D bodyCollider;
-    private float wallJumpCooldown;
+    //private float wallJumpCooldown;
     private float horizontalInput;
 
     protected override void Awake()
@@ -51,6 +60,7 @@ public class PlayerBasicMovement : MovementScript
         anim = GetComponent<Animator>();
         bodyCollider = GetComponent<BoxCollider2D>();
         leftScale = defaultLocalScale * leftScaleDirection;
+        extraJumpsCurrent = extraJumpsAvailable;
     }
 
     protected override void Update()
@@ -67,22 +77,18 @@ public class PlayerBasicMovement : MovementScript
 
         SetAnimatorParams();
 
+        UpdateStateSounds();
+
         SlopeCheck();
 
-        if (jumping)
-            updateJumpState();
+        UpdateJumpState();
 
-        if (WallJumpReady())
-        {
-            UpdateMovement();
-            if (Input.GetKey(KeyCode.Space))
-            {
-                if(Input.GetKeyDown(KeyCode.Space) || Time.time - lastJumpTime > jumpBufferTime)
-                    Jump(true);
-                else
-                    Jump(false);
-            }    
-        }
+        UpdateWallJumpState();
+
+        UpdateMovement();
+
+        UpdateJumps();
+
     }
 
     #region updateMethods
@@ -111,9 +117,33 @@ public class PlayerBasicMovement : MovementScript
         }
     }
 
+    private void UpdateStateSounds()
+    {
+        UpdateStateSound(ref runningAudioSource, runningSound,
+            new bool[] { isGrounded, horizontalInput != 0 });
+    }
+
+    private void UpdateStateSound(ref AudioSource stateAudioSource, Sound stateSound, bool[] conditions)
+    {
+        if (conditions.All(condition => condition))
+        {
+            if (stateAudioSource == null)
+            {
+                stateAudioSource = SoundManager.instance.PlayLoopingSound(stateSound);
+            }
+        }
+        else
+        {
+            if (stateAudioSource != null)
+            {
+                Destroy(stateAudioSource.gameObject);
+                stateAudioSource = null;
+            }
+        }
+    }
+
     private void UpdateMovement()
     {
-
         if (isGrounded && !onSlope)
         {
             body.linearVelocity = new Vector2(horizontalInput * speed, 0f);
@@ -130,30 +160,64 @@ public class PlayerBasicMovement : MovementScript
         }
     }
 
-    private bool WallJumpReady()
+    private void UpdateJumps()
     {
-        //return true if the a wall jump can be performed, also configures the players 
-        // body accordingly
-        if (wallJumpCooldown > 0.2f)
-        {
+        if (Input.GetKeyDown(KeyCode.Space)/* || Time.time - lastJumpTime > jumpBufferTime*/)
+            Jump(true);
 
-            if (OnWall() && !isGrounded)
-            {
-                body.gravityScale = 0;
-                body.linearVelocity = Vector2.zero;
-            }
-            else
-                body.gravityScale = defaultGravityScale;
-            return true;
+        if (Input.GetKeyUp(KeyCode.Space) && body.linearVelocityY > 0)
+            body.linearVelocity = new Vector2(body.linearVelocityX, body.linearVelocityY / 2);
+    }
+
+    private void UpdateWallJumpState()
+    {
+        if (onWall)
+        {
+            body.gravityScale = 0;
+            body.linearVelocity = Vector2.zero;
         }
         else
-            wallJumpCooldown += Time.deltaTime;
-        return false;
+         body.gravityScale = defaultGravityScale;
     }
+
+    //private bool WallJumpReady()
+    //{
+    //    //return true if the a wall jump can be performed, also configures the players 
+    //    // body accordingly
+    //    if (wallJumpCooldown > 0.2f)
+    //    {
+
+    //        if (OnWall() && !isGrounded)
+    //        {
+    //            body.gravityScale = 0;
+    //            body.linearVelocity = Vector2.zero;
+    //        }
+    //        else
+    //            body.gravityScale = defaultGravityScale;
+    //        return true;
+    //    }
+    //    else
+    //        wallJumpCooldown += Time.deltaTime;
+    //    return false;
+    //}
 
     private void Jump(bool playSound)
     {
-        if (isGrounded)
+        if ( coyoteTimer <= 0 && !onWall && extraJumpsCurrent <= 0)
+            return;
+
+
+        if (onWall)
+        {
+            jumping = true;
+
+            WallJump();
+
+            coyoteTimer = 0;
+
+            //lastJumpTime = Time.time;
+        }
+        else 
         {
             if (playSound)
                 SoundManager.instance.PlaySound(jumpSound);
@@ -162,30 +226,42 @@ public class PlayerBasicMovement : MovementScript
 
             RegularJump();
 
-            lastJumpTime = Time.time;
-        }
-        else if (onWall)
-        {
-            jumping = true;
+            //lastJumpTime = Time.time;
 
-            WallJump();
+            if (coyoteTimer <= 0)
+                extraJumpsCurrent--;
 
-            lastJumpTime = Time.time;
+            coyoteTimer = 0;
+
+            jumpBufferTimer = jumpBufferTime;
         }
     }
 
-    private void updateJumpState()
+    private void UpdateJumpState()
     {
-        if (isGrounded || onWall)
+        if (jumping)
         {
-            jumping = false;
-            landingSoundPlayed = false;
+            if (isGrounded || onWall)
+            {
+                jumping = false;
+                landingSoundPlayed = false;
+            }
+            else if (almostGrounded() && body.linearVelocityY < 0
+                && !landingSoundPlayed)
+            {
+                SoundManager.instance.PlaySound(jumpLandingSound);
+                landingSoundPlayed = true;
+            }
         }
-        else if (almostGrounded() && body.linearVelocityY < 0
-            && !landingSoundPlayed)
+        if (!onWall)
         {
-            SoundManager.instance.PlaySound(jumpLandingSound);
-            landingSoundPlayed = true;
+            if (isGrounded)
+            {
+                coyoteTimer = coyoteTime;
+                extraJumpsCurrent = extraJumpsAvailable;
+            }
+            else
+                coyoteTimer -= Time.deltaTime;
         }
     }
 
@@ -202,16 +278,8 @@ public class PlayerBasicMovement : MovementScript
 
     private void WallJump()
     {
-        if (horizontalInput == 0)
-        {
-            body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * (walljumpPowerX + walljumpPowerY), 0);
-            transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x) * defaultLocalScale, transform.localScale.y,
-                transform.localScale.z);
-        }
-        else
-            body.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * walljumpPowerX, walljumpPowerY);
-
-        wallJumpCooldown = 0;
+        body.AddForce(new Vector2(-Mathf.Sign(transform.localScale.x) * walljumpForceX,
+            walljumpForceY));
     }
 
 
@@ -227,6 +295,11 @@ public class PlayerBasicMovement : MovementScript
     }
     private bool IsGrounded()
     {
+        if (jumpBufferTimer > 0)
+        {
+            jumpBufferTimer -= Time.deltaTime;
+            return false;
+        }
         underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
             feetCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return underFeetRaycastHit.collider != null;
@@ -309,7 +382,7 @@ public class PlayerBasicMovement : MovementScript
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(bodyCollider.bounds.center,
             bodyCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
-        return raycastHit.collider != null;
+        return raycastHit.collider != null && !isGrounded;
     }
     public bool CanAttack()
     {
