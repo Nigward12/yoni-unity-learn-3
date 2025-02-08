@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class Health : MonoBehaviour
 {
     [Header("Health")]
-    [SerializeField] public float startingHealth;
+    [SerializeField] public float fullHealth;
     [SerializeField] private List<MonoBehaviour> disableOnDeath;
     public float currentHealth { get; private set; }
     private Animator anim;
@@ -26,14 +26,14 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         dead = false;
-        currentHealth = startingHealth;
+        currentHealth = fullHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(float _damage)
     {
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, fullHealth);
 
         if (currentHealth > 0)
         {
@@ -49,20 +49,20 @@ public class Health : MonoBehaviour
         {
             if (!dead)
             {
-                disableScriptsOnDeath();
+                DisEnableScripts(false);
                 anim.SetTrigger("death");
                 dead = true;
             }
         }
     }
-    public void disableScriptsOnDeath()
+    public void DisEnableScripts(bool enable)
     {
         foreach(MonoBehaviour script in disableOnDeath)
-            script.enabled = false;
+            script.enabled = enable;
     }
     public void AddHealth(float _value)
     {
-        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, fullHealth);
     }
     private IEnumerator Invunerability()
     {
@@ -75,5 +75,15 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(playerLayerCode, enemyLayerCode, false);
+    }
+
+    public void OnRespawn()
+    {
+        dead = false;
+        AddHealth(fullHealth);
+        anim.ResetTrigger("death");
+        anim.Play("idle");
+        StartCoroutine(Invunerability());
+        DisEnableScripts(true);
     }
 }

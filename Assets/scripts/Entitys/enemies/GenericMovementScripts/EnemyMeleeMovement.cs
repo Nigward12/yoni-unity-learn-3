@@ -26,7 +26,6 @@ public class EnemyMeleeMovement : MovementScript
 
     private Animator anim;
     private EnemyPatrol enemyPatrol;
-    private Rigidbody2D body;
     private Health health;
     private bool chasing;
     private float lastFrameHealth;
@@ -35,7 +34,6 @@ public class EnemyMeleeMovement : MovementScript
     {
         base.Awake();
         anim = GetComponent<Animator>();
-        body = GetComponent<Rigidbody2D>();
         enemyPatrol = GetComponent<EnemyPatrol>();
         health = GetComponent<Health>();
         lastFrameHealth = health.currentHealth;

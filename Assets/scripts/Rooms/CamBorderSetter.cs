@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+
 public class CamBorderSetter : MonoBehaviour
 {
     [SerializeField] private Camera cam;
@@ -23,6 +24,12 @@ public class CamBorderSetter : MonoBehaviour
         maxY = maxYBorder.position.y;
     }
     private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+            BorderSet();
+    }
+
+    public void BorderSet()
     {
         AdjustCamSize();
         SwitchToNewBorders();

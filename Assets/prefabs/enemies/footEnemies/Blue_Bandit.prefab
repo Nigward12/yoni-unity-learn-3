@@ -109,6 +109,7 @@ MonoBehaviour:
   hitSound:
     audioClip: {fileID: 0}
     pitch: 1
+    volume: 1
 --- !u!1 &2595725399167378869
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e1f46acdce98742aad70da54a56e7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 4
+  fullHealth: 4
   disableOnDeath:
   - {fileID: 4683023976979321888}
   - {fileID: 6258090055369665200}
@@ -599,6 +600,7 @@ MonoBehaviour:
   hurtSound:
     audioClip: {fileID: 0}
     pitch: 1
+    volume: 1
 --- !u!114 &1230825727446153183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,8 +629,9 @@ MonoBehaviour:
   facingLeftOnStart: 1
   defaultGravityScale: 7
   defaultLocalScale: 3
+  noFriction: {fileID: 6200000, guid: 68789d3107ac0024a94b6bdeb8c2a1a1, type: 2}
+  fullFriction: {fileID: 6200000, guid: c5be42cbf9f96c1469272d1a409eeaff, type: 2}
   attackCooldown: 1
-  damage: 1
   attackTriggerCollider: {fileID: 5483357332553274567}
   detectionColliderFront: {fileID: 3577335224915643874}
   detectionColliderBack: {fileID: 1953556353180642428}

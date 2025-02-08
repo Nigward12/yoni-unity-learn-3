@@ -26,8 +26,6 @@ public class PlayerBasicMovement : MovementScript
     [Header ("GroundAndSlopeCheck")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private BoxCollider2D feetCollider;
-    [SerializeField] private PhysicsMaterial2D noFriction;
-    [SerializeField] private PhysicsMaterial2D fullFriction;
     private bool isGrounded, onWall;
     private RaycastHit2D underFeetRaycastHit;
 
@@ -47,7 +45,6 @@ public class PlayerBasicMovement : MovementScript
     private bool landingSoundPlayed;
     private AudioSource runningAudioSource;
 
-    private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D bodyCollider;
     //private float wallJumpCooldown;
@@ -56,7 +53,6 @@ public class PlayerBasicMovement : MovementScript
     protected override void Awake()
     {
         base.Awake();
-        body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         bodyCollider = GetComponent<BoxCollider2D>();
         leftScale = defaultLocalScale * leftScaleDirection;
@@ -163,7 +159,7 @@ public class PlayerBasicMovement : MovementScript
     private void UpdateJumps()
     {
         if (Input.GetKeyDown(KeyCode.Space)/* || Time.time - lastJumpTime > jumpBufferTime*/)
-            Jump(true);
+            Jump();
 
         if (Input.GetKeyUp(KeyCode.Space) && body.linearVelocityY > 0)
             body.linearVelocity = new Vector2(body.linearVelocityX, body.linearVelocityY / 2);
@@ -201,11 +197,12 @@ public class PlayerBasicMovement : MovementScript
     //    return false;
     //}
 
-    private void Jump(bool playSound)
+    private void Jump()
     {
         if ( coyoteTimer <= 0 && !onWall && extraJumpsCurrent <= 0)
             return;
 
+        SoundManager.instance.PlaySound(jumpSound);
 
         if (onWall)
         {
@@ -215,18 +212,13 @@ public class PlayerBasicMovement : MovementScript
 
             coyoteTimer = 0;
 
-            //lastJumpTime = Time.time;
         }
-        else 
-        {
-            if (playSound)
-                SoundManager.instance.PlaySound(jumpSound);
+        else
+        { 
 
             jumping = true;
 
             RegularJump();
-
-            //lastJumpTime = Time.time;
 
             if (coyoteTimer <= 0)
                 extraJumpsCurrent--;
@@ -264,11 +256,6 @@ public class PlayerBasicMovement : MovementScript
                 coyoteTimer -= Time.deltaTime;
         }
     }
-
-    private void stopMovementOnDeath()
-    {
-        body.sharedMaterial = fullFriction;
-    }    
 
     private void RegularJump()
     {
