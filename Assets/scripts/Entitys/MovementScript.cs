@@ -20,13 +20,15 @@ public abstract class MovementScript : MonoBehaviour
             leftScaleDirection = (int)Mathf.Sign(transform.localScale.x) * -1;
     }
 
-    protected void stopMovementOnDeath()
+    protected virtual void OnDeath()
     {
         body.sharedMaterial = fullFriction;
     }
 
     protected virtual void Update()
     {
+        if (Time.timeScale == 0)
+            return;
         facingLeft = (int)Mathf.Sign(transform.localScale.x) * 1 == leftScaleDirection;
     }
 
@@ -36,15 +38,14 @@ public abstract class MovementScript : MonoBehaviour
             transform.localScale.z);
     }
 
-    public bool isFacingLeft()
+    public bool IsFacingLeft()
     {
         return facingLeft;
     }
 
-    public int getLeftScaleDirection()
+    public int GetLeftScaleDirection()
     {
         return leftScaleDirection;
     }
-
 
 }

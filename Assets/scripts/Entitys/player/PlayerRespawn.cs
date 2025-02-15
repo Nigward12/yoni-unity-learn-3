@@ -21,6 +21,7 @@ public class PlayerRespawn : MonoBehaviour
     public void Respawn()
     {
         SoundManager.instance.StopMusicLoop();
+        SoundManager.instance.DestroyAllSounds();
         StartCoroutine(RespawnAfterDeathScreen());
     }
 

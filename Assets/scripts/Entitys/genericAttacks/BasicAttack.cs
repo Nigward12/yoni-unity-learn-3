@@ -45,7 +45,6 @@ public class BasicAttack : MonoBehaviour
         {
             if (hit != null)
             {
-                print(hit.transform.name);
                 hit.GetComponent<Health>().TakeDamage(damage);
                 if (hitSound.audioClip)
                     SoundManager.instance.PlaySound(hitSound);

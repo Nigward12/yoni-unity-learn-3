@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using System.Linq;
+using System.Collections;
 
 public class PlayerBasicMovement : MovementScript
 {
@@ -102,22 +103,28 @@ public class PlayerBasicMovement : MovementScript
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded);
         if (Falling())
-        {
-            anim.SetBool("falling", true);
-            body.gravityScale = defaultGravityScale * 1.5f;
-        }
+            Fall();
         else
-        {
-            anim.SetBool("falling", false);
-            body.gravityScale = defaultGravityScale;
-        }
+            DontFall();
     }
 
+    private void Fall()
+    {
+        anim.SetBool("falling", true);
+        body.gravityScale = defaultGravityScale * 1.5f;
+    }
+
+    private void DontFall()
+    {
+        anim.SetBool("falling", false);
+        body.gravityScale = defaultGravityScale;
+    }
     private void UpdateStateSounds()
     {
         UpdateStateSound(ref runningAudioSource, runningSound,
             new bool[] { isGrounded, horizontalInput != 0 });
     }
+
 
     private void UpdateStateSound(ref AudioSource stateAudioSource, Sound stateSound, bool[] conditions)
     {
@@ -132,7 +139,7 @@ public class PlayerBasicMovement : MovementScript
         {
             if (stateAudioSource != null)
             {
-                Destroy(stateAudioSource.gameObject);
+                SoundManager.instance.StopLoopingSound(stateAudioSource);
                 stateAudioSource = null;
             }
         }
@@ -207,24 +214,19 @@ public class PlayerBasicMovement : MovementScript
         if (onWall)
         {
             jumping = true;
-
             WallJump();
-
             coyoteTimer = 0;
-
         }
         else
         { 
 
             jumping = true;
-
             RegularJump();
 
             if (coyoteTimer <= 0)
                 extraJumpsCurrent--;
 
             coyoteTimer = 0;
-
             jumpBufferTimer = jumpBufferTime;
         }
     }
@@ -269,6 +271,24 @@ public class PlayerBasicMovement : MovementScript
             walljumpForceY));
     }
 
+    protected override void OnDeath()
+    {
+        base.OnDeath();
+        if (!isGrounded && !onSlope)
+            StartCoroutine(FallToDeath());
+    }
+
+    private IEnumerator FallToDeath()
+    {
+        while (!IsGrounded())
+        {
+            Fall();
+            yield return null;
+        }
+        DontFall();
+        anim.SetBool("grounded", true);
+        anim.SetTrigger("deathOnlyRespawn");
+    }
 
     #endregion
 

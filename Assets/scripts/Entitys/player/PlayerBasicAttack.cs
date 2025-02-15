@@ -17,6 +17,8 @@ public class PlayerBasicAttack : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0)
+            return;
         if (Input.GetMouseButtonDown(0) && playerBasicMovement.CanAttack()) // Left mouse click
         {
             anim.SetTrigger("BasicAttack");

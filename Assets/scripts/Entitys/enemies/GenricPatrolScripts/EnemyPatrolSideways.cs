@@ -38,7 +38,7 @@ public class EnemyPatrolSideways : EnemyPatrol
 
     private void Start()
     {
-        movingLeft = enemyMovement.isFacingLeft();
+        movingLeft = enemyMovement.IsFacingLeft();
         movingDirection = 0;
         startPatrol();
     }
@@ -74,14 +74,14 @@ public class EnemyPatrolSideways : EnemyPatrol
         if (movingLeft)
         {
             if (transform.position.x > leftEdge.position.x)
-                MoveInDirection(enemyMovement.getLeftScaleDirection(), -1);
+                MoveInDirection(enemyMovement.GetLeftScaleDirection(), -1);
             else
                 StartCoroutine(DirectionChange());
         }
         else
         {
             if (transform.position.x < rightEdge.position.x)
-                MoveInDirection(-enemyMovement.getLeftScaleDirection(), 1);
+                MoveInDirection(-enemyMovement.GetLeftScaleDirection(), 1);
             else
                 StartCoroutine(DirectionChange());
         }
@@ -102,11 +102,11 @@ public class EnemyPatrolSideways : EnemyPatrol
 
         if (movingLeft)
         {
-            MoveInDirection(enemyMovement.getLeftScaleDirection(), -1);
+            MoveInDirection(enemyMovement.GetLeftScaleDirection(), -1);
         }
         else
         {
-            MoveInDirection(-enemyMovement.getLeftScaleDirection(), 1);
+            MoveInDirection(-enemyMovement.GetLeftScaleDirection(), 1);
         }
     }
 
