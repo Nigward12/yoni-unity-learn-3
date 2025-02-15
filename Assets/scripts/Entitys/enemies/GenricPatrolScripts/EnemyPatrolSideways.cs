@@ -18,13 +18,12 @@ public class EnemyPatrolSideways : EnemyPatrol
     [SerializeField] private float idleDuration;
 
     [Header("Relevant Layers")]
-    [SerializeField] int enemyLayerCode;
-    [SerializeField] int edgeLayerCode;
+    //[SerializeField] int enemyLayerCode;
+    //[SerializeField] int edgeLayerCode;
 
     private Animator anim;
     private Rigidbody2D body;
     private MovementScript enemyMovement;
-    //private float patrolCenterX;
 
     private void Awake()
     {
@@ -32,7 +31,6 @@ public class EnemyPatrolSideways : EnemyPatrol
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         enemyMovement = GetComponent<MovementScript>();
-        //patrolCenterX = (rightEdge.position.x - leftEdge.position.x) / 2;
         returningToPatrol = false;
     }
 
@@ -47,7 +45,7 @@ public class EnemyPatrolSideways : EnemyPatrol
         base.OnDisable();
         anim.SetBool(patrolMovementAnimVar, false);
         StopAllCoroutines();
-        Physics2D.IgnoreLayerCollision(edgeLayerCode, enemyLayerCode, true);
+        //Physics2D.IgnoreLayerCollision(edgeLayerCode, enemyLayerCode, true);
     }
 
     private void FixedUpdate()
@@ -64,7 +62,7 @@ public class EnemyPatrolSideways : EnemyPatrol
 
     private void OnEnable()
     {
-        Physics2D.IgnoreLayerCollision(edgeLayerCode, enemyLayerCode, false);
+        //Physics2D.IgnoreLayerCollision(edgeLayerCode, enemyLayerCode, false);
         Start();
     }
 

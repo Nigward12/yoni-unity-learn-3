@@ -46,6 +46,9 @@ public class PlayerBasicMovement : MovementScript
     private bool landingSoundPlayed;
     private AudioSource runningAudioSource;
 
+    [Header("Particle Systems")]
+    [SerializeField] private ParticleSystem dust;
+
     private Animator anim;
     private BoxCollider2D bodyCollider;
     //private float wallJumpCooldown;
@@ -92,10 +95,17 @@ public class PlayerBasicMovement : MovementScript
 
     private void FlipPlayerLeftRight()
     {
+        float newHorizontalScale = 0;
         if (horizontalInput > 0.01f)
-            transform.localScale = new Vector3(-leftScale, defaultLocalScale, defaultLocalScale);
+            newHorizontalScale = -leftScale;
         else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(leftScale, defaultLocalScale, defaultLocalScale);
+            newHorizontalScale = leftScale;
+        if (newHorizontalScale != 0)
+        {
+            if (isGrounded && newHorizontalScale != transform.localScale.x)
+                dust.Play();
+            transform.localScale = new Vector3(newHorizontalScale, defaultLocalScale, defaultLocalScale);
+        }
     }
 
     private void SetAnimatorParams()
@@ -210,6 +220,7 @@ public class PlayerBasicMovement : MovementScript
             return;
 
         SoundManager.instance.PlaySound(jumpSound);
+        dust.Play();
 
         if (onWall)
         {
@@ -274,13 +285,13 @@ public class PlayerBasicMovement : MovementScript
     protected override void OnDeath()
     {
         base.OnDeath();
-        if (!isGrounded && !onSlope)
+        if ((!isGrounded && !onSlope) || jumping)
             StartCoroutine(FallToDeath());
     }
 
     private IEnumerator FallToDeath()
     {
-        while (!IsGrounded())
+        while (!IsGrounded() || jumping)
         {
             Fall();
             yield return null;
