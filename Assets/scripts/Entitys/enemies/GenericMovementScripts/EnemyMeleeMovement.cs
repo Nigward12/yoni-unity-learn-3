@@ -19,7 +19,6 @@ public class EnemyMeleeMovement : MovementScript
     [SerializeField] Transform player;
     private float chaseFadeoutTimer = Mathf.Infinity;
 
-    private BoxCollider2D DetectionTriggerCollider;
 
     [Header("relevant layers")]
     [SerializeField] private LayerMask playerLayer;
