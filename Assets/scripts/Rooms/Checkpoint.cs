@@ -4,7 +4,7 @@ public class Checkpoint : MonoBehaviour
 {
     [SerializeField] private Sound checkpointSound;
     [SerializeField] private CamBorderSetter cpCamBorderSetter;
-    [SerializeField] private Sound musicInCheckpoint;
+    [SerializeField] private SoundsSetter checkpointSoundSetter;
     
     private bool checkpointDiscovered;
 
@@ -26,7 +26,7 @@ public class Checkpoint : MonoBehaviour
     {
         cpCamBorderSetter.BorderSet();
 
-        SoundManager.instance.ChangeMusic(musicInCheckpoint);
+        checkpointSoundSetter.SoundSet();
         // play checkpoint animations or somethin...
     }
 }

@@ -22,7 +22,7 @@ public class SoundManager : MonoBehaviour
     private List<Sound> atmosphereSounds = new List<Sound>();
     private List<AudioSource> activeSoundSources = new List<AudioSource>();
     private float soundRatio = 1, musicRatio = 1;
-    private bool canChangeSoundList = true;
+    private bool canChangeSoundLists = true;
 
     private void Awake()
     {
@@ -43,21 +43,29 @@ public class SoundManager : MonoBehaviour
     }
     public void AddAtmosphereSounds(List<Sound> _atSounds)
     {
-        foreach (AudioSource source in atmosphereSources)
+        if (canChangeSoundLists)
         {
-            atmosphereSources.Remove(source);
-            StopLoopingSound(source);
-        }
+            EmptyAtmosphereSoundList();
 
-        atmosphereSounds = _atSounds;
+            atmosphereSounds = _atSounds;
 
-        foreach (Sound _sound in _atSounds)
-        {
-            AudioSource atmosphereSoundSource = PlayLoopingSound(_sound);
-            atmosphereSources.Add(atmosphereSoundSource);
+            foreach (Sound _sound in _atSounds)
+            {
+                AudioSource atmosphereSoundSource = PlayLoopingSound(_sound);
+                atmosphereSources.Add(atmosphereSoundSource);
+            }
         }
     }
 
+    private void EmptyAtmosphereSoundList()
+    {
+        for (int i = atmosphereSources.Count - 1; i >= 0; i--)
+        {
+            StopLoopingSound(atmosphereSources[i]);
+            atmosphereSources.RemoveAt(i);
+        }
+        atmosphereSounds = new List<Sound>();
+    }
     public List<Sound> GetAtmosphereSounds()
     {
         return atmosphereSounds;
@@ -74,11 +82,14 @@ public class SoundManager : MonoBehaviour
 
     public void PlayMusicLoop()
     {
-        MusicSource.clip = music.audioClip;
-        MusicSource.pitch = music.pitch;
-        MusicSource.volume = music.volume * musicRatio;
-        MusicSource.loop = true;
-        MusicSource.Play();
+        if (music.audioClip != null)
+        {
+            MusicSource.clip = music.audioClip;
+            MusicSource.pitch = music.pitch;
+            MusicSource.volume = music.volume * musicRatio;
+            MusicSource.loop = true;
+            MusicSource.Play();
+        }
     }
 
     public void StopMusicLoop()
@@ -91,7 +102,7 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource PlaySound(Sound _sound)
     {
-        if (canChangeSoundList)
+        if (canChangeSoundLists)
         {
             AudioSource tempSource = gameObject.AddComponent<AudioSource>();
             tempSource.clip = _sound.audioClip;
@@ -109,7 +120,7 @@ public class SoundManager : MonoBehaviour
 
     public AudioSource PlayLoopingSound(Sound _sound)
     {
-        if (canChangeSoundList)
+        if (canChangeSoundLists)
         {
             AudioSource tempSource = gameObject.AddComponent<AudioSource>();
             tempSource.clip = _sound.audioClip;
@@ -118,7 +129,6 @@ public class SoundManager : MonoBehaviour
             tempSource.loop = true;
             tempSource.Play();
             activeSoundSources.Add(tempSource);
-
             return tempSource;
         }
         return null;
@@ -126,7 +136,7 @@ public class SoundManager : MonoBehaviour
 
     public void StopLoopingSound(AudioSource loopSource)
     {
-        if (canChangeSoundList && activeSoundSources.Contains(loopSource))
+        if (canChangeSoundLists && activeSoundSources.Contains(loopSource))
         {
             activeSoundSources.Remove(loopSource);
             Destroy(loopSource);
@@ -146,20 +156,19 @@ public class SoundManager : MonoBehaviour
 
     public void DestroyAllSounds()
     {
-        print(activeSoundSources);
-        AddAtmosphereSounds(new List<Sound>());
-        print(activeSoundSources);
-        canChangeSoundList = false;
+        canChangeSoundLists = false;
 
-        foreach (AudioSource source in activeSoundSources)
+        EmptyAtmosphereSoundList();
+
+        for (int i = activeSoundSources.Count - 1; i >= 0; i--)
         {
-            if (source.isPlaying)
+            if (activeSoundSources[i].isPlaying)
             {
-                activeSoundSources.Remove(source);
-                Destroy(source);
+                Destroy(activeSoundSources[i]);
+                activeSoundSources.RemoveAt(i);
             }
         }
-        canChangeSoundList = true;
+        canChangeSoundLists = true;
     }
     public void PauseAllSounds()
     {
