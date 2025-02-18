@@ -22,7 +22,6 @@ public class Health : MonoBehaviour
     [Header("SFX")]
     [SerializeField] private Sound hurtSound;
 
-
     private void Awake()
     {
         dead = false;

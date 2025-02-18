@@ -286,13 +286,16 @@ public class PlayerBasicMovement : MovementScript
     {
         base.OnDeath();
         if ((!isGrounded && !onSlope) || jumping)
+        {
             StartCoroutine(FallToDeath());
+        }
     }
 
     private IEnumerator FallToDeath()
     {
         while (!IsGrounded() || jumping)
         {
+            jumping = false;
             Fall();
             yield return null;
         }

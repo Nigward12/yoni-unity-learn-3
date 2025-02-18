@@ -18,6 +18,8 @@ public class SoundManager : MonoBehaviour
     public static SoundManager instance { get; private set; }
     [SerializeField] private Sound music;
     private AudioSource MusicSource;
+    private List<AudioSource> atmosphereSources = new List<AudioSource>();
+    private List<Sound> atmosphereSounds = new List<Sound>();
     private List<AudioSource> activeSoundSources = new List<AudioSource>();
     private float soundRatio = 1, musicRatio = 1;
     private bool canChangeSoundList = true;
@@ -38,6 +40,27 @@ public class SoundManager : MonoBehaviour
         ChangeMusicVolumeRatio(0);
 
         PlayMusicLoop();
+    }
+    public void AddAtmosphereSounds(List<Sound> _atSounds)
+    {
+        foreach (AudioSource source in atmosphereSources)
+        {
+            atmosphereSources.Remove(source);
+            StopLoopingSound(source);
+        }
+
+        atmosphereSounds = _atSounds;
+
+        foreach (Sound _sound in _atSounds)
+        {
+            AudioSource atmosphereSoundSource = PlayLoopingSound(_sound);
+            atmosphereSources.Add(atmosphereSoundSource);
+        }
+    }
+
+    public List<Sound> GetAtmosphereSounds()
+    {
+        return atmosphereSounds;
     }
 
     public void ChangeMusic(Sound newMusic)
@@ -88,10 +111,7 @@ public class SoundManager : MonoBehaviour
     {
         if (canChangeSoundList)
         {
-            GameObject soundObject = new GameObject("LoopingSound");
-            soundObject.transform.SetParent(transform);
-
-            AudioSource tempSource = soundObject.AddComponent<AudioSource>();
+            AudioSource tempSource = gameObject.AddComponent<AudioSource>();
             tempSource.clip = _sound.audioClip;
             tempSource.pitch = _sound.pitch;
             tempSource.volume = _sound.volume * soundRatio;
@@ -126,7 +146,11 @@ public class SoundManager : MonoBehaviour
 
     public void DestroyAllSounds()
     {
+        print(activeSoundSources);
+        AddAtmosphereSounds(new List<Sound>());
+        print(activeSoundSources);
         canChangeSoundList = false;
+
         foreach (AudioSource source in activeSoundSources)
         {
             if (source.isPlaying)
@@ -173,11 +197,12 @@ public class SoundManager : MonoBehaviour
     {
         float currentVolumeRatio = PlayerPrefs.GetFloat(volumeNameInPrefs, 1);
 
+        if (currentVolumeRatio == 1)
+            currentVolumeRatio = 0;
+
         currentVolumeRatio += change;
 
-        if (currentVolumeRatio > 1)
-            currentVolumeRatio = 0;
-        else if (currentVolumeRatio < 0)
+        if (currentVolumeRatio > 1 || currentVolumeRatio < 0)
             currentVolumeRatio = 1;
 
         ratioObject = currentVolumeRatio;
