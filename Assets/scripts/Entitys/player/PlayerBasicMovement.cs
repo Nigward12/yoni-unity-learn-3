@@ -2,12 +2,14 @@
 using UnityEngine;
 using System.Linq;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class PlayerBasicMovement : MovementScript
 {
     [Header("Movement variables")]
     [SerializeField] private float speed;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private PlayerCameraTarget cameraTarget;
     private float leftScale;
     [SerializeField] private float maxFallSpeed;
 
@@ -73,7 +75,7 @@ public class PlayerBasicMovement : MovementScript
 
         onWall = OnWall();
 
-        FlipPlayerLeftRight();
+        FlipPlayerBetter();
 
         SetAnimatorParams();
 
@@ -105,6 +107,23 @@ public class PlayerBasicMovement : MovementScript
             if (isGrounded && newHorizontalScale != transform.localScale.x)
                 dust.Play();
             transform.localScale = new Vector3(newHorizontalScale, defaultLocalScale, defaultLocalScale);
+        }
+    }
+
+    private void FlipPlayerBetter()
+    {
+        float newYRotation = 400;
+        if (horizontalInput > 0)
+            newYRotation = 0;
+        else if (horizontalInput < 0)
+            newYRotation = 180;
+
+        if (newYRotation != 400)
+        {
+            if (isGrounded && newYRotation != transform.eulerAngles.y)
+                dust.Play();
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, newYRotation, transform.eulerAngles.z);
+            cameraTarget.CallTurn(newYRotation);
         }
     }
 

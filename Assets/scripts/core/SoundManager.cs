@@ -16,7 +16,7 @@ public class Sound
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance { get; private set; }
-    [SerializeField] private Sound music;
+    public Sound music;
     private AudioSource MusicSource;
     private List<AudioSource> atmosphereSources = new List<AudioSource>();
     private List<Sound> atmosphereSounds = new List<Sound>();
