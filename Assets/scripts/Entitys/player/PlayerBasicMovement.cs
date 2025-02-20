@@ -75,8 +75,6 @@ public class PlayerBasicMovement : MovementScript
 
         onWall = OnWall();
 
-        FlipPlayerBetter();
-
         SetAnimatorParams();
 
         UpdateStateSounds();
@@ -91,6 +89,11 @@ public class PlayerBasicMovement : MovementScript
 
         UpdateJumps();
 
+    }
+
+    private void FixedUpdate()
+    {
+        FlipPlayerBetter();
     }
 
     #region updateMethods
@@ -118,9 +121,9 @@ public class PlayerBasicMovement : MovementScript
         else if (horizontalInput < 0)
             newYRotation = 180;
 
-        if (newYRotation != 400)
+        if (newYRotation != 400 && newYRotation != transform.eulerAngles.y)
         {
-            if (isGrounded && newYRotation != transform.eulerAngles.y)
+            if (isGrounded)
                 dust.Play();
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, newYRotation, transform.eulerAngles.z);
             cameraTarget.CallTurn(newYRotation);
