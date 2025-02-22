@@ -24,6 +24,7 @@ public class PlayerBasicMovement : MovementScript
     private float jumpBufferTimer;
     //private float lastJumpTime;
     private bool jumping;
+    public bool falling {  get; private set; }
     private float coyoteTimer = Mathf.Infinity;
 
     [Header ("GroundAndSlopeCheck")]
@@ -134,7 +135,7 @@ public class PlayerBasicMovement : MovementScript
     {
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded);
-        if (Falling())
+        if (CheckFalling())
             Fall();
         else
             DontFall();
@@ -144,12 +145,14 @@ public class PlayerBasicMovement : MovementScript
     {
         anim.SetBool("falling", true);
         body.gravityScale = defaultGravityScale * 1.5f;
+        falling = true;
     }
 
     private void DontFall()
     {
         anim.SetBool("falling", false);
         body.gravityScale = defaultGravityScale;
+        falling = false;
     }
     private void UpdateStateSounds()
     {
@@ -432,7 +435,7 @@ public class PlayerBasicMovement : MovementScript
         return horizontalInput == 0 && isGrounded && !OnWall();
     }
 
-    private bool Falling()
+    private bool CheckFalling()
     {
         underFeetRaycastHit = Physics2D.BoxCast(feetCollider.bounds.center,
             feetCollider.bounds.size, 0, Vector2.down, slopeCheckDistance, groundLayer);

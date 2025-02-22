@@ -24,7 +24,10 @@ public class Checkpoint : MonoBehaviour
 
     public void OnRespawnInCheckpoint()
     {
-        cpCamBorderSetter.BorderSet();
+        if (cpCamBorderSetter.gameObject.activeSelf)
+        {
+            cpCamBorderSetter.BorderSet();
+        }
 
         checkpointSoundSetter.SoundSet();
         // play checkpoint animations or somethin...
