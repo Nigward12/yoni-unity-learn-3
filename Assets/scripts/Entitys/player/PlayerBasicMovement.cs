@@ -246,17 +246,15 @@ public class PlayerBasicMovement : MovementScript
 
         SoundManager.instance.PlaySound(jumpSound);
         dust.Play();
+        jumping = true;
 
         if (onWall)
         {
-            jumping = true;
             WallJump();
             coyoteTimer = 0;
         }
         else
         { 
-
-            jumping = true;
             RegularJump();
 
             if (coyoteTimer <= 0)

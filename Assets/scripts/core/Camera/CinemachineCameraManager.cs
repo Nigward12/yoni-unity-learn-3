@@ -3,12 +3,14 @@ using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
 using System.Collections.Generic;
+using System;
 
 public class CinemachineCameraConfig
 {
     public CinemachinePositionComposer PositionComposer { get; }
     public float NormYDampAmount { get; }
     public Vector2 StartingTrackedObjectOffset { get; }
+
 
     public CinemachineCameraConfig(
         CinemachinePositionComposer positionComposer,
@@ -26,7 +28,7 @@ public class CinemachineCameraManager : MonoBehaviour
 
     [SerializeField] private CinemachineBrain brain;
 
-    [SerializeField] private CinemachineCamera[] Cameras;
+    [SerializeField] private List<CinemachineCamera> Cameras;
     private Dictionary<CinemachineCamera, CinemachineCameraConfig> camerasConfigs =
         new Dictionary<CinemachineCamera, CinemachineCameraConfig> ();
 
@@ -42,9 +44,9 @@ public class CinemachineCameraManager : MonoBehaviour
     private bool lerpedFromPlayerFalling;
     private CinemachineCamera _currentCamera;
     private CinemachinePositionComposer positionComposer;
-
-
     private float normYDampAmount;
+    private float normBrainBlendingTime;
+    private bool startingCustomBlend = false;
 
     private Vector2 startingTrackedObjectOffset;
     private Dictionary<PanDirection, Vector2> panDirections =
@@ -54,16 +56,16 @@ public class CinemachineCameraManager : MonoBehaviour
 
     private void Awake()
     {
-
         targetPlayerBody = targetPlayer.GetComponent<Rigidbody2D>();
         targetPlayerMovement = targetPlayer.GetComponent<PlayerBasicMovement>();
+        normBrainBlendingTime = brain.DefaultBlend.Time;
 
         if (instance == null)
         {
             instance = this;
         }
 
-        for (int i = 0; i < Cameras.Length; i++)
+        for (int i = 0; i < Cameras.Count; i++)
         {
             camerasConfigs.Add(Cameras[i], CreateCameraConfig(Cameras[i]));
 
@@ -90,6 +92,7 @@ public class CinemachineCameraManager : MonoBehaviour
             }
         }
     }
+
 
     private CinemachineCameraConfig CreateCameraConfig(CinemachineCamera camera)
     {
@@ -187,10 +190,13 @@ public class CinemachineCameraManager : MonoBehaviour
     #region Camera Swap
 
     public void SwapCameraHorizontal(CinemachineCamera cameraLeft, CinemachineCamera cameraRight
-        ,Vector2 triggerExitDirection)
+        , Vector2 triggerExitDirection, Transform leftTarget, Transform rightTarget,
+        float customBlendingTime = -1)
     {
         if (_currentCamera == cameraLeft && triggerExitDirection.x >0f)
         {
+            CutNeededCheck(cameraRight, rightTarget);
+
             cameraRight.enabled = true;
 
             cameraLeft.enabled = false;
@@ -201,6 +207,8 @@ public class CinemachineCameraManager : MonoBehaviour
         }
         else if (_currentCamera == cameraRight && triggerExitDirection.x <0f)
         {
+            CutNeededCheck(cameraLeft, leftTarget);
+
             cameraLeft.enabled = true;
 
             cameraRight.enabled = false;
@@ -209,12 +217,21 @@ public class CinemachineCameraManager : MonoBehaviour
 
             SetCurrentCameraConfig();
         }
+
+        if (customBlendingTime >= 0)
+        {
+            startingCustomBlend = true;
+            StartCoroutine(BlendCamsWithCustomBlendTime(customBlendingTime));
+        }
     }
 
-    public void SwapCameraVertical(CinemachineCamera cameraTop, CinemachineCamera cameraBottom, Vector2 triggerExitDirection)
+    public void SwapCameraVertical(CinemachineCamera cameraTop, CinemachineCamera cameraBottom
+        , Vector2 triggerExitDirection, Transform topTarget, Transform bottomTarget,
+        float customBlendingTime = -1)
     {
         if (_currentCamera == cameraTop && triggerExitDirection.y < 0f) 
         {
+            CutNeededCheck(cameraTop, topTarget);
             cameraBottom.enabled = true;
             cameraTop.enabled = false;
             _currentCamera = cameraBottom;
@@ -222,19 +239,73 @@ public class CinemachineCameraManager : MonoBehaviour
         }
         else if (_currentCamera == cameraBottom && triggerExitDirection.y > 0f) 
         {
+            CutNeededCheck(cameraBottom, bottomTarget);
             cameraTop.enabled = true;
             cameraBottom.enabled = false;
             _currentCamera = cameraTop;
             SetCurrentCameraConfig();
         }
+
+        if (customBlendingTime >= 0)
+        {
+            startingCustomBlend = true;
+            StartCoroutine(BlendCamsWithCustomBlendTime(customBlendingTime));
+        }
+    }
+
+    private void CutNeededCheck(CinemachineCamera cam, Transform target)
+    {
+        if (cam.Target.TrackingTarget != target)
+            CutCamToTarget(cam, target);
+    }
+    private void CutCamToTarget(CinemachineCamera cam, Transform target)
+    {
+        CinemachinePositionComposer posCom = camerasConfigs[cam].PositionComposer;
+        float defaultXDamp = posCom.Damping.x, defaultYDamp = posCom.Damping.y;
+        posCom.Damping.x = 0;
+        posCom.Damping.y = 0;
+        cam.Target.TrackingTarget = target;
+        posCom.Damping.x = defaultXDamp;
+        posCom.Damping.y = defaultYDamp;
+    }
+
+    private IEnumerator BlendCamsWithCustomBlendTime(float customBlendingTime)
+    {
+        brain.DefaultBlend.Time = customBlendingTime;
+
+        while (brain.IsBlending || startingCustomBlend)
+        {
+            yield return null;
+            startingCustomBlend = false;
+        }
+
+        brain.DefaultBlend.Time = normBrainBlendingTime;
+    }
+
+    public void SwapToCheckpointCamera(CinemachineCamera checkpointCam)
+    {
+        foreach (CinemachineCamera cam in Cameras)
+            cam.enabled = false;
+
+        if (Cameras.Contains(checkpointCam))
+        {
+            checkpointCam.enabled = true;
+            _currentCamera = checkpointCam;
+            SetCurrentCameraConfig();
+        }    
     }
     #endregion
 
     #region Target Swap
-    public void TargetSwitchHorizontal(Transform leftTarget, Transform rightTarget, Vector2 triggerExitDirection)
+    public void TargetSwitchHorizontal(Transform leftTarget, Transform rightTarget,
+        Vector2 triggerExitDirection, bool switchInstantly)
     {
         Transform newTarget = (triggerExitDirection.x > 0) ? rightTarget : leftTarget;
-
+        if (switchInstantly)
+        {
+            _currentCamera.Target.TrackingTarget = null;
+            _currentCamera.transform.position = newTarget.position;
+        }
         _currentCamera.Target.TrackingTarget = newTarget;
     }
     #endregion

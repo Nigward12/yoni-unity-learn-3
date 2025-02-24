@@ -35,14 +35,16 @@ public class CameraControlTrigger : MonoBehaviour
 
             if (customInspectorObjects.cameraSwapMode is SwapMode.SwapHorizontal)
                 CinemachineCameraManager.instance.SwapCameraHorizontal(customInspectorObjects.cameraOnLeft,
-                    customInspectorObjects.cameraOnRight, exitDirection);
+                    customInspectorObjects.cameraOnRight, exitDirection, customInspectorObjects.leftTarget,
+                    customInspectorObjects.rightTarget,customInspectorObjects.customBlendTime);
             else if (customInspectorObjects.cameraSwapMode is SwapMode.SwapVertical)
                 CinemachineCameraManager.instance.SwapCameraVertical(customInspectorObjects.cameraOnTop,
-                    customInspectorObjects.cameraOnBottom, exitDirection);
+                    customInspectorObjects.cameraOnBottom, exitDirection, customInspectorObjects.topTarget,
+                    customInspectorObjects.bottomTarget, customInspectorObjects.customBlendTime);
             else if (customInspectorObjects.cameraSwapMode is SwapMode.SwitchTargetHorizontal)
             {
                 CinemachineCameraManager.instance.TargetSwitchHorizontal(customInspectorObjects.leftTarget
-                    , customInspectorObjects.rightTarget, exitDirection);
+                    , customInspectorObjects.rightTarget, exitDirection, customInspectorObjects.switchInstantly);
             }
 
             if (customInspectorObjects.panCameraOnContact)
@@ -63,14 +65,18 @@ public class CCTCustomInspectorObjects
     [HideInInspector] public CinemachineCamera cameraOnRight;
     [HideInInspector] public CinemachineCamera cameraOnTop;
     [HideInInspector] public CinemachineCamera cameraOnBottom;
+    [HideInInspector] public float customBlendTime = -1;
 
     [HideInInspector] public Transform leftTarget;
     [HideInInspector] public Transform rightTarget;
+    [HideInInspector] public Transform topTarget;
+    [HideInInspector] public Transform bottomTarget;
+    [HideInInspector] public bool switchInstantly = false;
 
-    public bool panCameraOnContact = false;
-    public PanDirection panDirection;
-    public float panDistance = 2.25f;
-    public float panTime = 0.35f;
+    public bool panCameraOnContact;
+    [HideInInspector] public PanDirection panDirection;
+    [HideInInspector] public float panDistance = 2.25f;
+    [HideInInspector] public float panTime = 0.35f;
 
 }
 
@@ -115,6 +121,12 @@ public class MyScriptEditor: Editor
                     customInspector.cameraOnLeft, typeof(CinemachineCamera), true);
                 customInspector.cameraOnRight = (CinemachineCamera)EditorGUILayout.ObjectField("Camera On Right",
                     customInspector.cameraOnRight, typeof(CinemachineCamera), true);
+                customInspector.leftTarget = (Transform)EditorGUILayout.ObjectField("Left Target",
+                    customInspector.leftTarget, typeof(Transform), true);
+                customInspector.rightTarget = (Transform)EditorGUILayout.ObjectField("Right Target",
+                    customInspector.rightTarget, typeof(Transform), true);
+                customInspector.customBlendTime = EditorGUILayout.FloatField("optional custom blend time " +
+                    "(above or equal to 0)",customInspector.customBlendTime);
                 break;
 
             case SwapMode.SwapVertical:
@@ -122,14 +134,21 @@ public class MyScriptEditor: Editor
                     customInspector.cameraOnTop, typeof(CinemachineCamera), true);
                 customInspector.cameraOnBottom = (CinemachineCamera)EditorGUILayout.ObjectField("Camera On Bottom"
                     , customInspector.cameraOnBottom, typeof(CinemachineCamera), true);
+                customInspector.topTarget = (Transform)EditorGUILayout.ObjectField("Top Target",
+                    customInspector.topTarget, typeof(Transform), true);
+                customInspector.bottomTarget = (Transform)EditorGUILayout.ObjectField("bottom Target",
+                    customInspector.bottomTarget, typeof(Transform), true);
+                customInspector.customBlendTime = EditorGUILayout.FloatField("optional custom blend time " +
+                    "(above or equal to 0)",customInspector.customBlendTime);
                 break;
 
             case SwapMode.SwitchTargetHorizontal:
                 customInspector.leftTarget = (Transform)EditorGUILayout.ObjectField("Left Target",
                     customInspector.leftTarget, typeof(Transform), true);
-
                 customInspector.rightTarget = (Transform)EditorGUILayout.ObjectField("Right Target",
                     customInspector.rightTarget, typeof(Transform), true);
+                customInspector.switchInstantly = EditorGUILayout.Toggle
+                    ("Switch Instantly", customInspector.switchInstantly);
                 break;
 
         }

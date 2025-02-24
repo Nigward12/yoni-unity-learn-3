@@ -28,6 +28,8 @@ public class PlayerRespawn : MonoBehaviour
     private IEnumerator RespawnAfterDeathScreen()
     {
         uiManager.DeathUi();
+        CinemachineCameraManager.instance.SwapToCheckpointCamera(currentCheckpoint.camInCheckpoint);
+        currentCheckpoint.camInCheckpoint.Target.TrackingTarget = currentCheckpoint.transform;
 
         while (uiManager.IsDeathScreenActive())
         {

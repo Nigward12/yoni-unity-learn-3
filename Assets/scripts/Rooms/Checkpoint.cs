@@ -1,9 +1,15 @@
+using NUnit.Framework.Constraints;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
     [SerializeField] private Sound checkpointSound;
-    [SerializeField] private CamBorderSetter cpCamBorderSetter;
+
+    [Header("checkpoint cam settings")]
+    public CinemachineCamera camInCheckpoint;
+    public Transform checkpointCamTarget;
+    //[SerializeField] private CamBorderSetter cpCamBorderSetter;
     [SerializeField] private SoundsSetter checkpointSoundSetter;
     
     private bool checkpointDiscovered;
@@ -24,10 +30,12 @@ public class Checkpoint : MonoBehaviour
 
     public void OnRespawnInCheckpoint()
     {
-        if (cpCamBorderSetter.gameObject.activeSelf)
-        {
-            cpCamBorderSetter.BorderSet();
-        }
+        //if (cpCamBorderSetter.gameObject.activeSelf)
+        //{
+        //    cpCamBorderSetter.BorderSet();
+        //}
+
+        camInCheckpoint.Target.TrackingTarget = checkpointCamTarget;
 
         checkpointSoundSetter.SoundSet();
         // play checkpoint animations or somethin...
