@@ -5,12 +5,10 @@ public class PlayerRespawn : MonoBehaviour
 {
     private Checkpoint currentCheckpoint;
     private Health playerHealth;
-    private UiManager uiManager;
 
     private void Awake()
     {
         playerHealth = GetComponent<Health>();
-        uiManager = FindFirstObjectByType<UiManager>();
     }
 
     public void SetCheckPoint(Checkpoint checkpoint)
@@ -27,11 +25,11 @@ public class PlayerRespawn : MonoBehaviour
 
     private IEnumerator RespawnAfterDeathScreen()
     {
-        uiManager.DeathUi();
+        UiManager.instance.DeathUi();
         CinemachineCameraManager.instance.SwapToCheckpointCamera(currentCheckpoint.camInCheckpoint);
         currentCheckpoint.camInCheckpoint.Target.TrackingTarget = currentCheckpoint.transform;
 
-        while (uiManager.IsDeathScreenActive())
+        while (UiManager.instance.IsDeathScreenActive())
         {
             yield return null; 
         }
