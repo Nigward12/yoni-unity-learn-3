@@ -33,7 +33,6 @@ public class CinemachineCameraManager : MonoBehaviour
         new Dictionary<CinemachineCamera, CinemachineCameraConfig> ();
 
     [Header("Controls for lerping the Y Damping during player jump/fall")]
-    [SerializeField] private Transform targetPlayer;
     [SerializeField] private float _fallDampAmount = 0.25f;
     [SerializeField] private float _fallYDampTime = 0.35f;
     [SerializeField] private float _fallSpeedYDampingChangeThreshold = -15f;
@@ -56,14 +55,10 @@ public class CinemachineCameraManager : MonoBehaviour
 
     private void Awake()
     {
-        targetPlayerBody = targetPlayer.GetComponent<Rigidbody2D>();
-        targetPlayerMovement = targetPlayer.GetComponent<PlayerBasicMovement>();
-        normBrainBlendingTime = brain.DefaultBlend.Time;
-
-        if (instance == null)
-        {
+        if (instance == null || instance != this)
             instance = this;
-        }
+
+        normBrainBlendingTime = brain.DefaultBlend.Time;
 
         for (int i = 0; i < Cameras.Count; i++)
         {
@@ -74,6 +69,12 @@ public class CinemachineCameraManager : MonoBehaviour
         }
 
         SetCurrentCameraConfig();
+    }
+
+    private void Start()
+    {
+        targetPlayerBody = PlayerManager.instance.GetComponent<Rigidbody2D>();
+        targetPlayerMovement = PlayerManager.instance.GetComponent<PlayerBasicMovement>();
     }
 
     private void Update()
@@ -107,6 +108,18 @@ public class CinemachineCameraManager : MonoBehaviour
         positionComposer = currentCamConfig.PositionComposer;
         normYDampAmount = currentCamConfig.NormYDampAmount;
         startingTrackedObjectOffset = currentCamConfig.StartingTrackedObjectOffset;
+    }
+
+    public CinemachineCamera GetCameraInstanceByPrefab(GameObject prefab)
+    {
+        foreach (CinemachineCamera cam in Cameras)
+        {
+            if (cam.gameObject.name.Contains(prefab.name))
+            {
+                return cam;
+            }
+        }
+        return null; 
     }
     #region Lerp the Y Damping
 
@@ -258,7 +271,7 @@ public class CinemachineCameraManager : MonoBehaviour
         if (cam.Target.TrackingTarget != target)
             CutCamToTarget(cam, target);
     }
-    private void CutCamToTarget(CinemachineCamera cam, Transform target)
+    public void CutCamToTarget(CinemachineCamera cam, Transform target)
     {
         CinemachinePositionComposer posCom = camerasConfigs[cam].PositionComposer;
         float defaultXDamp = posCom.Damping.x, defaultYDamp = posCom.Damping.y;
@@ -282,7 +295,7 @@ public class CinemachineCameraManager : MonoBehaviour
         brain.DefaultBlend.Time = normBrainBlendingTime;
     }
 
-    public void SwapToCheckpointCamera(CinemachineCamera checkpointCam)
+    public void SwapCameraGeneric(CinemachineCamera checkpointCam)
     {
         foreach (CinemachineCamera cam in Cameras)
             cam.enabled = false;

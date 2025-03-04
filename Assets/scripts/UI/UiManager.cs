@@ -2,7 +2,9 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 
 public class UiManager : MonoBehaviour
 {
@@ -24,9 +26,14 @@ public class UiManager : MonoBehaviour
         {
             instance = this;
             transform.SetParent(null);
+            EventSystem existingEventSystem = FindFirstObjectByType<EventSystem>();
+            if (existingEventSystem != null && existingEventSystem != GetComponent<EventSystem>())
+            {
+                Destroy(existingEventSystem.gameObject);
+            }
             DontDestroyOnLoad(gameObject);
         }
-        else if (instance != this)
+        else if (instance != null && instance != this)
         {
             Destroy(gameObject);
             return;
@@ -45,6 +52,7 @@ public class UiManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseGame(!pauseScreen.activeInHierarchy);
+            pauseScreen.SetActive(!pauseScreen.activeInHierarchy);
         }
     }
     #region death
@@ -86,8 +94,6 @@ public class UiManager : MonoBehaviour
             Time.timeScale = 1;
             SoundManager.instance.ResumeAllSounds();
         }
-
-        pauseScreen.SetActive(status);
     }
 
     public void MainMenu()
@@ -111,12 +117,31 @@ public class UiManager : MonoBehaviour
     #endregion
 
     #region level transition
+
+    public void EnterTransitionState(bool status)
+    {
+        if (status)
+        {
+            this.enabled = false;
+            Time.timeScale = 0;
+            PlayerCameraTarget.instance.StopTracking();
+            SoundManager.instance.PauseAllSounds();
+            SoundManager.instance.DestroyAllSounds();
+        }
+        else
+        {
+            Time.timeScale = 1;
+            PlayerCameraTarget.instance.StartTracking();
+            this.enabled = true;
+        }
+    }
     public IEnumerator TransitionFadeIn(float fadeDuration)
     {
+        EnterTransitionState(true);
         float t = 0;
         while (t < fadeDuration)
         {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             levelTransitionScreen.color = new Color(LTSColor.r, LTSColor.g, LTSColor.b,
                 Mathf.Lerp(0, 1, t / fadeDuration));
             yield return null;
@@ -128,11 +153,12 @@ public class UiManager : MonoBehaviour
         float t = 0;
         while (t < fadeDuration)
         {
-            t += Time.deltaTime;
+            t += Time.unscaledDeltaTime;
             levelTransitionScreen.color = new Color(LTSColor.r, LTSColor.g, LTSColor.b,
                 Mathf.Lerp(1, 0, t / fadeDuration));
             yield return null;
         }
+        EnterTransitionState(false);
     }
     #endregion
 }

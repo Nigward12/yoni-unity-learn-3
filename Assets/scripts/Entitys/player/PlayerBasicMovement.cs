@@ -9,7 +9,6 @@ public class PlayerBasicMovement : MovementScript
     [Header("Movement variables")]
     [SerializeField] private float speed;
     [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private PlayerCameraTarget cameraTarget;
     private float leftScale;
     [SerializeField] private float maxFallSpeed;
 
@@ -127,7 +126,7 @@ public class PlayerBasicMovement : MovementScript
             if (isGrounded)
                 dust.Play();
             transform.eulerAngles = new Vector3(transform.eulerAngles.x, newYRotation, transform.eulerAngles.z);
-            cameraTarget.CallTurn(newYRotation);
+            PlayerCameraTarget.instance.CallTurn(newYRotation);
         }
     }
 

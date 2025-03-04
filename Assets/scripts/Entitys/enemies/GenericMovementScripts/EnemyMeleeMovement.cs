@@ -16,7 +16,7 @@ public class EnemyMeleeMovement : MovementScript
     [SerializeField] private float stopChaseDistance;
     [SerializeField] private float chaseFadeoutTime;
     [SerializeField] float speed;
-    [SerializeField] Transform player;
+    private Transform player;
     private float chaseFadeoutTimer = Mathf.Infinity;
 
 
@@ -36,6 +36,11 @@ public class EnemyMeleeMovement : MovementScript
         enemyPatrol = GetComponent<EnemyPatrol>();
         health = GetComponent<Health>();
         lastFrameHealth = health.currentHealth;
+    }
+
+    private void Start()
+    {
+        player = PlayerManager.instance.transform;
     }
 
     protected override void Update()
