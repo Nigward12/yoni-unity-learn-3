@@ -6,7 +6,6 @@ public class PlayerCameraTarget : MonoBehaviour
     [Header("Flip Rotation stats")]
     [SerializeField]
     private float _flipYRotationTime = 0.5f;
-    private bool track = true;
 
     public static PlayerCameraTarget instance { get; private set; }
 
@@ -17,18 +16,7 @@ public class PlayerCameraTarget : MonoBehaviour
     }
     void Update()
     {
-        if (track)
-            transform.position = PlayerManager.instance.transform.position;
-    }
-
-    public void StopTracking()
-    {
-        track = false;
-    }
-
-    public void StartTracking()
-    {
-        track = true;
+        transform.position = PlayerManager.instance.transform.position;
     }
 
     public void CallTurn(float endRotation)

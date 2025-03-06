@@ -39,32 +39,46 @@ public class LoadingManager : MonoBehaviour
         StartCoroutine(TransitionToSceneCoroutine(levelData, transitionTime,
             camActiveAfterTransitionPrefab));
     }
-    private IEnumerator TransitionToSceneCoroutine(LevelData levelData, float minTransitionTime,
-        GameObject camActiveAfterTransitionPrefab)
+    private IEnumerator TransitionToSceneCoroutine(LevelData levelData, float minTransitionTime, GameObject camActiveAfterTransitionPrefab)
     {
+        PlayerManager.instance.SavePlayerSessionData();
+
         yield return StartCoroutine(UiManager.instance.TransitionFadeIn(minTransitionTime / 2));
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(levelData.levelName);
         asyncLoad.allowSceneActivation = false;
 
-        while (!asyncLoad.isDone)
+        while (asyncLoad.progress < 0.9f)
         {
-            if (asyncLoad.progress >= 0.9f)
-            {
-                asyncLoad.allowSceneActivation = true;
-            }
             yield return null;
         }
 
-        yield return null;
+        Scene newScene = SceneManager.GetSceneByName(levelData.levelName);
+        SpawnPlayerInNewScene(newScene,levelData);
+
+        asyncLoad.allowSceneActivation = true;
+
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        SceneManager.SetActiveScene(newScene);
+
         ApplyLevelData(levelData, camActiveAfterTransitionPrefab);
+
         yield return StartCoroutine(UiManager.instance.TransitionFadeOut(minTransitionTime / 2));
+    }
+
+    private void SpawnPlayerInNewScene(Scene newScene, LevelData levelData)
+    {
+        GameObject spawnPoint = GameObject.Find(levelData.TransitionInfoByFromScene[currentLevelData.levelName].spawnPoint);
+        Vector3 spawnPosition = spawnPoint != null ? spawnPoint.transform.position : Vector3.zero;
+
+        GameObject newPlayer = PlayerManager.instance.CreateNewPlayer(spawnPosition);
+
+        SceneManager.MoveGameObjectToScene(newPlayer, newScene);
     }
 
     private void ApplyLevelData(LevelData levelData, GameObject camActiveAfterTransitionPrefab)
     {
-        PlayerManager.instance.transform.position = GameObject.Find(levelData.TransitionInfoByFromScene
-            [currentLevelData.levelName].spawnPoint).transform.position;
 
         GameObject targetAfterTransition = GameObject.Find(levelData.TransitionInfoByFromScene
             [currentLevelData.levelName].camTargetName);

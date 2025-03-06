@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using static UnityEngine.Rendering.DebugUI;
 
 public class Health : MonoBehaviour
 {
@@ -62,6 +63,11 @@ public class Health : MonoBehaviour
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, fullHealth);
+    }
+
+    public void SetHealth(float health)
+    {
+        currentHealth = Mathf.Clamp(health, 0, fullHealth);
     }
     private IEnumerator Invunerability()
     {

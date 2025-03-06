@@ -64,6 +64,8 @@ public class CinemachineCameraManager : MonoBehaviour
         {
             camerasConfigs.Add(Cameras[i], CreateCameraConfig(Cameras[i]));
 
+            Cameras[i].Target.TrackingTarget = PlayerCameraTarget.instance.transform;
+
             if (Cameras[i].enabled)
                 _currentCamera = Cameras[i];
         }
@@ -73,8 +75,10 @@ public class CinemachineCameraManager : MonoBehaviour
 
     private void Start()
     {
-        targetPlayerBody = PlayerManager.instance.GetComponent<Rigidbody2D>();
-        targetPlayerMovement = PlayerManager.instance.GetComponent<PlayerBasicMovement>();
+        targetPlayerBody = PlayerManager.instance.getCurrentPlayer()
+            .GetComponent<Rigidbody2D>();
+        targetPlayerMovement = PlayerManager.instance.getCurrentPlayer()
+            .GetComponent<PlayerBasicMovement>();
     }
 
     private void Update()
@@ -319,6 +323,11 @@ public class CinemachineCameraManager : MonoBehaviour
             _currentCamera.Target.TrackingTarget = null;
             _currentCamera.transform.position = newTarget.position;
         }
+        _currentCamera.Target.TrackingTarget = newTarget;
+    }
+
+    public void TargetSwapGeneric(Transform newTarget)
+    {
         _currentCamera.Target.TrackingTarget = newTarget;
     }
     #endregion

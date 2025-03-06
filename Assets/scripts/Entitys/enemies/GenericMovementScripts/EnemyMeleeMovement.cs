@@ -40,7 +40,7 @@ public class EnemyMeleeMovement : MovementScript
 
     private void Start()
     {
-        player = PlayerManager.instance.transform;
+        player = PlayerManager.instance.getCurrentPlayer().transform;
     }
 
     protected override void Update()

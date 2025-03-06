@@ -35,7 +35,10 @@ public class SoundManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
         else if (instance != null && instance != this)
+        {
             Destroy(gameObject);
+            return;
+        }
 
         ChangeSoundVolumeRatio(0);
         ChangeMusicVolumeRatio(0);
@@ -85,10 +88,13 @@ public class SoundManager : MonoBehaviour
     {
         if (music.audioClip != null)
         {
-            MusicSource.clip = music.audioClip;
-            MusicSource.pitch = music.pitch;
-            MusicSource.volume = music.volume * musicRatio;
-            MusicSource.loop = true;
+            if (MusicSource.clip != music.audioClip)
+            {
+                MusicSource.clip = music.audioClip;
+                MusicSource.pitch = music.pitch;
+                MusicSource.volume = music.volume * musicRatio;
+                MusicSource.loop = true;
+            }
             MusicSource.Play();
         }
     }

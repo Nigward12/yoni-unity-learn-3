@@ -124,15 +124,14 @@ public class UiManager : MonoBehaviour
         {
             this.enabled = false;
             Time.timeScale = 0;
-            PlayerCameraTarget.instance.StopTracking();
-            SoundManager.instance.PauseAllSounds();
             SoundManager.instance.DestroyAllSounds();
+            SoundManager.instance.StopMusicLoop();
         }
         else
         {
             Time.timeScale = 1;
-            PlayerCameraTarget.instance.StartTracking();
             this.enabled = true;
+            SoundManager.instance.PlayMusicLoop();
         }
     }
     public IEnumerator TransitionFadeIn(float fadeDuration)

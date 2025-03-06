@@ -12,8 +12,12 @@ public class LevelTransitionPoint : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
-           LoadingManager.instance.TransitionToScene(nextLevelData, minTransitionTime,
+        {
+            CinemachineCameraManager.instance.TargetSwapGeneric(transform);
+            LoadingManager.instance.TransitionToScene(nextLevelData, minTransitionTime,
                camActiveAfterTransitionPrefab);
+
+        }
     }
 
 }
