@@ -148168,7 +148168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b32c5dd55768242b13d0e3557d767f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerTransform: {fileID: 623375729}
   _flipYRotationTime: 0.5
 --- !u!1 &520942343
 GameObject:
@@ -178260,7 +178259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &623375724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178538,6 +178537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da31e19fca4e5f042947f56470cd849d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerData: {fileID: 0}
+  playerPrefab: {fileID: 0}
 --- !u!1 &623473612
 GameObject:
   m_ObjectHideFlags: 0
@@ -396309,7 +396310,6 @@ Transform:
   - {fileID: 1254094092}
   - {fileID: 1778995635}
   - {fileID: 8893287330285006861}
-  - {fileID: 1789391376}
   - {fileID: 1390027259}
   - {fileID: 631546447}
   - {fileID: 1378514586}
@@ -442652,11 +442652,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7109480666048073324, guid: c4bd097c3bb35c84085150a829fc8ced, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: -10.2
       objectReference: {fileID: 0}
     - target: {fileID: 7109480666048073324, guid: c4bd097c3bb35c84085150a829fc8ced, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.07999998
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 7109480666048073324, guid: c4bd097c3bb35c84085150a829fc8ced, type: 3}
       propertyPath: m_LocalPosition.z
@@ -510162,104 +510162,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1789391375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1789391376}
-  - component: {fileID: 1789391378}
-  - component: {fileID: 1789391377}
-  m_Layer: 0
-  m_Name: FirstEverCheckpoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1789391376
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789391375}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.23, y: -0.71, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1404480966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1789391377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789391375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3df4e1f65df5b41ba347c2d9769d2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointSound:
-    audioClip: {fileID: 8300000, guid: 4bef3bc627d726c45bcfddb93c6ca9ef, type: 3}
-    pitch: 1
-    volume: 1
-  camInCheckpoint: {fileID: 0}
-  checkpointCamTarget: {fileID: 623375729}
-  checkpointSoundSetter: {fileID: 1146695201}
---- !u!61 &1789391378
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1789391375}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1789705471
 GameObject:
   m_ObjectHideFlags: 0

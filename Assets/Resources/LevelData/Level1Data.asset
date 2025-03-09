@@ -10,10 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e1e105dd1f6463438a0697a4777bc6a, type: 3}
-  m_Name: Level2Data
+  m_Name: Level1Data
   m_EditorClassIdentifier: 
-  levelName: Level2
+  levelName: Level1
+  levelMusic:
+    audioClip: {fileID: 8300000, guid: 94972bce0b649a2489aa2aa79dda7d78, type: 3}
+    pitch: 1
+    volume: 0.09
   transitionsList:
-  - fromSceneData: {fileID: 11400000, guid: 4f64b5d6013163244a8c5025b5646f8e, type: 2}
+  - fromSceneData: {fileID: 11400000, guid: f77af20f717c983438bf360d0b041360, type: 2}
     camTargetName: PlayerCameraTarget
-    spawnPoint: Level1ToLevel2SP
+    spawnPoint: FirstEverSpawnPoint
+    camActiveAfterTransitionPrefab: {fileID: 371616414265503503, guid: 52af71093e6d0794d874987c7f441f56, type: 3}

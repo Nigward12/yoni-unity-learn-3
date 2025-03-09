@@ -8,12 +8,15 @@ public class TransitionInfo
     public LevelData fromSceneData;  
     public string camTargetName;
     public string spawnPoint;
+    public GameObject camActiveAfterTransitionPrefab;
 }
 
 [CreateAssetMenu(fileName = "NewLevelData", menuName = "Game/Level Data")]
 public class LevelData : ScriptableObject
 {
     public string levelName;
+
+    public Sound levelMusic;
 
     [SerializeField] private List<TransitionInfo> transitionsList = new List<TransitionInfo>();
 

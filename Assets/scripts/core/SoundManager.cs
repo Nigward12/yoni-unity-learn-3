@@ -65,8 +65,9 @@ public class SoundManager : MonoBehaviour
     {
         for (int i = atmosphereSources.Count - 1; i >= 0; i--)
         {
-            StopLoopingSound(atmosphereSources[i]);
+            AudioSource atmosphereSoundSource = atmosphereSources[i];
             atmosphereSources.RemoveAt(i);
+            StopLoopingSound(atmosphereSoundSource);
         }
         atmosphereSounds = new List<Sound>();
     }
@@ -74,8 +75,7 @@ public class SoundManager : MonoBehaviour
     {
         return atmosphereSounds;
     }
-
-    public void ChangeMusic(Sound newMusic)
+    public void ChangeNPlayMusic(Sound newMusic)
     {
         StopMusicLoop();
 
@@ -84,11 +84,17 @@ public class SoundManager : MonoBehaviour
         PlayMusicLoop();
     }
 
+    public void ChangeMusic(Sound newMusic)
+    {
+        music = newMusic;
+    }
+
     public void PlayMusicLoop()
     {
         if (music.audioClip != null)
         {
-            if (MusicSource.clip != music.audioClip)
+            if (MusicSource.clip == null ||
+                MusicSource.clip.name != music.audioClip.name)
             {
                 MusicSource.clip = music.audioClip;
                 MusicSource.pitch = music.pitch;
@@ -103,7 +109,7 @@ public class SoundManager : MonoBehaviour
     {
         if (MusicSource.isPlaying)
         {
-            MusicSource.Stop(); 
+            MusicSource.Pause(); 
         }
     }
 

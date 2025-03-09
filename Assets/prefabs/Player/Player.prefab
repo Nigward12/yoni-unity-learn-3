@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7659090291914324467}
   - component: {fileID: 1017535638009625061}
   - component: {fileID: 4024472086944515747}
-  - component: {fileID: 2899934519728322023}
+  - component: {fileID: 4641734853696437271}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -277,7 +277,7 @@ MonoBehaviour:
     audioClip: {fileID: 0}
     pitch: 1
     volume: 1
---- !u!114 &2899934519728322023
+--- !u!114 &4641734853696437271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,7 +286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 592126485138879584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcb3dae425f0294e94ca1b5ba2bdb8f, type: 3}
+  m_Script: {fileID: 11500000, guid: ead56f9cc58729d4baff5936f2f7b584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2464932226239103397

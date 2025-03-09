@@ -73,8 +73,17 @@ public class CinemachineCameraManager : MonoBehaviour
         SetCurrentCameraConfig();
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
+        if (!PlayerManager.instance.IsPlayerSpawned)
+        {
+            this.enabled = false;
+            while (!PlayerManager.instance.IsPlayerSpawned)
+            {
+                yield return null;
+            }
+            this.enabled = true;
+        }
         targetPlayerBody = PlayerManager.instance.getCurrentPlayer()
             .GetComponent<Rigidbody2D>();
         targetPlayerMovement = PlayerManager.instance.getCurrentPlayer()

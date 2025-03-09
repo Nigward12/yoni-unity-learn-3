@@ -9,6 +9,9 @@ using UnityEngine.EventSystems;
 public class UiManager : MonoBehaviour
 {
     public static UiManager instance {  get; private set; }
+    [Header ("Main Menu")]
+    [SerializeField] private GameObject mainMenuScreen;
+
     [Header ("death")]
     [SerializeField] private GameObject deathScreen;
     [SerializeField] private Sound deathSound;
@@ -19,6 +22,9 @@ public class UiManager : MonoBehaviour
     [Header ("level transition")]
     [SerializeField] private Image levelTransitionScreen;
     [SerializeField] private Color LTSColor = Color.black;
+
+    [Header ("UI indicators")]
+    [SerializeField] private GameObject healthBar;
 
     private void Awake()
     {
@@ -50,10 +56,13 @@ public class UiManager : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
             PauseGame(!pauseScreen.activeInHierarchy);
-            pauseScreen.SetActive(!pauseScreen.activeInHierarchy);
-        }
+    }
+
+    public void OnGamePlay()
+    {
+        mainMenuScreen.SetActive(false);
+        healthBar.SetActive(true);
     }
     #region death
     public void DeathUi()
@@ -88,17 +97,20 @@ public class UiManager : MonoBehaviour
         {
             Time.timeScale = 0;
             SoundManager.instance.PauseAllSounds();
+            pauseScreen.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
             SoundManager.instance.ResumeAllSounds();
+            pauseScreen.SetActive(false);
         }
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        // set isMainMenu to true in game manager , also play music
     }
     public void Quit()
     {
@@ -149,6 +161,7 @@ public class UiManager : MonoBehaviour
 
     public IEnumerator TransitionFadeOut(float fadeDuration)
     {
+        EnterTransitionState(false);
         float t = 0;
         while (t < fadeDuration)
         {
@@ -157,7 +170,6 @@ public class UiManager : MonoBehaviour
                 Mathf.Lerp(1, 0, t / fadeDuration));
             yield return null;
         }
-        EnterTransitionState(false);
     }
     #endregion
 }

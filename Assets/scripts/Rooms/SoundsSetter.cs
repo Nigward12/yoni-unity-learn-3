@@ -19,7 +19,7 @@ public class SoundsSetter : MonoBehaviour
         if (atmosphereSounds.Count > 0 &&
                 !atmosphereSounds.Equals(SoundManager.instance.GetAtmosphereSounds()))
             SoundManager.instance.AddAtmosphereSounds(atmosphereSounds);
-        if (music.audioClip != null && music != SoundManager.instance.music)
-            SoundManager.instance.ChangeMusic(music);
+        if (music.audioClip != null && music.audioClip.name != SoundManager.instance.music.audioClip.name)
+            SoundManager.instance.ChangeNPlayMusic(music);
     }
 }

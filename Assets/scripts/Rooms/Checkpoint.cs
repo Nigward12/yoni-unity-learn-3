@@ -19,25 +19,26 @@ public class Checkpoint : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<PlayerRespawn>().SetCheckPoint(this);
+            PlayerRespawnManager.instance.SetCheckPoint(this);
             if (!checkpointDiscovered)
             {
                 checkpointDiscovered = true;
                 SoundManager.instance.PlaySound(checkpointSound);
             }
+            GameManager.instance.SaveInCheckpoint(this);
         }
     }
 
-    public void OnRespawnInCheckpoint()
-    {
-        //if (cpCamBorderSetter.gameObject.activeSelf)
-        //{
-        //    cpCamBorderSetter.BorderSet();
-        //}
+    //public void OnRespawnInCheckpoint()
+    //{
+    //    if (cpCamBorderSetter.gameObject.activeSelf)
+    //    {
+    //        cpCamBorderSetter.BorderSet();
+    //    }
 
-        camInCheckpoint.Target.TrackingTarget = checkpointCamTarget;
+    //    camInCheckpoint.Target.TrackingTarget = checkpointCamTarget;
 
-        checkpointSoundSetter.SoundSet();
-        // play checkpoint animations or somethin...
-    }
+    //    checkpointSoundSetter.SoundSet();
+    //    play checkpoint animations or somethin...
+    //}
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -38,8 +39,17 @@ public class EnemyMeleeMovement : MovementScript
         lastFrameHealth = health.currentHealth;
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
+        if (!PlayerManager.instance.IsPlayerSpawned)
+        {
+            this.enabled = false;
+            while (!PlayerManager.instance.IsPlayerSpawned)
+            {
+                yield return null;
+            }
+            this.enabled = true;
+        }
         player = PlayerManager.instance.getCurrentPlayer().transform;
     }
 

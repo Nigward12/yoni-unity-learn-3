@@ -178229,17 +178229,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1672485134068205966, guid: 680a600ac68631845a9271853fc34f57, type: 3}
   m_PrefabInstance: {fileID: 2689584240141734038}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &623375731 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4024472086944515747, guid: 680a600ac68631845a9271853fc34f57, type: 3}
-  m_PrefabInstance: {fileID: 2689584240141734038}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32e1f46acdce98742aad70da54a56e7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &623473612
 GameObject:
   m_ObjectHideFlags: 0
@@ -192147,6 +192136,7 @@ Transform:
   - {fileID: 619394802}
   - {fileID: 723153981}
   - {fileID: 2121393530}
+  - {fileID: 1157523175}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674283996
@@ -314165,7 +314155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7fec04cf3e46b5429ca968d05ba2cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 623375731}
   HealthBarFull: {fileID: 2131002457}
   HealthBarEmpty: {fileID: 473284182}
 --- !u!1 &1108811731
@@ -326243,7 +326232,7 @@ MonoBehaviour:
     pitch: 1
     volume: 0.3
   music:
-    audioClip: {fileID: 8300000, guid: 94972bce0b649a2489aa2aa79dda7d78, type: 3}
+    audioClip: {fileID: 0}
     pitch: 1
     volume: 0.09
 --- !u!61 &1146695202
@@ -328945,6 +328934,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1157523174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157523175}
+  - component: {fileID: 1157523176}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157523175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157523174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 674121747}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1157523176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157523174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab30af35c6b44bc419cc9340eb4131ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuLevelData: {fileID: 0}
+  firstLevelData: {fileID: 0}
+  minTransitionToGameTime: 1
+  playerData: {fileID: 11400000, guid: ed0ed39700a6a874cbfd7b8e3d55eada, type: 2}
+  loadWithoutSaves: 0
 --- !u!1 &1157752322
 GameObject:
   m_ObjectHideFlags: 0
@@ -478744,7 +478782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8a73a63672ca9408b44b560f54def1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevelData: {fileID: 11400000, guid: 4f64b5d6013163244a8c5025b5646f8e, type: 2}
+  currentLevelData: {fileID: 11400000, guid: f77af20f717c983438bf360d0b041360, type: 2}
+  isLoading: 0
 --- !u!1 &1673503770
 GameObject:
   m_ObjectHideFlags: 0
@@ -510644,7 +510683,7 @@ MonoBehaviour:
     pitch: 1
     volume: 1
   camInCheckpoint: {fileID: 1786957909}
-  checkpointCamTarget: {fileID: 623375729}
+  checkpointCamTarget: {fileID: 520901243}
   checkpointSoundSetter: {fileID: 1146695201}
 --- !u!61 &1789391378
 BoxCollider2D:
@@ -567476,6 +567515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749ac783632c7084a8a736367623b892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenuScreen: {fileID: 0}
   deathScreen: {fileID: 264995678}
   deathSound:
     audioClip: {fileID: 8300000, guid: 9daa304b3f30e2144bd0ad40510bc4e8, type: 3}
@@ -567484,6 +567524,7 @@ MonoBehaviour:
   pauseScreen: {fileID: 105271539}
   levelTransitionScreen: {fileID: 1347549591}
   LTSColor: {r: 0, g: 0, b: 0, a: 1}
+  healthBar: {fileID: 0}
 --- !u!1 &1974163892
 GameObject:
   m_ObjectHideFlags: 0
@@ -595981,6 +596022,7 @@ GameObject:
   - component: {fileID: 2072686188}
   - component: {fileID: 2072686187}
   - component: {fileID: 2072686186}
+  - component: {fileID: 2072686191}
   m_Layer: 0
   m_Name: CinemachineBrain
   m_TagString: Untagged
@@ -596150,12 +596192,72 @@ Transform:
   m_GameObject: {fileID: 2072686185}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7099936, y: 3.15057, z: -9.942136}
+  m_LocalPosition: {x: -2.7100003, y: 3.15056, z: -9.942136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2121393530}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072686191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072686185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 2072686190}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 16384
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 0
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &2073272540
 GameObject:
   m_ObjectHideFlags: 0
@@ -616903,7 +617005,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 592126485138879584, guid: 680a600ac68631845a9271853fc34f57, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 592126485138879584, guid: 680a600ac68631845a9271853fc34f57, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1672485134068205966, guid: 680a600ac68631845a9271853fc34f57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -617126,7 +617232,7 @@ PrefabInstance:
       objectReference: {fileID: 371616414265503503, guid: 52af71093e6d0794d874987c7f441f56, type: 3}
     - target: {fileID: 3218631089201687102, guid: 6b28be3451615df43a962cdcd5bcc9a9, type: 3}
       propertyPath: m_Name
-      value: LevelTransition
+      value: LevelTransitionToLvl2
       objectReference: {fileID: 0}
     - target: {fileID: 6394255113970843381, guid: 6b28be3451615df43a962cdcd5bcc9a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -617305,7 +617411,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2066146050973337846, guid: c4bd097c3bb35c84085150a829fc8ced, type: 3}
       propertyPath: m_Name
-      value: LevelSpawnPoint
+      value: FirstEverSpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 7109480666048073324, guid: c4bd097c3bb35c84085150a829fc8ced, type: 3}
       propertyPath: m_LocalPosition.x

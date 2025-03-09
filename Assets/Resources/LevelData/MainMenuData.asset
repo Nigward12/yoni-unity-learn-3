@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e1e105dd1f6463438a0697a4777bc6a, type: 3}
-  m_Name: Level1Data
+  m_Name: MainMenuData
   m_EditorClassIdentifier: 
-  levelName: Level1
-  playerStartPosition: {x: 0, y: 0}
-  startingCamera: {fileID: 0}
+  levelName: MainMenu
+  levelMusic:
+    audioClip: {fileID: 8300000, guid: 94972bce0b649a2489aa2aa79dda7d78, type: 3}
+    pitch: 1
+    volume: 0.09
+  transitionsList: []

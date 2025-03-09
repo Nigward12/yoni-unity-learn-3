@@ -1,19 +1,23 @@
 using UnityEngine;
-
+using System.IO;
 public class PlayerSessionData
 {
+    public bool inSession = false;
     public float currentHealth;
 }
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance { get; private set; }
 
-    [SerializeField] private PlayerData playerData;
+    public PlayerData playerData;
 
     [SerializeField] private GameObject playerPrefab;
 
     private GameObject currentPlayer;
     private PlayerSessionData currentPlayerSessionData = new PlayerSessionData();
+
+    public bool IsPlayerSpawned{ get; private set; } = false;
+    private string playerDataSaveFilePath => Application.persistentDataPath + "/playerdata.json";
 
     private void Awake()
     {
@@ -37,17 +41,53 @@ public class PlayerManager : MonoBehaviour
         // more stuff later ig.......
     }
 
-    public GameObject CreateNewPlayer(Vector3 spawnPosition)
+    public GameObject SpawnPlayer(Vector3 spawnPosition)
     {
         currentPlayer = Instantiate(playerPrefab, spawnPosition, Quaternion.identity);
 
         Health newPlayerHealth = currentPlayer.GetComponent<Health>();
 
         newPlayerHealth.fullHealth = playerData.PlayerMaxHealth;
-        newPlayerHealth.SetHealth(currentPlayerSessionData.currentHealth);
+        if (currentPlayerSessionData.inSession)
+            newPlayerHealth.SetHealth(currentPlayerSessionData.currentHealth);
+        else
+        {
+            currentPlayerSessionData.inSession = true;
+            newPlayerHealth.SetHealth(newPlayerHealth.fullHealth);
+        }
         // more stuff later ig.......
-
+        IsPlayerSpawned = true;
         return currentPlayer;
+    }
+
+    public void DisablePlayerMovement()
+    {
+        currentPlayer.GetComponent<PlayerBasicMovement>().enabled = false;
+    }
+
+    public void EnablePlayerMovement()
+    {
+        currentPlayer.GetComponent<PlayerBasicMovement>().enabled = true;
+    }
+
+    public void SetPlayerSpawned(bool status)
+    {
+        IsPlayerSpawned = status;
+    }
+
+    public void LoadPlayerData()
+    {
+        if (File.Exists(playerDataSaveFilePath))
+        {
+            string json = File.ReadAllText(playerDataSaveFilePath);
+            JsonUtility.FromJsonOverwrite(json, this);
+        }
+    }
+
+    public void SavePlayerData()
+    {
+        string json = JsonUtility.ToJson(playerData);
+        File.WriteAllText(playerDataSaveFilePath, json);
     }
 
     public GameObject getCurrentPlayer()

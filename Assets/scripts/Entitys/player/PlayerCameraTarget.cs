@@ -6,6 +6,7 @@ public class PlayerCameraTarget : MonoBehaviour
     [Header("Flip Rotation stats")]
     [SerializeField]
     private float _flipYRotationTime = 0.5f;
+    private Transform player;
 
     public static PlayerCameraTarget instance { get; private set; }
 
@@ -14,9 +15,22 @@ public class PlayerCameraTarget : MonoBehaviour
         if (instance == null || instance != this)
             instance = this;
     }
-    void Update()
+    private IEnumerator Start()
     {
-        transform.position = PlayerManager.instance.transform.position;
+        if (!PlayerManager.instance.IsPlayerSpawned)
+        {
+            this.enabled = false;
+            while (!PlayerManager.instance.IsPlayerSpawned)
+            {
+                yield return null;
+            }
+            this.enabled = true;
+        }
+        player = PlayerManager.instance.getCurrentPlayer().transform;
+    }
+    private void Update()
+    {
+        transform.position = player.transform.position;
     }
 
     public void CallTurn(float endRotation)
