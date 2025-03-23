@@ -24,11 +24,6 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
-    public void NextLevel()
-    {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
     public void TransitionToScene(LevelData levelData, float transitionTime, bool firstSceneLoad
         , string spawnCheckpoint = "")
     {
@@ -89,24 +84,35 @@ public class LoadingManager : MonoBehaviour
 
     private void ApplyLevelData(LevelData levelData, bool firstSceneLoad, string spawnCheckpoint)
     {
-        SetCameraOnLevelLoad(levelData, firstSceneLoad, spawnCheckpoint);
+        Checkpoint checkpoint = null;
 
-        SoundManager.instance.ChangeMusic(levelData.levelMusic);
+        if (spawnCheckpoint != "")
+        {
+            checkpoint = GameObject.Find(spawnCheckpoint).GetComponent<Checkpoint>();
+            checkpoint.OnRespawnInCheckpoint();
+        }
+
+        SetSoundsOnLevelLoad(levelData);
+        SetCameraOnLevelLoad(levelData, firstSceneLoad, checkpoint);
 
         if (firstSceneLoad)
             UiManager.instance.OnGamePlay();
     }
 
-    private void SetCameraOnLevelLoad(LevelData levelData, bool firstSceneLoad, string spawnCheckpoint)
+    private void SetSoundsOnLevelLoad(LevelData levelData)
+    {
+        SoundManager.instance.ChangeMusic(levelData.levelMusic);
+    }
+
+    private void SetCameraOnLevelLoad(LevelData levelData, bool firstSceneLoad, Checkpoint spawnCheckpoint)
     {
         GameObject targetAfterTransition;
         CinemachineCamera camAfterTransition;
 
-        if (spawnCheckpoint != "")
+        if (spawnCheckpoint != null)
         {
-            Checkpoint checkpoint = GameObject.Find(spawnCheckpoint).GetComponent<Checkpoint>();
-            targetAfterTransition = checkpoint.checkpointCamTarget.gameObject;
-            camAfterTransition = checkpoint.camInCheckpoint;
+            targetAfterTransition = spawnCheckpoint.checkpointCamTarget.gameObject;
+            camAfterTransition = spawnCheckpoint.camInCheckpoint;
         }
         else
         {
@@ -121,6 +127,4 @@ public class LoadingManager : MonoBehaviour
         CinemachineCameraManager.instance.SwapCameraGeneric(camAfterTransition);
     }
 
-
-    // add spawning in checkpoint
 }

@@ -12,12 +12,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private PlayerData playerData;
 
     [Header("DEBUG")]
-    [SerializeField] private bool loadWithoutSaves;
+    public bool loadWithoutSaves;
  
     private bool inMainMenu;
 
-    private const string SAVED_LEVEL_KEY = "SavedGameCurrentLevel";
-    private const string SAVED_CHECKPOINT_KEY = "SavedGameCurrentCheckpoint";
+    public const string SAVED_LEVEL_KEY = "SavedGameCurrentLevel";
+    public const string SAVED_CHECKPOINT_KEY = "SavedGameCurrentCheckpoint";
 
     private void Awake()
     {
@@ -79,20 +79,6 @@ public class GameManager : MonoBehaviour
     private void LoadGameWithoutSaves()
     {
         LoadingManager.instance.TransitionToScene(firstLevelData, minTransitionToGameTime, true);
-    }
-    #endregion
-
-    #region save game
-    public void SaveInCheckpoint(Checkpoint spawnCheckpoint)
-    {
-
-        PlayerManager.instance.SavePlayerData();
-
-        PlayerPrefs.SetString(SAVED_LEVEL_KEY, LoadingManager.instance.currentLevelData.levelName);
-
-        PlayerPrefs.SetString(SAVED_CHECKPOINT_KEY, spawnCheckpoint.name);
-
-        PlayerPrefs.Save();
     }
     #endregion
 
