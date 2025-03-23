@@ -1,6 +1,7 @@
 using NUnit.Framework.Constraints;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour
 {
@@ -9,11 +10,17 @@ public class Checkpoint : MonoBehaviour
     [Header("checkpoint cam settings")]
     public CinemachineCamera camInCheckpoint;
     public Transform checkpointCamTarget;
-    //[SerializeField] private CamBorderSetter cpCamBorderSetter;
     [SerializeField] private SoundsSetter checkpointSoundSetter;
     
     private bool checkpointDiscovered;
+    private string checkpointKey;
 
+    private void Awake()
+    {
+        checkpointKey = this.name +"_"+SceneManager.GetActiveScene().name;
+        if (!GameManager.instance.loadWithoutSaves)
+            checkpointDiscovered = CheckpointManager.instance.IsCheckpointDiscovered(checkpointKey);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -24,13 +31,14 @@ public class Checkpoint : MonoBehaviour
             {
                 checkpointDiscovered = true;
                 SoundManager.instance.PlaySound(checkpointSound);
+                CheckpointManager.instance.DiscoverCheckpoint(checkpointKey);
             }
-            GameManager.instance.SaveInCheckpoint(this);
+            SaveManager.SaveInCheckpoint(this);
         }
     }
 
-    //public void OnRespawnInCheckpoint()
-    //{
+    public void OnRespawnInCheckpoint()
+    {
     //    if (cpCamBorderSetter.gameObject.activeSelf)
     //    {
     //        cpCamBorderSetter.BorderSet();
@@ -38,7 +46,7 @@ public class Checkpoint : MonoBehaviour
 
     //    camInCheckpoint.Target.TrackingTarget = checkpointCamTarget;
 
-    //    checkpointSoundSetter.SoundSet();
+       checkpointSoundSetter.SoundSet();
     //    play checkpoint animations or somethin...
-    //}
+    }
 }

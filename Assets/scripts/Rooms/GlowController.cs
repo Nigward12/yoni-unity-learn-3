@@ -13,14 +13,10 @@ public class GlowController : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         propertyBlock = new MaterialPropertyBlock();
-    }
-
-    private void Update()
-    {
         spriteRenderer.GetPropertyBlock(propertyBlock);
 
-        propertyBlock.SetColor("_Color", glowColor);         
-        propertyBlock.SetFloat("_GlowAmount", glowAmount);   
+        propertyBlock.SetColor("_Color", glowColor);
+        propertyBlock.SetFloat("_GlowAmount", glowAmount);
 
         spriteRenderer.SetPropertyBlock(propertyBlock);
     }
