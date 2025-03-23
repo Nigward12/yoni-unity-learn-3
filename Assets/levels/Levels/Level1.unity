@@ -176543,11 +176543,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 2
-  m_LightType: 4
+  m_LightType: 1
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.3
+  m_Intensity: 0.35
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
   m_ApplyToSortingLayers: 0000000069ffb47eebd21ed73ba8c0db87159c3f71a2fe7dad2d020a
@@ -176566,8 +176566,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+    m_Center: {x: 17.57085, y: -32.6045, z: 0}
+    m_Extent: {x: 32.27185, y: 47.6481, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -176578,10 +176578,28 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
+  - {x: -14.201258, y: -2.5162044, z: 0}
+  - {x: -12.686721, y: -2.5865626, z: 0}
+  - {x: 6.2927732, y: -2.5398781, z: 0}
+  - {x: 11.887944, y: -3.4531791, z: 0}
+  - {x: 14.58352, y: -3.923046, z: 0}
+  - {x: 15.866322, y: -4.5788784, z: 0}
+  - {x: 16.005173, y: -6.3970013, z: 0}
+  - {x: 15.447784, y: -13.281908, z: 0}
+  - {x: 15.771153, y: -60.469963, z: 0}
+  - {x: -3.4923458, y: -64.50727, z: 0}
+  - {x: -4.8456993, y: -71.95072, z: 0}
+  - {x: -4.5073624, y: -79.61971, z: 0}
+  - {x: 49.343765, y: -79.75335, z: 0}
+  - {x: 49.28843, y: -70.14625, z: 0}
+  - {x: 47.371174, y: -64.9584, z: 0}
+  - {x: 37.55937, y: -63.15392, z: 0}
+  - {x: 28.649796, y: -62.138905, z: 0}
+  - {x: 27.791718, y: -6.6698976, z: 0}
+  - {x: 27.695934, y: -3.849438, z: 0}
+  - {x: 29.922407, y: -3.382838, z: 0}
+  - {x: 30.30951, y: 14.350939, z: 0}
+  - {x: -14.180705, y: 14.543777, z: 0}
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -596192,7 +596210,7 @@ Transform:
   m_GameObject: {fileID: 2072686185}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7100003, y: 3.15056, z: -9.942136}
+  m_LocalPosition: {x: -2.709996, y: 2.55426, z: -9.942136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -600242,7 +600260,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 1
   m_CompositeOrder: 0
-  m_Offset: {x: 1.0334225, y: 7.3657994}
+  m_Offset: {x: 1.0334225, y: 7.067645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -600252,7 +600270,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 50.936176, y: 14.572097}
+  m_Size: {x: 50.936176, y: 15.168406}
   m_EdgeRadius: 0
 --- !u!50 &2089647614
 Rigidbody2D:
@@ -600327,9 +600345,9 @@ CompositeCollider2D:
       - X: -244346656
         Y: 146518480
       - X: -244346656
-        Y: 797510
+        Y: -5165577
       - X: 265015104
-        Y: 797510
+        Y: -5165577
   - m_Collider: {fileID: 2089647612}
     m_ColliderPaths:
     - - X: 264667200
@@ -600367,12 +600385,12 @@ CompositeCollider2D:
       - {x: 30.821936, y: -60.465332}
       - {x: 30.821907, y: -57.197697}
       - {x: 26.46672, y: -57.197666}
-      - {x: 26.46675, y: 0.079751}
-      - {x: 26.50151, y: 0.0797803}
+      - {x: 26.46675, y: -0.5165577}
+      - {x: 26.50151, y: -0.5165284}
       - {x: 26.501482, y: 14.651848}
       - {x: -24.434666, y: 14.651819}
-      - {x: -24.434637, y: 0.079751}
-      - {x: 2.156416, y: 0.0797216}
+      - {x: -24.434637, y: -0.5165577}
+      - {x: 2.156416, y: -0.5165871}
       - {x: 2.1563866, y: -57.197697}
       - {x: -2.0454712, y: -57.197727}
       - {x: -2.0455005, y: -60.465363}
