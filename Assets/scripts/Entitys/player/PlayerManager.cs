@@ -16,7 +16,7 @@ public class PlayerManager : MonoBehaviour
     private GameObject currentPlayer;
     private PlayerSessionData currentPlayerSessionData = new PlayerSessionData();
 
-    public bool IsPlayerSpawned{ get; private set; } = false;
+    public bool IsPlayerSpawned { get; private set; } = false;
     private string playerDataSaveFilePath => Application.persistentDataPath + "/playerdata.json";
 
     private void Awake()
@@ -31,6 +31,11 @@ public class PlayerManager : MonoBehaviour
         {
             Destroy(gameObject);
             return;
+        }
+        if (GameManager.instance.testing)
+        {
+            IsPlayerSpawned = true;
+            currentPlayer = GameObject.Find("Test Player");
         }
     }
 

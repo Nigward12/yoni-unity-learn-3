@@ -1,0 +1,892 @@
+fileFormatVersion: 2
+guid: 23b84eccfae387c4f8e536ff38079534
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3691931343370572687
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_0
+  - first:
+      213: 6456764476231948870
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_1
+  - first:
+      213: 6609627021426284569
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_2
+  - first:
+      213: -1181197715630106278
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_3
+  - first:
+      213: 6968722052953186358
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_4
+  - first:
+      213: -1007874842454286021
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_5
+  - first:
+      213: 6010259389881123307
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_6
+  - first:
+      213: 7030200660907689976
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_7
+  - first:
+      213: -7129305840206391566
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_8
+  - first:
+      213: -3322471666248026539
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_9
+  - first:
+      213: -2572625093374198598
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_10
+  - first:
+      213: -6343915265101118897
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_11
+  - first:
+      213: 4169499805481216042
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_12
+  - first:
+      213: -3597275617000986107
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_13
+  - first:
+      213: -455072142182602398
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_14
+  - first:
+      213: 7084061290087449201
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_15
+  - first:
+      213: 4907941100143101884
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_16
+  - first:
+      213: 970593469891263732
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_17
+  - first:
+      213: -465955556804447404
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_18
+  - first:
+      213: -3625668939868253344
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_19
+  - first:
+      213: -340290079538739260
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_20
+  - first:
+      213: 4233380704837916039
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_21
+  - first:
+      213: -2498361756928789717
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_22
+  - first:
+      213: -3724900226568611355
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_23
+  - first:
+      213: -6668182890929052915
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_24
+  - first:
+      213: -3770566677118730209
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_25
+  - first:
+      213: -5573713318335910033
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_26
+  - first:
+      213: 3468055349673327547
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_27
+  - first:
+      213: -4767956405769497234
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_28
+  - first:
+      213: -6830102734839105395
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_29
+  - first:
+      213: 6582881982848504104
+    second: SpriteAtlasTexture-Fossil-2048x2048-fmt12_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1682
+        width: 712
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83dbb00fff5c3330800000000000000
+      internalID: 3691931343370572687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_1
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1822
+        width: 103
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a9a2ce4190b9950800000000000000
+      internalID: 6456764476231948870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 126
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918dfe5b1cc1abb50800000000000000
+      internalID: 6609627021426284569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_3
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1391
+        width: 512
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a595d569fea8b9fe0800000000000000
+      internalID: -1181197715630106278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_4
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1402
+        width: 221
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630a4b809cfd5b060800000000000000
+      internalID: 6968722052953186358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1672
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31a575bb2f4302f0800000000000000
+      internalID: -1007874842454286021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1275
+        width: 127
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be102d5421bb86350800000000000000
+      internalID: 6010259389881123307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1235
+        width: 206
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f78e15e04a409160800000000000000
+      internalID: 7030200660907689976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1243
+        width: 159
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6516b6c1e9f0d90800000000000000
+      internalID: -7129305840206391566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_9
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1226
+        width: 130
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5567cfc6f9534e1d0800000000000000
+      internalID: -3322471666248026539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_10
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 800
+        width: 438
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcbc21ab133c4cd0800000000000000
+      internalID: -2572625093374198598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_11
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 819
+        width: 213
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42487a8da2e5f7a0800000000000000
+      internalID: -6343915265101118897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_12
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 808
+        width: 280
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28a4cc6bf90dd930800000000000000
+      internalID: 4169499805481216042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_13
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1043
+        width: 369
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a6b71b2e8e31ec0800000000000000
+      internalID: -3597275617000986107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 416
+        width: 469
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269a70a3c424fa9f0800000000000000
+      internalID: -455072142182602398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 46
+        width: 493
+        height: 779
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17202cad534af4260800000000000000
+      internalID: 7084061290087449201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_16
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 707
+        width: 78
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7c19c5d628c1440800000000000000
+      internalID: 4907941100143101884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_17
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 779
+        width: 149
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcbe225e9d387d00800000000000000
+      internalID: 970593469891263732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_18
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 674
+        width: 126
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4533d8bc3e79889f0800000000000000
+      internalID: -465955556804447404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_19
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 435
+        width: 213
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0635cfd0f490fadc0800000000000000
+      internalID: -3625668939868253344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_20
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 541
+        width: 244
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c70180c9fb074bf0800000000000000
+      internalID: -340290079538739260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 457
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7855bd6525dffba30800000000000000
+      internalID: 4233380704837916039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_22
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 67
+        width: 289
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23b6dd0839045dd0800000000000000
+      internalID: -2498361756928789717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_23
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 332
+        width: 281
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e91b93bafe7e4cc0800000000000000
+      internalID: -3724900226568611355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_24
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 0
+        width: 284
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0326d08dfad573a0800000000000000
+      internalID: -6668182890929052915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_25
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 59
+        width: 242
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10c960a5914cabc0800000000000000
+      internalID: -3770566677118730209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_26
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 163
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f69bc844136a2b0800000000000000
+      internalID: -5573713318335910033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_27
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 130
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbfbaa47f1012030800000000000000
+      internalID: 3468055349673327547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_28
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 79
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e659f8129e0d4ddb0800000000000000
+      internalID: -4767956405769497234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_29
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 0
+        width: 240
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88bd7600c99631a0800000000000000
+      internalID: -6830102734839105395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Fossil-2048x2048-fmt12_30
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 42
+        width: 211
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 821110a29481b5b50800000000000000
+      internalID: 6582881982848504104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

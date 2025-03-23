@@ -1,0 +1,592 @@
+fileFormatVersion: 2
+guid: 2ba3490c89009804d86c6753b04e7765
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4707470078766027812
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_0
+  - first:
+      213: -2050694361036616411
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_1
+  - first:
+      213: 2263994044855496166
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_2
+  - first:
+      213: 1116838300190546053
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_3
+  - first:
+      213: 5719243563295317311
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_4
+  - first:
+      213: 3816480704896123346
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_5
+  - first:
+      213: 2610139929876436756
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_6
+  - first:
+      213: -1445690741110399625
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_7
+  - first:
+      213: 6403836982909320340
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_8
+  - first:
+      213: -6599698097668527240
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_9
+  - first:
+      213: -7872850270224907075
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_10
+  - first:
+      213: -5465874888196068456
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_11
+  - first:
+      213: 7372541611421362778
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_12
+  - first:
+      213: -5407026017964960958
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_13
+  - first:
+      213: -6817018148192127502
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_14
+  - first:
+      213: -8893448932469232742
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_15
+  - first:
+      213: -961201988990161907
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_16
+  - first:
+      213: 5111747685673701575
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_17
+  - first:
+      213: 842395000327731013
+    second: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1959
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbee5497e4bbaeb0800000000000000
+      internalID: -4707470078766027812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1645
+        width: 147
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d048bf7587a83e0800000000000000
+      internalID: -2050694361036616411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1938
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed2631b6925b6f10800000000000000
+      internalID: 2263994044855496166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1699
+        width: 199
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588986a448ecf7f00800000000000000
+      internalID: 1116838300190546053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1399
+        width: 180
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d182e08b5de5f40800000000000000
+      internalID: 5719243563295317311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_5
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 1687
+        width: 93
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d147730bfcd6f430800000000000000
+      internalID: 3816480704896123346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_6
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1594
+        width: 274
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4171956ef64193420800000000000000
+      internalID: 2610139929876436756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1384
+        width: 393
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d1b093eefdfebe0800000000000000
+      internalID: -1445690741110399625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_8
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1495
+        width: 258
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cb1d59ecffed850800000000000000
+      internalID: 6403836982909320340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_9
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1439
+        width: 117
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b65affb892964a0800000000000000
+      internalID: -6599698097668527240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_10
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1455
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4086134640eb290800000000000000
+      internalID: -7872850270224907075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1692
+        height: 1401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b6856afbf4524b0800000000000000
+      internalID: -5465874888196068456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_12
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1386
+        width: 322
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a6e80c887805660800000000000000
+      internalID: 7372541611421362778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_13
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 793
+        width: 502
+        height: 674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24357ebfb7266f4b0800000000000000
+      internalID: -5407026017964960958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_14
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 0
+        width: 439
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f5fd91cc161561a0800000000000000
+      internalID: -6817018148192127502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_15
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 267
+        width: 148
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9b2810c05f149480800000000000000
+      internalID: -8893448932469232742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_16
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 198
+        width: 207
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ca7d832ef19a2f0800000000000000
+      internalID: -961201988990161907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_17
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 59
+        width: 12
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c0910adf6390f640800000000000000
+      internalID: 5111747685673701575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_18
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 0
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54779132ac9c0bb00800000000000000
+      internalID: 842395000327731013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

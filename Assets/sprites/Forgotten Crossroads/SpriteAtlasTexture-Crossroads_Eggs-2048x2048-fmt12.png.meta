@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 73992564b3ce3ae4684ce2d468897398
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -261500729657110838
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_0
+  - first:
+      213: -7747761423476099760
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_1
+  - first:
+      213: 6143911631562118727
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_2
+  - first:
+      213: -6095049477512039603
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_3
+  - first:
+      213: 2729893770214156370
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_4
+  - first:
+      213: -4019378695467841141
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_5
+  - first:
+      213: -4026184771472338030
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_6
+  - first:
+      213: 5423817696678776286
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_7
+  - first:
+      213: -3958485394169429457
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_8
+  - first:
+      213: -4321495840758379743
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_9
+  - first:
+      213: 5532170425039095967
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_10
+  - first:
+      213: -4985431830221657640
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_11
+  - first:
+      213: 7807135112693079352
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_12
+  - first:
+      213: -6300745920174922548
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_13
+  - first:
+      213: 8069742736452794646
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_14
+  - first:
+      213: 3856158090456545163
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_15
+  - first:
+      213: 1799403495784797135
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_16
+  - first:
+      213: 3956147501980298908
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_17
+  - first:
+      213: 9120729872308482929
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_18
+  - first:
+      213: -1434832747388788545
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_19
+  - first:
+      213: 1672676667558668016
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_20
+  - first:
+      213: -6866506144936166217
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_21
+  - first:
+      213: -3509667590629325878
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_22
+  - first:
+      213: -9035983238369315545
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_23
+  - first:
+      213: -3243884223757211939
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_24
+  - first:
+      213: -2093324490301029713
+    second: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1646
+        width: 181
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace484cc876fe5cf0800000000000000
+      internalID: -261500729657110838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1574
+        width: 293
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0557b35e80c6a7490800000000000000
+      internalID: -7747761423476099760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_2
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1377
+        width: 486
+        height: 386
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74696aab31f834550800000000000000
+      internalID: 6143911631562118727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1183
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43f67c0bc80a6ba0800000000000000
+      internalID: -6095049477512039603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1162
+        width: 146
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258aa20abe782e520800000000000000
+      internalID: 2729893770214156370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_5
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 1135
+        width: 467
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89cdde3f5c4838c0800000000000000
+      internalID: -4019378695467841141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 970
+        width: 193
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 293dd40384e1028c0800000000000000
+      internalID: -4026184771472338030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 571
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd04016575454b40800000000000000
+      internalID: 5423817696678776286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_8
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 573
+        width: 514
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2285f7c182a019c0800000000000000
+      internalID: -3958485394169429457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_9
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 835
+        width: 238
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12bc449dd66f604c0800000000000000
+      internalID: -4321495840758379743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_10
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 333
+        width: 258
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98806dd0b736cc40800000000000000
+      internalID: 5532170425039095967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_11
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 538
+        width: 186
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d966b31a2030dab0800000000000000
+      internalID: -4985431830221657640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 163
+        width: 148
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ddc816504885c60800000000000000
+      internalID: 7807135112693079352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_13
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 203
+        width: 118
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc46bf7e7f04f88a0800000000000000
+      internalID: -6300745920174922548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_14
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 292
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619be03734c7dff60800000000000000
+      internalID: 8069742736452794646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_15
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 243
+        width: 258
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87396b3a53d38530800000000000000
+      internalID: 3856158090456545163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_16
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 143
+        width: 181
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc359dd12f3c8f810800000000000000
+      internalID: 1799403495784797135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_17
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 118
+        width: 366
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ea596413f07e630800000000000000
+      internalID: 3956147501980298908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_18
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 282
+        width: 231
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173bd33ce77539e70800000000000000
+      internalID: 9120729872308482929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_19
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 157
+        width: 233
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb02bc3e733761ce0800000000000000
+      internalID: -1434832747388788545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_20
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 0
+        width: 374
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f62be1219a863710800000000000000
+      internalID: 1672676667558668016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_21
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 209
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcfa0f9a0545b0a0800000000000000
+      internalID: -6866506144936166217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_22
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 0
+        width: 249
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac386dcdbe72b4fc0800000000000000
+      internalID: -3509667590629325878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_23
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 197
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 725fc909e1db99280800000000000000
+      internalID: -9035983238369315545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6257e3c786bf2d0800000000000000
+      internalID: -3243884223757211939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_25
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 0
+        width: 191
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa24bfb877403f2e0800000000000000
+      internalID: -2093324490301029713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

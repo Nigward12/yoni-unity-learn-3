@@ -1,0 +1,3592 @@
+fileFormatVersion: 2
+guid: 54ac3f6668d579046ac0eeee4721e8ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3586406377188950834
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_0
+  - first:
+      213: -5512157597939197921
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_1
+  - first:
+      213: 556195695438971873
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_2
+  - first:
+      213: 8506306719599417225
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_3
+  - first:
+      213: -9144086739729741814
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_4
+  - first:
+      213: -8129403660860979974
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_5
+  - first:
+      213: -14297532482355646
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_6
+  - first:
+      213: 6548064663232409859
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_7
+  - first:
+      213: -8591733409478751329
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_8
+  - first:
+      213: 7710816797714248903
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_9
+  - first:
+      213: -6781547126782833345
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_10
+  - first:
+      213: 6704652287919188092
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_11
+  - first:
+      213: 2536810391923090505
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_12
+  - first:
+      213: -5217579414122310711
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_13
+  - first:
+      213: -3380140367125030665
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_14
+  - first:
+      213: -6639925070928488124
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_15
+  - first:
+      213: -2082644220517700113
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_16
+  - first:
+      213: 2980917608416248422
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_17
+  - first:
+      213: 8626482510197535693
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_18
+  - first:
+      213: 321836844461353255
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_19
+  - first:
+      213: 5388347013556975734
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_20
+  - first:
+      213: -8930022511975460670
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_21
+  - first:
+      213: -6444214381443924455
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_22
+  - first:
+      213: -1246550816587497887
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_23
+  - first:
+      213: -5964677214169318240
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_24
+  - first:
+      213: -4002132947818008327
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_25
+  - first:
+      213: -3032112407192234913
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_26
+  - first:
+      213: 1196408709040533134
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_27
+  - first:
+      213: -1429997028185847144
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_28
+  - first:
+      213: -4462450866363353789
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_29
+  - first:
+      213: 213807433848147676
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_30
+  - first:
+      213: 507311720176016992
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_31
+  - first:
+      213: -8385464409585743639
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_32
+  - first:
+      213: -6416466421511948661
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_33
+  - first:
+      213: 6721028231875407305
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_34
+  - first:
+      213: 1415770887944839571
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_35
+  - first:
+      213: 4730368611354863261
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_36
+  - first:
+      213: 4458356506873583033
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_37
+  - first:
+      213: 231386094255419306
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_38
+  - first:
+      213: -5184520883957501581
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_39
+  - first:
+      213: -4749359134187756156
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_40
+  - first:
+      213: -7999044216814448478
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_41
+  - first:
+      213: 8925842565784999159
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_42
+  - first:
+      213: 5584818848183195053
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_43
+  - first:
+      213: -638714053931221695
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_44
+  - first:
+      213: 2054301220038418902
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_45
+  - first:
+      213: -3107652345826579217
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_46
+  - first:
+      213: 5532901506929269809
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_47
+  - first:
+      213: -7092926719579768512
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_48
+  - first:
+      213: -9139721202108020916
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_49
+  - first:
+      213: -1736302304381137660
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_50
+  - first:
+      213: -1990702294463561440
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_51
+  - first:
+      213: 4714211991358121993
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_52
+  - first:
+      213: -7666163840049113704
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_53
+  - first:
+      213: 8785613050592696119
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_54
+  - first:
+      213: -8426323692123122798
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_55
+  - first:
+      213: 1744901022349096666
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_56
+  - first:
+      213: 8625139879056477195
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_57
+  - first:
+      213: 4278945919719714858
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_58
+  - first:
+      213: 1708952640342897490
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_59
+  - first:
+      213: 4599636705292407907
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_60
+  - first:
+      213: -8964625011348050312
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_61
+  - first:
+      213: 6918748922151674098
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_62
+  - first:
+      213: 8768122829167352230
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_63
+  - first:
+      213: 4160034920169495032
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_64
+  - first:
+      213: 7255767345660135227
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_65
+  - first:
+      213: 1612859583659952614
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_66
+  - first:
+      213: -3925270799398807474
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_67
+  - first:
+      213: 8487706091592332067
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_68
+  - first:
+      213: -7614013861586772916
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_69
+  - first:
+      213: 5415915579551699429
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_70
+  - first:
+      213: 8103188943735716673
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_71
+  - first:
+      213: 8734800635258884432
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_72
+  - first:
+      213: 4421041814662419309
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_73
+  - first:
+      213: -6491774390951274800
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_74
+  - first:
+      213: -954813790972086518
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_75
+  - first:
+      213: -6642939439676363854
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_76
+  - first:
+      213: 3561688184787993140
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_77
+  - first:
+      213: -2682740778397647834
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_78
+  - first:
+      213: 8284975012470537956
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_79
+  - first:
+      213: 3897111029476798356
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_80
+  - first:
+      213: 2407841450851103418
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_81
+  - first:
+      213: -668673995795190167
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_82
+  - first:
+      213: 6647653848729065022
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_83
+  - first:
+      213: 8795134258573553051
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_84
+  - first:
+      213: 8891584082517137672
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_85
+  - first:
+      213: 134341431553104400
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_86
+  - first:
+      213: -1555097027895552967
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_87
+  - first:
+      213: -5627998721625692293
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_88
+  - first:
+      213: -301678307193806728
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_89
+  - first:
+      213: -3872750920337384248
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_90
+  - first:
+      213: 2330231569106865007
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_91
+  - first:
+      213: 4672183637986364913
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_92
+  - first:
+      213: -1531315343059946082
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_93
+  - first:
+      213: -6637951563370252529
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_94
+  - first:
+      213: -1635691172182334166
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_95
+  - first:
+      213: 6528121832351319053
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_96
+  - first:
+      213: 4255203002523956040
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_97
+  - first:
+      213: -2447633520436204568
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_98
+  - first:
+      213: 3483585332098762920
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_99
+  - first:
+      213: -6573976358015949279
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_100
+  - first:
+      213: -1177923414888499714
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_101
+  - first:
+      213: 2029477376146016323
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_102
+  - first:
+      213: 5934296042084462567
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_103
+  - first:
+      213: -548795029159231399
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_104
+  - first:
+      213: -195715358204192926
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_105
+  - first:
+      213: 640229381621774422
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_106
+  - first:
+      213: 4401976518416807629
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_107
+  - first:
+      213: -7328883766339189276
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_108
+  - first:
+      213: 2436105510350143603
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_109
+  - first:
+      213: 8402666343895353550
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_110
+  - first:
+      213: 784856905833115020
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_111
+  - first:
+      213: -6174936421300818529
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_112
+  - first:
+      213: -8079700215289081805
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_113
+  - first:
+      213: -5715268198952707526
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_114
+  - first:
+      213: 6022018964585853969
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_115
+  - first:
+      213: -6300669699656758863
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_116
+  - first:
+      213: 467335309636325304
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_117
+  - first:
+      213: 8146936537031787930
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_118
+  - first:
+      213: 1708608014105176905
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_119
+  - first:
+      213: 663159389985481084
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_120
+  - first:
+      213: 3341624536946637719
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_121
+  - first:
+      213: 81415158799944346
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_122
+  - first:
+      213: 7329067571368559047
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_123
+  - first:
+      213: 7251275487318000057
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_124
+  - first:
+      213: -7549409732959238415
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_125
+  - first:
+      213: 4578926148851171187
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_126
+  - first:
+      213: -4996666816064285609
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_127
+  - first:
+      213: 1629711126352462122
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_128
+  - first:
+      213: 4051531365183557864
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_129
+  - first:
+      213: -6615026695629594947
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_130
+  - first:
+      213: 1258446047115833901
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_131
+  - first:
+      213: 7108053944473674919
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_132
+  - first:
+      213: 3685912231217999451
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_133
+  - first:
+      213: -259181574672662775
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_134
+  - first:
+      213: 3662560036615443860
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_135
+  - first:
+      213: -8124957372393137646
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_136
+  - first:
+      213: 5293941206295204450
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_137
+  - first:
+      213: -3825274180894442844
+    second: SpriteAtlasTexture-Shaman-4096x2048-fmt12_138
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1717
+        width: 291
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccf47bc6668a3ec0800000000000000
+      internalID: -3586406377188950834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1849
+        width: 448
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f181ddc8ed1e083b0800000000000000
+      internalID: -5512157597939197921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_2
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1607
+        width: 205
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e3cd34c90108b700800000000000000
+      internalID: 556195695438971873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_3
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1793
+        width: 261
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987dd34a4e87c0670800000000000000
+      internalID: 8506306719599417225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_4
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 1447
+        width: 347
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a088c03ce8da91180800000000000000
+      internalID: -9144086739729741814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_5
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1074
+        width: 108
+        height: 790
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af40f9e117e8e2f80800000000000000
+      internalID: -8129403660860979974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_6
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1792
+        width: 453
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e793f48743dcff0800000000000000
+      internalID: -14297532482355646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_7
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 1732
+        width: 102
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301714a3e166fda50800000000000000
+      internalID: 6548064663232409859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1276
+        width: 156
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bc92b2cf704c880800000000000000
+      internalID: -8591733409478751329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_9
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1599
+        width: 271
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c47fdb1603520b60800000000000000
+      internalID: 7710816797714248903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_10
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 1739
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3dc98081da13e1a0800000000000000
+      internalID: -6781547126782833345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_11
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1041
+        width: 93
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78eeebabb5bb0d50800000000000000
+      internalID: 6704652287919188092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_12
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 1105
+        width: 115
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94468116c9f843320800000000000000
+      internalID: 2536810391923090505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1436
+        width: 353
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c359d1ba2f6797b0800000000000000
+      internalID: -5217579414122310711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_14
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1253
+        width: 107
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8dd8eae345711d0800000000000000
+      internalID: -3380140367125030665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_15
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 1339
+        width: 52
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449d81ce35f3ad3a0800000000000000
+      internalID: -6639925070928488124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_16
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1315
+        width: 89
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feda582ad16f813e0800000000000000
+      internalID: -2082644220517700113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_17
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 1461
+        width: 350
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6628b5275c85e5920800000000000000
+      internalID: 2980917608416248422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_18
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1367
+        width: 460
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc3b171532c67b770800000000000000
+      internalID: 8626482510197535693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_19
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 1367
+        width: 103
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72960c5a7e4677400800000000000000
+      internalID: 321836844461353255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_20
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1369
+        width: 164
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678b9956f0147ca40800000000000000
+      internalID: 5388347013556975734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_21
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 1376
+        width: 154
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c01671b6df221480800000000000000
+      internalID: -8930022511975460670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_22
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 1444
+        width: 170
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e3299b92d8196a0800000000000000
+      internalID: -6444214381443924455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1174
+        width: 354
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e34d603ac53bee0800000000000000
+      internalID: -1246550816587497887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_24
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1109
+        width: 353
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac32990da5393da0800000000000000
+      internalID: -5964677214169318240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_25
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1380
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0bb65c9419578c0800000000000000
+      internalID: -4002132947818008327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_26
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 744
+        width: 245
+        height: 534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54904a94d5cbe5d0800000000000000
+      internalID: -3032112407192234913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_27
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1233
+        width: 377
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e6b8cc16f7a9010800000000000000
+      internalID: 1196408709040533134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_28
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 931
+        width: 143
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a4e118741a72ce0800000000000000
+      internalID: -1429997028185847144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_29
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 985
+        width: 63
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34537c284903212c0800000000000000
+      internalID: -4462450866363353789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_30
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 933
+        width: 69
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde4bd07ab897f200800000000000000
+      internalID: 213807433848147676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_31
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 828
+        width: 132
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06edb7752555a0700800000000000000
+      internalID: 507311720176016992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_32
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1113
+        width: 87
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e806fd2c88d0ab80800000000000000
+      internalID: -8385464409585743639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_33
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1213
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86fe8819c124f6a0800000000000000
+      internalID: -6416466421511948661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_34
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 887
+        width: 355
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd2e4e3193e54d50800000000000000
+      internalID: 6721028231875407305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_35
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 1046
+        width: 261
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391aa4b1f14d5a310800000000000000
+      internalID: 1415770887944839571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_36
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 1155
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96e6708035a5a140800000000000000
+      internalID: 4730368611354863261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1103
+        width: 97
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b550422f934fdd30800000000000000
+      internalID: 4458356506873583033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 634
+        width: 280
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf2f024d6c063300800000000000000
+      internalID: 231386094255419306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_39
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 855
+        width: 136
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3717e1d89b1ec08b0800000000000000
+      internalID: -5184520883957501581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_40
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 1016
+        width: 62
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4856bf7d703e61eb0800000000000000
+      internalID: -4749359134187756156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_41
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 704
+        width: 324
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0d1226aafadf090800000000000000
+      internalID: -7999044216814448478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_42
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1005
+        width: 10
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f41daeb586fedb70800000000000000
+      internalID: 8925842565784999159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_43
+      rect:
+        serializedVersion: 2
+        x: 1546
+        y: 311
+        width: 107
+        height: 740
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da59ddc1723418d40800000000000000
+      internalID: 5584818848183195053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_44
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 867
+        width: 94
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d3166b3f4d227f0800000000000000
+      internalID: -638714053931221695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_45
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 917
+        width: 139
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1aa025318528c10800000000000000
+      internalID: 2054301220038418902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_46
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 548
+        width: 419
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fece89118a66fd4d0800000000000000
+      internalID: -3107652345826579217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_47
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 799
+        width: 137
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c1eb12b90d8cc40800000000000000
+      internalID: 5532901506929269809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_48
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 858
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049329d7abcd09d90800000000000000
+      internalID: -7092926719579768512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_49
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 831
+        width: 88
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47ce32bdff292180800000000000000
+      internalID: -9139721202108020916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_50
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 221
+        width: 94
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d8ba4e04a67e7e0800000000000000
+      internalID: -1736302304381137660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_51
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 362
+        width: 306
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021c1f47fca9f54e0800000000000000
+      internalID: -1990702294463561440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_52
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 802
+        width: 335
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908a9c444de3c6140800000000000000
+      internalID: 4714211991358121993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_53
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 860
+        width: 335
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8959de3ca905c9590800000000000000
+      internalID: -7666163840049113704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_54
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 486
+        width: 113
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7371d967584cce970800000000000000
+      internalID: 8785613050592696119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_55
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 786
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2931b802f3faf0b80800000000000000
+      internalID: -8426323692123122798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_56
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 211
+        width: 128
+        height: 592
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad675552c32273810800000000000000
+      internalID: 1744901022349096666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_57
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 790
+        width: 94
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c8735a507a2b770800000000000000
+      internalID: 8625139879056477195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_58
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 754
+        width: 158
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a203006a4aed16b30800000000000000
+      internalID: 4278945919719714858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_59
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 667
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 253ba993f5b67b710800000000000000
+      internalID: 1708952640342897490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_60
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 727
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3645dcaa63135df30800000000000000
+      internalID: 4599636705292407907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_61
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 178
+        width: 174
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e640e7c01479380800000000000000
+      internalID: -8964625011348050312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_62
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 611
+        width: 164
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f0a7f2dc75540060800000000000000
+      internalID: 6918748922151674098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_63
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 554
+        width: 55
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a95383f141aea970800000000000000
+      internalID: 8768122829167352230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_64
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 662
+        width: 112
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f95ce518b96bb930800000000000000
+      internalID: 4160034920169495032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_65
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 521
+        width: 55
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3783fa45f9a1b460800000000000000
+      internalID: 7255767345660135227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_66
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 595
+        width: 79
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9c2acfe37026610800000000000000
+      internalID: 1612859583659952614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_67
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 608
+        width: 69
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48de924103a689c0800000000000000
+      internalID: -3925270799398807474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_68
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 709
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323b74378b36ac570800000000000000
+      internalID: 8487706091592332067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 507
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c5831dbb6955690800000000000000
+      internalID: -7614013861586772916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_70
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 611
+        width: 32
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e1deac5682392b40800000000000000
+      internalID: 5415915579551699429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_71
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 598
+        width: 172
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b7d3b696f447070800000000000000
+      internalID: 8103188943735716673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_72
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 633
+        width: 55
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051567816ee383970800000000000000
+      internalID: 8734800635258884432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_73
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 347
+        width: 75
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d631a145b12ba5d30800000000000000
+      internalID: 4421041814662419309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_74
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 595
+        width: 152
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d61f59169598e5a0800000000000000
+      internalID: -6491774390951274800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_75
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 637
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07f67a7ae1dfb2f0800000000000000
+      internalID: -954813790972086518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_76
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 384
+        width: 138
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb68a186c98fc3a0800000000000000
+      internalID: -6642939439676363854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_77
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 271
+        width: 67
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4328efe8888ad6130800000000000000
+      internalID: 3561688184787993140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_78
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 346
+        height: 555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c372fc97df4cad0800000000000000
+      internalID: -2682740778397647834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_79
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 0
+        width: 353
+        height: 564
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee3b4fc0e42af270800000000000000
+      internalID: 8284975012470537956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_80
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 456
+        width: 63
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fa83265d1551630800000000000000
+      internalID: 3897111029476798356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_81
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 342
+        width: 86
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2f071da0f5a6120800000000000000
+      internalID: 2407841450851103418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_82
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 529
+        width: 225
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e261a2b8468b6f0800000000000000
+      internalID: -668673995795190167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_83
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 350
+        width: 73
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36114364f5314c50800000000000000
+      internalID: 6647653848729065022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_84
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 395
+        width: 71
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d252272089e0a70800000000000000
+      internalID: 8795134258573553051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_85
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 265
+        width: 121
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80993f80d90456b70800000000000000
+      internalID: 8891584082517137672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_86
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 326
+        width: 190
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a175af1d64dd100800000000000000
+      internalID: 134341431553104400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_87
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 348
+        width: 99
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934150d0e7f2b6ae0800000000000000
+      internalID: -1555097027895552967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_88
+      rect:
+        serializedVersion: 2
+        x: 2493
+        y: 347
+        width: 330
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77e5292bf455e1b0800000000000000
+      internalID: -5627998721625692293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_89
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 341
+        width: 39
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870a54f8d2930dbf0800000000000000
+      internalID: -301678307193806728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_90
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 398
+        width: 6
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc19b18e89314ac0800000000000000
+      internalID: -3872750920337384248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_91
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 159
+        width: 379
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b04091445a65020800000000000000
+      internalID: 2330231569106865007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_92
+      rect:
+        serializedVersion: 2
+        x: 2814
+        y: 343
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdc193b34ee6d040800000000000000
+      internalID: 4672183637986364913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_93
+      rect:
+        serializedVersion: 2
+        x: 2858
+        y: 338
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e957ec90fccafbae0800000000000000
+      internalID: -1531315343059946082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_94
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 87
+        width: 62
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f073115f83241e3a0800000000000000
+      internalID: -6637951563370252529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_95
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 341
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2564df8b8bdc49e0800000000000000
+      internalID: -1635691172182334166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_96
+      rect:
+        serializedVersion: 2
+        x: 2998
+        y: 322
+        width: 99
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04c5c3183c889a50800000000000000
+      internalID: 6528121832351319053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_97
+      rect:
+        serializedVersion: 2
+        x: 3101
+        y: 336
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843bd94f5948d0b30800000000000000
+      internalID: 4255203002523956040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_98
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 0
+        width: 119
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebaf020842480ed0800000000000000
+      internalID: -2447633520436204568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_99
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 1
+        width: 315
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a80288176e285030800000000000000
+      internalID: 3483585332098762920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_100
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 273
+        width: 170
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126a4a2355b84c4a0800000000000000
+      internalID: -6573976358015949279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_101
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 236
+        width: 279
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5b4f225ec27afe0800000000000000
+      internalID: -1177923414888499714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_102
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 0
+        width: 73
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34800e4cbe62a2c10800000000000000
+      internalID: 2029477376146016323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_103
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 154
+        width: 78
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef637c1fcada5250800000000000000
+      internalID: 5934296042084462567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_104
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 175
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 950c67024d94268f0800000000000000
+      internalID: -548795029159231399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_105
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 260
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267962d2beda84df0800000000000000
+      internalID: -195715358204192926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_106
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 173
+        width: 45
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65875520b3d82e800800000000000000
+      internalID: 640229381621774422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_107
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 7
+        width: 97
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc638d12256f61d30800000000000000
+      internalID: 4401976518416807629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_108
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 163
+        width: 151
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5c93b6b039a4a90800000000000000
+      internalID: -7328883766339189276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_109
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 207
+        width: 164
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370cacbfd09cec120800000000000000
+      internalID: 2436105510350143603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_110
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 81
+        width: 148
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8430245844c9470800000000000000
+      internalID: 8402666343895353550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_111
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 114
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8de1bf823f54ea00800000000000000
+      internalID: 784856905833115020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_112
+      rect:
+        serializedVersion: 2
+        x: 3214
+        y: 120
+        width: 91
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d2eb18a083e4aa0800000000000000
+      internalID: -6174936421300818529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_113
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 128
+        width: 75
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3301c0856732fdf80800000000000000
+      internalID: -8079700215289081805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_114
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 0
+        width: 226
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a56559ad94fa0b0800000000000000
+      internalID: -5715268198952707526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_115
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 128
+        width: 42
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1143ece9752829350800000000000000
+      internalID: 6022018964585853969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_116
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 161
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b944e06a468f88a0800000000000000
+      internalID: -6300669699656758863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_117
+      rect:
+        serializedVersion: 2
+        x: 2083
+        y: 159
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bfced1fcfe4c7600800000000000000
+      internalID: 467335309636325304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_118
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 109
+        width: 369
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a954e69bd9bbf0170800000000000000
+      internalID: 8146936537031787930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_119
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 164
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bef1dafe136b710800000000000000
+      internalID: 1708608014105176905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_120
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 3
+        width: 132
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71ac8d93f3043900800000000000000
+      internalID: 663159389985481084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_121
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 139
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79bfe69cfc5df5e20800000000000000
+      internalID: 3341624536946637719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_122
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 0
+        width: 165
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a4a93d7ae312100800000000000000
+      internalID: 81415158799944346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_123
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1
+        width: 43
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c10246002416b560800000000000000
+      internalID: 7329067571368559047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_124
+      rect:
+        serializedVersion: 2
+        x: 2968
+        y: 52
+        width: 175
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1461603a4b1a460800000000000000
+      internalID: 7251275487318000057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_125
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 0
+        width: 107
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6861ba8db1b3790800000000000000
+      internalID: -7549409732959238415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_126
+      rect:
+        serializedVersion: 2
+        x: 3345
+        y: 127
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f750b721d9b8f30800000000000000
+      internalID: 4578926148851171187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_127
+      rect:
+        serializedVersion: 2
+        x: 3353
+        y: 41
+        width: 121
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7549187110648aab0800000000000000
+      internalID: -4996666816064285609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_128
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 0
+        width: 59
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a218db482a5ed9610800000000000000
+      internalID: 1629711126352462122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_129
+      rect:
+        serializedVersion: 2
+        x: 2307
+        y: 19
+        width: 164
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e09e1a8f4ee93830800000000000000
+      internalID: 4051531365183557864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_130
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 0
+        width: 64
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe954ba444b234a0800000000000000
+      internalID: -6615026695629594947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_131
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 0
+        width: 170
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2275572306e67110800000000000000
+      internalID: 1258446047115833901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_132
+      rect:
+        serializedVersion: 2
+        x: 2635
+        y: 0
+        width: 168
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4eaa40761e4a260800000000000000
+      internalID: 7108053944473674919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_133
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1
+        width: 165
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e240f35adf62330800000000000000
+      internalID: 3685912231217999451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_134
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 0
+        width: 293
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f3f452bb3376cf0800000000000000
+      internalID: -259181574672662775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_135
+      rect:
+        serializedVersion: 2
+        x: 3353
+        y: 0
+        width: 164
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495510fb2f604d230800000000000000
+      internalID: 3662560036615443860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_136
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ad053515a5e3f80800000000000000
+      internalID: -8124957372393137646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_137
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26257078a7bd77940800000000000000
+      internalID: 5293941206295204450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman-4096x2048-fmt12_138
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 0
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa305f4665e9eac0800000000000000
+      internalID: -3825274180894442844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

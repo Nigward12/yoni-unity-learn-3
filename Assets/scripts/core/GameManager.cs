@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
 
     [Header("DEBUG")]
     public bool loadWithoutSaves;
- 
+    public bool testing;
+
     private bool inMainMenu;
 
     public const string SAVED_LEVEL_KEY = "SavedGameCurrentLevel";
@@ -32,8 +33,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
-        InMainMenu();
+        if (!testing)
+            InMainMenu();
     }
 
     public void InMainMenu()

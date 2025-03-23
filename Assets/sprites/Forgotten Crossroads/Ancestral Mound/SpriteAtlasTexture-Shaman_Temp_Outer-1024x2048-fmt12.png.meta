@@ -1,0 +1,317 @@
+fileFormatVersion: 2
+guid: 90a9d75519b020545aba0866d308130a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1799569634866734029
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_0
+  - first:
+      213: -6675220576093025095
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_1
+  - first:
+      213: -7233354193726321702
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_2
+  - first:
+      213: 6832519721366569929
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_3
+  - first:
+      213: -443948906182536802
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_4
+  - first:
+      213: 6871598460640499806
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_5
+  - first:
+      213: 976527290670102260
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_6
+  - first:
+      213: 6469604220352683774
+    second: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1043
+        width: 81
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33c503d93f4a607e0800000000000000
+      internalID: -1799569634866734029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1176
+        width: 128
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bcc89cb04adc53a0800000000000000
+      internalID: -6675220576093025095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1043
+        width: 84
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb4c5c4fa6fd9b90800000000000000
+      internalID: -7233354193726321702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 329
+        height: 1057
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3c7e08c7cf1de50800000000000000
+      internalID: 6832519721366569929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_4
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 706
+        width: 77
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91119c62d6c6d9f0800000000000000
+      internalID: -443948906182536802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_5
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 0
+        width: 563
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5819958462dc5f50800000000000000
+      internalID: 6871598460640499806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 461
+        width: 168
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6bdd1a5625d8d00800000000000000
+      internalID: 976527290670102260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Shaman_Temp_Outer-1024x2048-fmt12_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 239
+        width: 145
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe5d7fc2c6a8c950800000000000000
+      internalID: 6469604220352683774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
