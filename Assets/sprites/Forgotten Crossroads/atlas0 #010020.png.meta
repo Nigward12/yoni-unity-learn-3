@@ -216,6 +216,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1134,7 +1147,48 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atlas0 #010020_0: -746957243671195419
+      atlas0 #010020_1: 5128572770662130237
+      atlas0 #010020_10: -41548406473355757
+      atlas0 #010020_11: -5497712676866300210
+      atlas0 #010020_12: 8852835742093348983
+      atlas0 #010020_13: -5008311310034667808
+      atlas0 #010020_14: 5826635980769802297
+      atlas0 #010020_15: -1522762763127208041
+      atlas0 #010020_16: -3448914563381439840
+      atlas0 #010020_17: -1408399477880006113
+      atlas0 #010020_18: -4642764004901439577
+      atlas0 #010020_19: -5213685354858663928
+      atlas0 #010020_2: 7171811907090844083
+      atlas0 #010020_20: -4884587048803815453
+      atlas0 #010020_21: 9168449306562086738
+      atlas0 #010020_22: -2675957937536137065
+      atlas0 #010020_23: -4895412262543119840
+      atlas0 #010020_24: -2978772545782156851
+      atlas0 #010020_25: -8906817503533246216
+      atlas0 #010020_26: 5794201589799159459
+      atlas0 #010020_27: -7169118210733983195
+      atlas0 #010020_28: -1775625074858274943
+      atlas0 #010020_29: 5123414498042659967
+      atlas0 #010020_3: 190935004833111737
+      atlas0 #010020_30: -1081452862137567814
+      atlas0 #010020_31: -3324653662695908991
+      atlas0 #010020_32: 8441425255981753993
+      atlas0 #010020_33: -4819278354690572941
+      atlas0 #010020_34: -2917868683616527592
+      atlas0 #010020_35: 8260789865452981865
+      atlas0 #010020_36: 8928294275492227328
+      atlas0 #010020_37: -3698673272802709828
+      atlas0 #010020_38: -4457333986944210287
+      atlas0 #010020_39: -8743937302143978565
+      atlas0 #010020_4: -7204488303857758065
+      atlas0 #010020_40: -4962688896645097013
+      atlas0 #010020_5: 3307022151116467998
+      atlas0 #010020_6: -3901394240998667210
+      atlas0 #010020_7: -3542651480122116638
+      atlas0 #010020_8: 7857397574208730407
+      atlas0 #010020_9: -4056044855446600371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

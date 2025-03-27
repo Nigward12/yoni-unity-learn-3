@@ -276,6 +276,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1634,7 +1647,68 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_0: 399269293697676838
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_1: -4251585312896292314
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_10: 340433578680893885
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_11: 6269886416988511088
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_12: -4314506382099705159
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_13: -6030760012909449403
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_14: -7288951556921434828
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_15: -5611929451095444092
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_16: 6133836078625174743
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_17: -9005343900127926530
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_18: 7204285797450679586
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_19: 5205078509798447120
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_2: -3928321831637699892
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_20: -9142086833347616616
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_21: -5959004978655317063
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_22: 688527170503798456
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_23: -5442717830191852579
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_24: -5368626151040896491
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_25: 4918789341711192096
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_26: 2266140298798789642
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_27: 8550970735523215091
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_28: -8048301014392323175
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_29: -2528645304959809910
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_3: 1028716244636262966
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_30: -8409788296233645424
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_31: 8970585390374564733
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_32: 478405221469020148
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_33: 8842867868183103861
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_34: -1960589328671776514
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_35: 8794216300350266470
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_36: 4834253436172771720
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_37: 1076059688084477647
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_38: -5646910662713126700
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_39: 5372405181872767912
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_4: 1474765253340252608
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_40: -6678378310227063641
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_41: 6519004211066486502
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_42: -3583506612072310957
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_43: -4553842588797072529
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_44: 2293511950107679115
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_45: -8135256166431591543
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_46: -3058667926903161408
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_47: 6547870408510511943
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_48: 732369523915633382
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_49: -7641239078198486710
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_5: 6022934886941541591
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_50: -8271327012949787117
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_51: 5129349577003408593
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_52: -533771948373843409
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_53: 6266912286644009984
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_54: 6935872644126231436
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_55: -1559950885522770097
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_56: -7862384016329519403
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_57: 2900616463854752799
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_58: 483500466524019553
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_59: -1728156062086435854
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_6: -1371204898145235927
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_60: -1383416539716323317
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_7: 2737111515219159512
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_8: 2972122556303025119
+      SpriteAtlasTexture-Infected-1024x1024-fmt12_9: -8641993370144893269
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -126,6 +126,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -384,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_0: -4717602699388340602
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_1: 2398503710188309059
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_10: 2616920444016180381
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_2: -3633550249035611171
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_3: -2702799908907365465
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_4: -3237885255529454640
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_5: -8530645876185878990
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_6: 7957771076559944702
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_7: 138216521958065683
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_8: 7666970792620338188
+      SpriteAtlasTexture-Crossroads_Well-2048x1024-fmt12_9: 5189003244008922163
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

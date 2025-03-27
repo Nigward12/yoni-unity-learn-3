@@ -47,6 +47,18 @@ TagManager:
   - name: mainBackground
     uniqueID: 2113839729
     locked: 0
+  - name: background5
+    uniqueID: 856793025
+    locked: 0
+  - name: background4
+    uniqueID: 823197925
+    locked: 0
+  - name: background3
+    uniqueID: 1197072965
+    locked: 0
+  - name: background2
+    uniqueID: 1691956897
+    locked: 0
   - name: background
     uniqueID: 2125791081
     locked: 0
@@ -59,8 +71,11 @@ TagManager:
   - name: ground
     uniqueID: 1067193735
     locked: 0
-  - name: 
+  - name: foregroundFront
     uniqueID: 167914925
+    locked: 0
+  - name: foregroundFront2
+    uniqueID: 2521189275
     locked: 0
   m_RenderingLayers:
   - Default

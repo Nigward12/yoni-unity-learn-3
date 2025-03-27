@@ -150,6 +150,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -584,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_0: -5075062076342766943
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_1: -4201167471625687097
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_10: -5764044974048525531
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_11: 1291126731956073258
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_12: 4128525516695604594
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_13: 5839036217524428691
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_14: -343377106165611365
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_15: 6162640331559084144
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_16: -956885550622339429
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_17: 3467575233144837210
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_18: 743310250303921185
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_2: -1420197682446616472
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_3: 4226197350367661
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_4: 389973897822159246
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_5: 2003926400188925363
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_6: -998721962890311379
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_7: -7178504693258722381
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_8: 654701947561970543
+      SpriteAtlasTexture-F_Boss_Chamber-2048x2048-fmt12_9: -8960057892390678493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

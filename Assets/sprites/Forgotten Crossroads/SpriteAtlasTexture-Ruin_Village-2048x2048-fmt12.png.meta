@@ -150,6 +150,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -584,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_0: -4707470078766027812
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_1: -2050694361036616411
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_10: -7872850270224907075
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_11: -5465874888196068456
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_12: 7372541611421362778
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_13: -5407026017964960958
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_14: -6817018148192127502
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_15: -8893448932469232742
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_16: -961201988990161907
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_17: 5111747685673701575
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_18: 842395000327731013
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_2: 2263994044855496166
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_3: 1116838300190546053
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_4: 5719243563295317311
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_5: 3816480704896123346
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_6: 2610139929876436756
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_7: -1445690741110399625
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_8: 6403836982909320340
+      SpriteAtlasTexture-Ruin_Village-2048x2048-fmt12_9: -6599698097668527240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

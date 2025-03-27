@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -259,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cd_dead_guardians_01_0000_08_0: 3349731864847038273
+      cd_dead_guardians_01_0000_08_1: 2428124422798076703
+      cd_dead_guardians_01_0000_08_2: -519851340428206845
+      cd_dead_guardians_01_0000_08_3: -2037837749258722455
+      cd_dead_guardians_01_0000_08_4: -6852027179094860041
+      cd_dead_guardians_01_0000_08_5: 1373852852892962887
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

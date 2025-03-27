@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -259,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grub_homes_0015_Color-Balance-1-copy-31_0: -2717029838387383715
+      grub_homes_0015_Color-Balance-1-copy-31_1: -2590186714206101893
+      grub_homes_0015_Color-Balance-1-copy-31_2: 3511959126332835390
+      grub_homes_0015_Color-Balance-1-copy-31_3: 5611231899459584171
+      grub_homes_0015_Color-Balance-1-copy-31_4: 5269070143673365793
+      grub_homes_0015_Color-Balance-1-copy-31_5: -3766294365915469883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

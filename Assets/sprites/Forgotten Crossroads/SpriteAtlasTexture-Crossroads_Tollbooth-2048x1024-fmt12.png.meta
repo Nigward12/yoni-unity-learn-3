@@ -132,6 +132,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -434,7 +447,20 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_0: 4400754729533668624
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_1: -114814028731868493
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_10: -8884665812302444898
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_11: 7376640141495746498
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_12: 7760516273686393912
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_2: 6349334072045785841
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_3: 1414651474469679887
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_4: 5822745109889668585
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_5: -6087278682919317135
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_6: -3329770363600554750
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_7: -813530347127871772
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_8: 1943776932314582555
+      SpriteAtlasTexture-Crossroads_Tollbooth-2048x1024-fmt12_9: 3534496050951251953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

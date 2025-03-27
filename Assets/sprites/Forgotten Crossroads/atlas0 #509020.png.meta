@@ -216,6 +216,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1134,7 +1147,48 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atlas0 #509020_0: -864152336095010553
+      atlas0 #509020_1: -3680767140599315647
+      atlas0 #509020_10: -3971833173147066781
+      atlas0 #509020_11: 8600137481859061908
+      atlas0 #509020_12: -3003341414857766180
+      atlas0 #509020_13: -4846810485234244191
+      atlas0 #509020_14: -3374105057069943889
+      atlas0 #509020_15: 1704950812989362955
+      atlas0 #509020_16: -4639222724618167971
+      atlas0 #509020_17: -8010258420415371630
+      atlas0 #509020_18: 3346837298087470172
+      atlas0 #509020_19: 4126931556353548413
+      atlas0 #509020_2: 7202538317890923298
+      atlas0 #509020_20: 7330133176497147877
+      atlas0 #509020_21: -4716046136780385002
+      atlas0 #509020_22: -3394389537918574694
+      atlas0 #509020_23: 6423033173321533287
+      atlas0 #509020_24: 2194173882280594533
+      atlas0 #509020_25: -2893808250240260641
+      atlas0 #509020_26: -3207235502669267995
+      atlas0 #509020_27: 1050141189130903972
+      atlas0 #509020_28: -5604525536869276086
+      atlas0 #509020_29: 850723604577516642
+      atlas0 #509020_3: -8364151955615510379
+      atlas0 #509020_30: -3909333056887524129
+      atlas0 #509020_31: 3899522332731534800
+      atlas0 #509020_32: -5413231754596518260
+      atlas0 #509020_33: 7309979517540685411
+      atlas0 #509020_34: -4282693845957249959
+      atlas0 #509020_35: -6169817797399952116
+      atlas0 #509020_36: -1917689005393898203
+      atlas0 #509020_37: 6561522653964196584
+      atlas0 #509020_38: 4339467503980818507
+      atlas0 #509020_39: 1543704560710701678
+      atlas0 #509020_4: -6619712832818399345
+      atlas0 #509020_40: 4264792889494225831
+      atlas0 #509020_5: -4163052030264965670
+      atlas0 #509020_6: 2063268619891084276
+      atlas0 #509020_7: 8244221636430576496
+      atlas0 #509020_8: 4672928592076075549
+      atlas0 #509020_9: 6149276411714327095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

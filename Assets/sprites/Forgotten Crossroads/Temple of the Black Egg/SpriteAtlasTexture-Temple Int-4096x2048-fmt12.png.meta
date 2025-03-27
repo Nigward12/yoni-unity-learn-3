@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -484,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_0: -3973839239019303542
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_1: -3343868414981289687
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_10: 5828091507676098067
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_11: 3360548988512388195
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_12: 6784173097988953266
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_13: -1337227161402800035
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_14: 6278509280753429154
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_2: 2251223746119333780
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_3: -3198253384293194643
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_4: -8454967404876354781
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_5: -3939850955515704575
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_6: 7178051168896182207
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_7: -5047593116164295183
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_8: 4410948530526173905
+      SpriteAtlasTexture-Temple Int-4096x2048-fmt12_9: -780164475617515616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

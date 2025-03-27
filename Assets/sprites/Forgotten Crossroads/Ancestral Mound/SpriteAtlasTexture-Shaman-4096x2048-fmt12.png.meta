@@ -510,6 +510,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -3584,7 +3597,146 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_0: -3586406377188950834
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_1: -5512157597939197921
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_10: -6781547126782833345
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_100: -6573976358015949279
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_101: -1177923414888499714
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_102: 2029477376146016323
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_103: 5934296042084462567
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_104: -548795029159231399
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_105: -195715358204192926
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_106: 640229381621774422
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_107: 4401976518416807629
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_108: -7328883766339189276
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_109: 2436105510350143603
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_11: 6704652287919188092
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_110: 8402666343895353550
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_111: 784856905833115020
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_112: -6174936421300818529
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_113: -8079700215289081805
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_114: -5715268198952707526
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_115: 6022018964585853969
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_116: -6300669699656758863
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_117: 467335309636325304
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_118: 8146936537031787930
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_119: 1708608014105176905
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_12: 2536810391923090505
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_120: 663159389985481084
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_121: 3341624536946637719
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_122: 81415158799944346
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_123: 7329067571368559047
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_124: 7251275487318000057
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_125: -7549409732959238415
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_126: 4578926148851171187
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_127: -4996666816064285609
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_128: 1629711126352462122
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_129: 4051531365183557864
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_13: -5217579414122310711
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_130: -6615026695629594947
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_131: 1258446047115833901
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_132: 7108053944473674919
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_133: 3685912231217999451
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_134: -259181574672662775
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_135: 3662560036615443860
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_136: -8124957372393137646
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_137: 5293941206295204450
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_138: -3825274180894442844
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_14: -3380140367125030665
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_15: -6639925070928488124
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_16: -2082644220517700113
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_17: 2980917608416248422
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_18: 8626482510197535693
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_19: 321836844461353255
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_2: 556195695438971873
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_20: 5388347013556975734
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_21: -8930022511975460670
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_22: -6444214381443924455
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_23: -1246550816587497887
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_24: -5964677214169318240
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_25: -4002132947818008327
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_26: -3032112407192234913
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_27: 1196408709040533134
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_28: -1429997028185847144
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_29: -4462450866363353789
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_3: 8506306719599417225
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_30: 213807433848147676
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_31: 507311720176016992
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_32: -8385464409585743639
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_33: -6416466421511948661
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_34: 6721028231875407305
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_35: 1415770887944839571
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_36: 4730368611354863261
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_37: 4458356506873583033
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_38: 231386094255419306
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_39: -5184520883957501581
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_4: -9144086739729741814
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_40: -4749359134187756156
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_41: -7999044216814448478
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_42: 8925842565784999159
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_43: 5584818848183195053
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_44: -638714053931221695
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_45: 2054301220038418902
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_46: -3107652345826579217
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_47: 5532901506929269809
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_48: -7092926719579768512
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_49: -9139721202108020916
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_5: -8129403660860979974
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_50: -1736302304381137660
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_51: -1990702294463561440
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_52: 4714211991358121993
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_53: -7666163840049113704
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_54: 8785613050592696119
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_55: -8426323692123122798
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_56: 1744901022349096666
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_57: 8625139879056477195
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_58: 4278945919719714858
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_59: 1708952640342897490
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_6: -14297532482355646
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_60: 4599636705292407907
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_61: -8964625011348050312
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_62: 6918748922151674098
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_63: 8768122829167352230
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_64: 4160034920169495032
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_65: 7255767345660135227
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_66: 1612859583659952614
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_67: -3925270799398807474
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_68: 8487706091592332067
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_69: -7614013861586772916
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_7: 6548064663232409859
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_70: 5415915579551699429
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_71: 8103188943735716673
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_72: 8734800635258884432
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_73: 4421041814662419309
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_74: -6491774390951274800
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_75: -954813790972086518
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_76: -6642939439676363854
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_77: 3561688184787993140
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_78: -2682740778397647834
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_79: 8284975012470537956
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_8: -8591733409478751329
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_80: 3897111029476798356
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_81: 2407841450851103418
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_82: -668673995795190167
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_83: 6647653848729065022
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_84: 8795134258573553051
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_85: 8891584082517137672
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_86: 134341431553104400
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_87: -1555097027895552967
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_88: -5627998721625692293
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_89: -301678307193806728
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_9: 7710816797714248903
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_90: -3872750920337384248
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_91: 2330231569106865007
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_92: 4672183637986364913
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_93: -1531315343059946082
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_94: -6637951563370252529
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_95: -1635691172182334166
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_96: 6528121832351319053
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_97: 4255203002523956040
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_98: -2447633520436204568
+      SpriteAtlasTexture-Shaman-4096x2048-fmt12_99: 3483585332098762920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

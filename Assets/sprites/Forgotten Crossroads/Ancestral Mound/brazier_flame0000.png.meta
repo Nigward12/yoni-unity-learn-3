@@ -153,6 +153,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -609,7 +622,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      brazier_flame0000_0: 5233692192265266325
+      brazier_flame0000_1: -4347986348173749121
+      brazier_flame0000_10: -458928653224368805
+      brazier_flame0000_11: 8628748412796939053
+      brazier_flame0000_12: 1916948618046926378
+      brazier_flame0000_13: 3650344792721935689
+      brazier_flame0000_14: 7955934598796620682
+      brazier_flame0000_15: -4160926833901394141
+      brazier_flame0000_16: 7076866861348740432
+      brazier_flame0000_17: -7060812306073322007
+      brazier_flame0000_18: -809329491105654527
+      brazier_flame0000_19: -9157017482250076542
+      brazier_flame0000_2: -2681360466477463112
+      brazier_flame0000_3: -4698189620395156271
+      brazier_flame0000_4: -4610519657169545070
+      brazier_flame0000_5: -3222051881421269541
+      brazier_flame0000_6: -5936056260661549474
+      brazier_flame0000_7: -5674374701712192998
+      brazier_flame0000_8: -6752471649739314488
+      brazier_flame0000_9: 2447957260391977294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

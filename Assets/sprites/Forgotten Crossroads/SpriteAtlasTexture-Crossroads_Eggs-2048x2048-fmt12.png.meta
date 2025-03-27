@@ -171,6 +171,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -759,7 +772,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_0: -261500729657110838
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_1: -7747761423476099760
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_10: 5532170425039095967
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_11: -4985431830221657640
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_12: 7807135112693079352
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_13: -6300745920174922548
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_14: 8069742736452794646
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_15: 3856158090456545163
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_16: 1799403495784797135
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_17: 3956147501980298908
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_18: 9120729872308482929
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_19: -1434832747388788545
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_2: 6143911631562118727
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_20: 1672676667558668016
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_21: -6866506144936166217
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_22: -3509667590629325878
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_23: -9035983238369315545
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_24: -3243884223757211939
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_25: -2093324490301029713
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_3: -6095049477512039603
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_4: 2729893770214156370
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_5: -4019378695467841141
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_6: -4026184771472338030
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_7: 5423817696678776286
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_8: -3958485394169429457
+      SpriteAtlasTexture-Crossroads_Eggs-2048x2048-fmt12_9: -4321495840758379743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

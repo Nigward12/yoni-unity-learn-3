@@ -186,6 +186,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -884,7 +897,38 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_0: 3691931343370572687
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_1: 6456764476231948870
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_10: -2572625093374198598
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_11: -6343915265101118897
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_12: 4169499805481216042
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_13: -3597275617000986107
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_14: -455072142182602398
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_15: 7084061290087449201
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_16: 4907941100143101884
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_17: 970593469891263732
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_18: -465955556804447404
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_19: -3625668939868253344
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_2: 6609627021426284569
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_20: -340290079538739260
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_21: 4233380704837916039
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_22: -2498361756928789717
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_23: -3724900226568611355
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_24: -6668182890929052915
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_25: -3770566677118730209
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_26: -5573713318335910033
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_27: 3468055349673327547
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_28: -4767956405769497234
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_29: -6830102734839105395
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_3: -1181197715630106278
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_30: 6582881982848504104
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_4: 6968722052953186358
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_5: -1007874842454286021
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_6: 6010259389881123307
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_7: 7030200660907689976
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_8: -7129305840206391566
+      SpriteAtlasTexture-Fossil-2048x2048-fmt12_9: -3322471666248026539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

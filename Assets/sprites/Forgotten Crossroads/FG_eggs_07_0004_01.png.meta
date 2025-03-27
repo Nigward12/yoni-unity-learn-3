@@ -138,6 +138,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -484,7 +497,22 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FG_eggs_07_0004_01_0: -3863141025471784210
+      FG_eggs_07_0004_01_1: -3743890935678376680
+      FG_eggs_07_0004_01_10: 5237494755237643146
+      FG_eggs_07_0004_01_11: 548549077062129223
+      FG_eggs_07_0004_01_12: -8834114359224091796
+      FG_eggs_07_0004_01_13: 7458403280717482829
+      FG_eggs_07_0004_01_14: 2115469391467024976
+      FG_eggs_07_0004_01_2: 6905421759389194100
+      FG_eggs_07_0004_01_3: -6986974287030750850
+      FG_eggs_07_0004_01_4: -5551064193908869177
+      FG_eggs_07_0004_01_5: -8476396390145036798
+      FG_eggs_07_0004_01_6: -8159992438124246513
+      FG_eggs_07_0004_01_7: -6564191302474525983
+      FG_eggs_07_0004_01_8: 7286354145918170540
+      FG_eggs_07_0004_01_9: 453914612056860366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
