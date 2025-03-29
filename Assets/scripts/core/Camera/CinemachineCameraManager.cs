@@ -26,7 +26,7 @@ public class CinemachineCameraManager : MonoBehaviour
 {
     public static CinemachineCameraManager instance;
 
-    [SerializeField] private CinemachineBrain brain;
+    public CinemachineBrain brain;
 
     [SerializeField] private List<CinemachineCamera> Cameras;
     private Dictionary<CinemachineCamera, CinemachineCameraConfig> camerasConfigs =
@@ -41,7 +41,7 @@ public class CinemachineCameraManager : MonoBehaviour
     private PlayerBasicMovement targetPlayerMovement;
     private bool isLerpingYDamping;
     private bool lerpedFromPlayerFalling;
-    private CinemachineCamera _currentCamera;
+    public CinemachineCamera currentCamera { get; private set; }
     private CinemachinePositionComposer positionComposer;
     private float normYDampAmount;
     private float normBrainBlendingTime;
@@ -67,7 +67,7 @@ public class CinemachineCameraManager : MonoBehaviour
             Cameras[i].Target.TrackingTarget = PlayerCameraTarget.instance.transform;
 
             if (Cameras[i].enabled)
-                _currentCamera = Cameras[i];
+                currentCamera = Cameras[i];
         }
 
         SetCurrentCameraConfig();
@@ -117,7 +117,7 @@ public class CinemachineCameraManager : MonoBehaviour
 
     private void SetCurrentCameraConfig()
     {
-        CinemachineCameraConfig currentCamConfig = camerasConfigs[_currentCamera];
+        CinemachineCameraConfig currentCamConfig = camerasConfigs[currentCamera];
         positionComposer = currentCamConfig.PositionComposer;
         normYDampAmount = currentCamConfig.NormYDampAmount;
         startingTrackedObjectOffset = currentCamConfig.StartingTrackedObjectOffset;
@@ -219,7 +219,7 @@ public class CinemachineCameraManager : MonoBehaviour
         , Vector2 triggerExitDirection, Transform leftTarget, Transform rightTarget,
         float customBlendingTime = -1)
     {
-        if (_currentCamera == cameraLeft && triggerExitDirection.x >0f)
+        if (currentCamera == cameraLeft && triggerExitDirection.x >0f)
         {
             CutNeededCheck(cameraRight, rightTarget);
 
@@ -227,11 +227,11 @@ public class CinemachineCameraManager : MonoBehaviour
 
             cameraLeft.enabled = false;
 
-            _currentCamera = cameraRight;
+            currentCamera = cameraRight;
 
             SetCurrentCameraConfig();
         }
-        else if (_currentCamera == cameraRight && triggerExitDirection.x <0f)
+        else if (currentCamera == cameraRight && triggerExitDirection.x <0f)
         {
             CutNeededCheck(cameraLeft, leftTarget);
 
@@ -239,7 +239,7 @@ public class CinemachineCameraManager : MonoBehaviour
 
             cameraRight.enabled = false;
 
-            _currentCamera = cameraLeft;
+            currentCamera = cameraLeft;
 
             SetCurrentCameraConfig();
         }
@@ -255,20 +255,20 @@ public class CinemachineCameraManager : MonoBehaviour
         , Vector2 triggerExitDirection, Transform topTarget, Transform bottomTarget,
         float customBlendingTime = -1)
     {
-        if (_currentCamera == cameraTop && triggerExitDirection.y < 0f) 
+        if (currentCamera == cameraTop && triggerExitDirection.y < 0f) 
         {
             CutNeededCheck(cameraTop, topTarget);
             cameraBottom.enabled = true;
             cameraTop.enabled = false;
-            _currentCamera = cameraBottom;
+            currentCamera = cameraBottom;
             SetCurrentCameraConfig();
         }
-        else if (_currentCamera == cameraBottom && triggerExitDirection.y > 0f) 
+        else if (currentCamera == cameraBottom && triggerExitDirection.y > 0f) 
         {
             CutNeededCheck(cameraBottom, bottomTarget);
             cameraTop.enabled = true;
             cameraBottom.enabled = false;
-            _currentCamera = cameraTop;
+            currentCamera = cameraTop;
             SetCurrentCameraConfig();
         }
 
@@ -316,7 +316,7 @@ public class CinemachineCameraManager : MonoBehaviour
         if (Cameras.Contains(checkpointCam))
         {
             checkpointCam.enabled = true;
-            _currentCamera = checkpointCam;
+            currentCamera = checkpointCam;
             SetCurrentCameraConfig();
         }    
     }
@@ -329,15 +329,15 @@ public class CinemachineCameraManager : MonoBehaviour
         Transform newTarget = (triggerExitDirection.x > 0) ? rightTarget : leftTarget;
         if (switchInstantly)
         {
-            _currentCamera.Target.TrackingTarget = null;
-            _currentCamera.transform.position = newTarget.position;
+            currentCamera.Target.TrackingTarget = null;
+            currentCamera.transform.position = newTarget.position;
         }
-        _currentCamera.Target.TrackingTarget = newTarget;
+        currentCamera.Target.TrackingTarget = newTarget;
     }
 
     public void TargetSwapGeneric(Transform newTarget)
     {
-        _currentCamera.Target.TrackingTarget = newTarget;
+        currentCamera.Target.TrackingTarget = newTarget;
     }
     #endregion
 }

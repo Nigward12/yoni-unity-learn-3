@@ -77,5 +77,8 @@ TagManager:
   - name: foregroundFront2
     uniqueID: 2521189275
     locked: 0
+  - name: foregroundFront3
+    uniqueID: 2199534201
+    locked: 0
   m_RenderingLayers:
   - Default
