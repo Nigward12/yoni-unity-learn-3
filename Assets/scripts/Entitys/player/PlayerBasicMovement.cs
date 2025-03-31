@@ -29,7 +29,8 @@ public class PlayerBasicMovement : MovementScript
     [Header ("GroundAndSlopeCheck")]
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private BoxCollider2D feetCollider;
-    private bool isGrounded, onWall;
+    public bool isGrounded { get; private set; }
+    private bool onWall;
     private RaycastHit2D underFeetRaycastHit;
 
     [SerializeField] private float slopeCheckDistance;
