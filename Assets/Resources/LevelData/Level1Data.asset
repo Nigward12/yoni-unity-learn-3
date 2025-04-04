@@ -22,3 +22,7 @@ MonoBehaviour:
     camTargetName: PlayerCameraTarget
     spawnPoint: FirstEverSpawnPoint
     camActiveAfterTransitionPrefab: {fileID: 371616414265503503, guid: 52af71093e6d0794d874987c7f441f56, type: 3}
+  - fromSceneData: {fileID: 11400000, guid: 656c324ff875df24bbd0532cee0e3681, type: 2}
+    camTargetName: PlayerCameraTarget
+    spawnPoint: FirstEverSpawnPoint
+    camActiveAfterTransitionPrefab: {fileID: 371616414265503503, guid: 52af71093e6d0794d874987c7f441f56, type: 3}
