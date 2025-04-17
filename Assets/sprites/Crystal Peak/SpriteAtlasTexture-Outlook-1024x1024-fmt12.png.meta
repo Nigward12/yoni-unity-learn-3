@@ -126,6 +126,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -384,7 +397,18 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_0: -2647641888168387509
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_1: 4260376338738180001
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_10: -304191114663608208
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_2: -3293346371175176879
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_3: -6893458566679995761
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_4: 3311701481038618819
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_5: -5641852653169057388
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_6: 6874385851263322221
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_7: 6946594489642357677
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_8: -2192420689263282484
+      SpriteAtlasTexture-Outlook-1024x1024-fmt12_9: -329376823914259201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

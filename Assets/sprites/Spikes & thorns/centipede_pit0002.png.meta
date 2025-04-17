@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -309,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      centipede_pit0002_0: 1515120155670609389
+      centipede_pit0002_1: -6854670377585352364
+      centipede_pit0002_2: 5547459111309264936
+      centipede_pit0002_3: -2140831060940641634
+      centipede_pit0002_4: 1039504014697826759
+      centipede_pit0002_5: -1960978205075957609
+      centipede_pit0002_6: 2999547195042757782
+      centipede_pit0002_7: 7450588362676638207
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

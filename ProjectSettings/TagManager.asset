@@ -81,6 +81,9 @@ TagManager:
   - name: foregroundFront3
     uniqueID: 2199534201
     locked: 0
+  - name: foregroundFront4
+    uniqueID: 3282210337
+    locked: 0
   - name: UI
     uniqueID: 920647435
     locked: 0

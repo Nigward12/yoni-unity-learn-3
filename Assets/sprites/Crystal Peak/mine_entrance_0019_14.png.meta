@@ -108,6 +108,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -234,7 +247,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mine_entrance_0019_14_0: 4998001822121845044
+      mine_entrance_0019_14_1: 4974845242494386528
+      mine_entrance_0019_14_2: -5336183160235683688
+      mine_entrance_0019_14_3: 3906584833380051840
+      mine_entrance_0019_14_4: -8248878299566103306
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_0: 7307291980048114593
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_1: -8214166454663486478
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_10: -6818870705609479999
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_11: -8793625172640224001
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_12: 6299992643352025890
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_13: 6028383805088692636
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_14: -3075676301658991938
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_15: 8896452439374602348
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_2: 5078296745742071815
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_3: 3279819955778043333
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_4: -5579531084386228617
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_5: -4935542765861950661
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_6: 3727831934079917180
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_7: -3220819122235019372
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_8: 5653844686668438677
+      SpriteAtlasTexture-Deep_Pit-2048x2048-fmt12_9: -3706758108752622724
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
