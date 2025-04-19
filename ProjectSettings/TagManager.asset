@@ -51,17 +51,32 @@ TagManager:
   - name: background5
     uniqueID: 856793025
     locked: 0
+  - name: BG5Fog
+    uniqueID: 1928085743
+    locked: 0
   - name: background4
     uniqueID: 823197925
+    locked: 0
+  - name: BG4Fog
+    uniqueID: 1931723817
     locked: 0
   - name: background3
     uniqueID: 1197072965
     locked: 0
+  - name: BG3Fog
+    uniqueID: 4008534157
+    locked: 0
   - name: background2
     uniqueID: 1691956897
     locked: 0
+  - name: BG2Fog
+    uniqueID: 3302353689
+    locked: 0
   - name: background
     uniqueID: 2125791081
+    locked: 0
+  - name: BG1Fog
+    uniqueID: 3464778959
     locked: 0
   - name: foreground
     uniqueID: 3609121515
@@ -71,6 +86,9 @@ TagManager:
     locked: 0
   - name: ground
     uniqueID: 1067193735
+    locked: 0
+  - name: void
+    uniqueID: 85937029
     locked: 0
   - name: foregroundFront
     uniqueID: 167914925
