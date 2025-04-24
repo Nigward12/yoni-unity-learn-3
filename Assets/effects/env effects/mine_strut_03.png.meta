@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 866361526fa670a458532922cd5ee1b0
+guid: b0140687ef2a544499a7ab85eb44a7f4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8182090488871584389
-    second: Nailmaster_Paint_Projectile_fix_0
+      213: 7583506485805232083
+    second: mine_strut_03_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nailmaster_Paint_Projectile_fix_0
+      name: mine_strut_03_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 51
-        width: 68
-        height: 68
+        x: 0
+        y: 0
+        width: 396
+        height: 384
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: -129, y: -117}
+        - {x: -106, y: -159}
+        - {x: -66, y: -150}
+        - {x: -80, y: -64}
+        - {x: -116, y: -73}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b7df4ba0d00637e80800000000000000
-      internalID: -8182090488871584389
+      spriteID: 3dfaa4e38f60e3960800000000000000
+      internalID: 7583506485805232083
       vertices: []
       indices: 
       edges: []
@@ -138,7 +143,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 809e2eb659920e040bbae875ff10a6a4
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +153,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Nailmaster_Paint_Projectile_fix_0: -8182090488871584389
+      mine_strut_03_0: 7583506485805232083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

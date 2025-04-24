@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: 32d4e6d09f723fa4797abcc4523fdffa
+guid: 2d5dc28237d5e594eb0f0d70312be9db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1458697066762286973
-    second: mine_strut_01_0
+      213: -7387673489792585293
+    second: fog_02_0
   - first:
-      213: -166286030034683499
-    second: mine_strut_01_1
+      213: -1713418900020226996
+    second: fog_02_1
   - first:
-      213: -6795165108184976223
-    second: mine_strut_01_2
+      213: 900612959801435248
+    second: fog_02_2
+  - first:
+      213: -2317713360679013917
+    second: fog_02_3
+  - first:
+      213: -7744404844918581253
+    second: fog_02_4
+  - first:
+      213: -2761988175713721655
+    second: fog_02_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +63,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -119,84 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mine_strut_01_0
+      name: fog_02_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 401
-        height: 389
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline:
-      - - {x: -128.5, y: -125.5}
-        - {x: 4.5, y: -124.5}
-        - {x: 21.5, y: -56.5}
-        - {x: 8.5, y: -26.5}
-        - {x: -128.5, y: -26.5}
-      - - {x: -123.5, y: -194.5}
-        - {x: -84.5, y: -194.5}
-        - {x: -84.5, y: -142.5}
-        - {x: -122.5, y: -142.5}
-      - - {x: -114.5, y: -21.5}
-        - {x: -55.5, y: -21.5}
-        - {x: -55.5, y: 30.5}
-        - {x: -114.5, y: 30.5}
-      - - {x: -5.5, y: 90.5}
-        - {x: 189.5, y: -186.5}
-        - {x: 198.5, y: 188.5}
-        - {x: -139.5, y: 184.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 388cabc0fbaa1cbe0800000000000000
-      internalID: -1458697066762286973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mine_strut_01_1
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 0
-        width: 56
+        y: 365
+        width: 65
         height: 36
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5993ca89cbb31bdf0800000000000000
-      internalID: -166286030034683499
+      spriteID: 3b1b7544a16b97990800000000000000
+      internalID: -7387673489792585293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mine_strut_01_2
+      name: fog_02_1
       rect:
         serializedVersion: 2
-        x: 212
-        y: 0
-        width: 35
-        height: 81
+        x: 10
+        y: 17
+        width: 2018
+        height: 566
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1a471802659b2b1a0800000000000000
-      internalID: -6795165108184976223
+      spriteID: c449ad8a696b838e0800000000000000
+      internalID: -1713418900020226996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fog_02_2
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 197
+        width: 65
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074e31d17be9f7c00800000000000000
+      internalID: 900612959801435248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fog_02_3
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 0
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1fc8d6af3d5dfd0800000000000000
+      internalID: -2317713360679013917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fog_02_4
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf750dd33d8568490800000000000000
+      internalID: -7744404844918581253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fog_02_5
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 0
+        width: 106
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c221c843627ba9d0800000000000000
+      internalID: -2761988175713721655
       vertices: []
       indices: 
       edges: []
@@ -205,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cb99e914bd736a94183765205867469f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -215,9 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mine_strut_01_0: -1458697066762286973
-      mine_strut_01_1: -166286030034683499
-      mine_strut_01_2: -6795165108184976223
+      fog_02_0: -7387673489792585293
+      fog_02_1: -1713418900020226996
+      fog_02_2: 900612959801435248
+      fog_02_3: -2317713360679013917
+      fog_02_4: -7744404844918581253
+      fog_02_5: -2761988175713721655
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

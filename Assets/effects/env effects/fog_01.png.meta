@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 866361526fa670a458532922cd5ee1b0
+guid: a53494b53452f0e4188930b33b57c4b7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8182090488871584389
-    second: Nailmaster_Paint_Projectile_fix_0
+      213: 8730268200864519004
+    second: fog_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nailmaster_Paint_Projectile_fix_0
+      name: fog_01_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 51
-        width: 68
-        height: 68
+        x: 0
+        y: 0
+        width: 2047
+        height: 468
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7df4ba0d00637e80800000000000000
-      internalID: -8182090488871584389
+      spriteID: c531b6a7ca4282970800000000000000
+      internalID: 8730268200864519004
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Nailmaster_Paint_Projectile_fix_0: -8182090488871584389
+      fog_01_0: 8730268200864519004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

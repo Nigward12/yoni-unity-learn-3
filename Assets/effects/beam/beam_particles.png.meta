@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 866361526fa670a458532922cd5ee1b0
+guid: 842ec42e06d27d14cb71050d35a02e65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8182090488871584389
-    second: Nailmaster_Paint_Projectile_fix_0
+      213: 6481427047592660218
+    second: beam_particles_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nailmaster_Paint_Projectile_fix_0
+      name: beam_particles_0
       rect:
         serializedVersion: 2
-        x: 50
-        y: 51
-        width: 68
-        height: 68
+        x: 2
+        y: 2
+        width: 43
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b7df4ba0d00637e80800000000000000
-      internalID: -8182090488871584389
+      spriteID: afc8e594f87a2f950800000000000000
+      internalID: 6481427047592660218
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Nailmaster_Paint_Projectile_fix_0: -8182090488871584389
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
