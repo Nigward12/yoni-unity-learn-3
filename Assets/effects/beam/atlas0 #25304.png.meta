@@ -159,9 +159,9 @@ TextureImporter:
       name: atlas0 #25304_1
       rect:
         serializedVersion: 2
-        x: 350
+        x: 353
         y: 379
-        width: 103
+        width: 100
         height: 107
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -643,9 +643,9 @@ TextureImporter:
       name: atlas0 #25304_23
       rect:
         serializedVersion: 2
-        x: 194
+        x: 191
         y: 122
-        width: 98
+        width: 101
         height: 99
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

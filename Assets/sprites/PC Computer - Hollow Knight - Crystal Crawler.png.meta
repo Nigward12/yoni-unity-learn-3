@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 842ec42e06d27d14cb71050d35a02e65
+guid: f2111e20d362fe54a982b326c98a5dc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6481427047592660218
-    second: beam_particles_0
+      213: -4101369505473318331
+    second: PC Computer - Hollow Knight - Crystal Crawler_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,40 +96,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: beam_particles_0
+      name: PC Computer - Hollow Knight - Crystal Crawler_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 43
-        height: 42
+        x: 3
+        y: 1459
+        width: 135
+        height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 167, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: afc8e594f87a2f950800000000000000
-      internalID: 6481427047592660218
+      spriteID: 542b4ad2a220517c0800000000000000
+      internalID: -4101369505473318331
       vertices: []
       indices: 
       edges: []
@@ -138,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b655ad59d71e02d4da3bac8404400cd8
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      beam_particles_0: 6481427047592660218
+      PC Computer - Hollow Knight - Crystal Crawler_0: -4101369505473318331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
