@@ -138,9 +138,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 454
+        y: 455
         width: 117
-        height: 39
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,9 +314,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 117
-        y: 454
+        y: 455
         width: 117
-        height: 39
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: atlas0 #25304_11
       rect:
         serializedVersion: 2
-        x: 206
+        x: 209
         y: 375
-        width: 123
-        height: 36
+        width: 117
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: atlas0 #25304_18
       rect:
         serializedVersion: 2
-        x: 107
-        y: 312
-        width: 128
-        height: 41
+        x: 115
+        y: 319
+        width: 117
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
