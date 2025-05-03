@@ -105,6 +105,7 @@ public class beamController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, maxBeamDistance, hitMask);
         float distance = hit.collider != null ? hit.distance : maxBeamDistance;
         Debug.DrawRay(origin, direction * distance, Color.red);
+        print(hit.transform.name);
 
         beamRayLengthController.localScale = new Vector3(
             initialRayScale.x * distance / 2 / EnemyTransform.localScale.x,

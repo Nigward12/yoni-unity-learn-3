@@ -264,16 +264,16 @@ MonoBehaviour:
   beamSourceAnimator: {fileID: 7299417420010814640}
   beamRayAnimator: {fileID: 2480578763228301983}
   beamEndAnimator: {fileID: 655180340655193990}
-  sourcePoint: {fileID: 0}
-  EnemyTransform: {fileID: 0}
-  rayThinCollider: {fileID: 0}
-  rayThickCollider: {fileID: 0}
+  sourcePoint: {fileID: 2823241225590059902}
+  EnemyTransform: {fileID: 284083855783586269}
+  rayThinCollider: {fileID: 3665238285713866740}
+  rayThickCollider: {fileID: 829767775786291954}
   sourceThinCollider: {fileID: 2907869978821679807}
   sourceThickCollider: {fileID: 1215659300773059912}
   beamEndCollider: {fileID: 638110280985674310}
   hitMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 193
   maxBeamDistance: 100
   timeBetweenShots: 10
   startDuration: 0.5
@@ -566,6 +566,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3c1bc50c7b5d34ea7c830cd2ee1578, type: 3}
+--- !u!61 &829767775786291954 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6879363759915235097, guid: 0c3c1bc50c7b5d34ea7c830cd2ee1578, type: 3}
+  m_PrefabInstance: {fileID: 6123634909446645227}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2480578763228301983 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8545383202861510516, guid: 0c3c1bc50c7b5d34ea7c830cd2ee1578, type: 3}
@@ -574,5 +579,10 @@ Animator:
 --- !u!4 &3164207820437226476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9156385107162113543, guid: 0c3c1bc50c7b5d34ea7c830cd2ee1578, type: 3}
+  m_PrefabInstance: {fileID: 6123634909446645227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &3665238285713866740 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7360587461193194015, guid: 0c3c1bc50c7b5d34ea7c830cd2ee1578, type: 3}
   m_PrefabInstance: {fileID: 6123634909446645227}
   m_PrefabAsset: {fileID: 0}
