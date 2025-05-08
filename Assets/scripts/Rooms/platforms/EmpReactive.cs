@@ -9,4 +9,6 @@ public interface EmpReactive
     public bool IsReacting();
 
     public void OnBecomingChosenEmpReactive();
+
+    public void OnBecomingUnchosenEmpReactive();
 }

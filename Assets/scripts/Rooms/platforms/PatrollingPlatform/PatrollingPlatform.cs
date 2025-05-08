@@ -11,12 +11,15 @@ public class PatrollingPlatform : MonoBehaviour
     [Header("Target")]
     public Transform nextPatrolEdge;
 
+    protected int pauseCounter = 0;
     protected bool isPaused = false;
     private bool isChangingDirection = false;
     private Vector2 currentVelocity;
 
     private void Update()
     {
+        isPaused = pauseCounter > 0;
+
         if (isPaused || nextPatrolEdge == null)
             return;
 
@@ -36,18 +39,32 @@ public class PatrollingPlatform : MonoBehaviour
     public void ChangeDirection(Transform newEdge)
     {
         if (!isChangingDirection)
-            StartCoroutine(DelayedDirectionChange(newEdge));
+            DelayedDirectionChange(newEdge);
     }
 
-    private IEnumerator DelayedDirectionChange(Transform newEdge)
+    private void DelayedDirectionChange(Transform newEdge)
     {
         isChangingDirection = true;
-        isPaused = true;
-
-        yield return new WaitForSeconds(directionChangePauseTime);
-
         nextPatrolEdge = newEdge;
-        isPaused = false;
+        StartCoroutine(PauseForSeconds(directionChangePauseTime));
         isChangingDirection = false;
+    }
+
+    public IEnumerator PauseForSeconds(float time)
+    {
+        Pause();
+        yield return new WaitForSeconds(time);
+        Resume();
+    }
+
+    protected void Pause()
+    {
+        pauseCounter++;
+    }
+
+    protected void Resume()
+    {
+        pauseCounter--;
+        if (pauseCounter < 0) pauseCounter = 0;
     }
 }

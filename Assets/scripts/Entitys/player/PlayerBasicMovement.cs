@@ -70,6 +70,8 @@ public class PlayerBasicMovement : MovementScript
     {
         base.Update();
 
+        facingLeft = transform.eulerAngles.y == 180f;
+
         horizontalInput = Input.GetAxis("Horizontal");
 
         isGrounded = IsGrounded();

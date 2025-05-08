@@ -27,7 +27,7 @@ public class EMPBurst : ability
             aimedEmpReactive = ChooseAimedEmpReactive();
             if (aimedEmpReactive != null)
             {
-                ShowAimedEmpReactiveOnScreen();
+                aimedEmpReactive.OnBecomingChosenEmpReactive();
                 if (Input.GetKeyDown(abilityActivationKey))
                     ActivateAbility();
             }
@@ -50,6 +50,7 @@ public class EMPBurst : ability
 
     private EmpReactive ChooseAimedEmpReactive()
     {
+        // direction thing not working maybe, maybe its the glow thing
         bool playerFacingLeft = playerMovementScript.IsFacingLeft();
 
         foreach (var empReactive in empReactiveInProximity)
@@ -61,16 +62,18 @@ public class EMPBurst : ability
             if (!empReactive.IsReacting() && 
                 (playerFacingLeft && isToLeft) || (!playerFacingLeft && !isToLeft))
             {
-                print("chosen: " + tEmp.name);
+                if (aimedEmpReactive != null && aimedEmpReactive != empReactive)
+                    aimedEmpReactive.OnBecomingUnchosenEmpReactive();
                 return empReactive;
             }
         }
+        if (aimedEmpReactive != null)
+            aimedEmpReactive.OnBecomingUnchosenEmpReactive();
         return null;
     }
 
     public void AddEmpReactiveInProximity(EmpReactive empReactive)
     {
-        print("added");
         if (!empReactiveInProximity.Contains(empReactive))
             empReactiveInProximity.Add(empReactive);
     }
@@ -78,19 +81,18 @@ public class EMPBurst : ability
     public void RemoveEmpReactiveInProximity(EmpReactive empReactive)
     {
         if (empReactiveInProximity.Contains(empReactive))
+        {
             empReactiveInProximity.Remove(empReactive);
-    }
-
-    public void ShowAimedEmpReactiveOnScreen()
-    {
-
+            if (aimedEmpReactive == empReactive)
+                aimedEmpReactive.OnBecomingUnchosenEmpReactive();
+        }
     }
 
     public override void ActivateAbility()
     {
         // add playing the ability animation and particleSystems
         base.ActivateAbility();
-        // add the property dict thing
-        //aimedEmpReactive.ReactToEmpBurst();
+        aimedEmpReactive.ReactToEmpBurst(PlayerManager.instance.playerData
+            .abilitiesProperties["EmpBurst"]);
     }
 }
