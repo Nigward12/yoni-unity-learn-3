@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/levels/Levels/TestingLevel3.unity
     guid: d6ef2da0301867147b3478bc3de46d98
+  - enabled: 1
+    path: Assets/levels/Levels/mapLevel1.unity
+    guid: f115652e2b3ae1b40a0c3351adbdbc24
+  - enabled: 1
+    path: Assets/levels/Levels/mapLevel2.unity
+    guid: 6cd01414c59ccfa4ea84c03f93d5f9c3
+  - enabled: 1
+    path: Assets/levels/Levels/mapLevel3.unity
+    guid: f9b3b0cb2086f634ca118a03a7583811
+  - enabled: 1
+    path: Assets/levels/Levels/PersistentScene.unity
+    guid: a381debfcc450fd4bbd130794f979b5f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
