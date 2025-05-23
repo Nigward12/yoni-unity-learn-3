@@ -37,6 +37,7 @@ public class PlayerManager : MonoBehaviour
         {
             IsPlayerSpawned = true;
             currentPlayer = GameObject.Find("Test Player");
+            EnablePlayerMapIcon();
         }
     }
 
@@ -72,6 +73,7 @@ public class PlayerManager : MonoBehaviour
         }
         // more stuff later ig.......
         IsPlayerSpawned = true;
+        EnablePlayerMapIcon();
         return currentPlayer;
     }
 
@@ -108,5 +110,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject getCurrentPlayer()
     {
         return currentPlayer;
+    }
+
+    private void EnablePlayerMapIcon()
+    {
+        if (currentPlayer != null)
+            currentPlayer.transform.Find("MapIcon").gameObject.SetActive(true);
     }
 }

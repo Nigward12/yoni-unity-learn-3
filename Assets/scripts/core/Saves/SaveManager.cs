@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
+using UnityEditor.Overlays;
+using UnityEngine.Tilemaps;
 public static class SaveManager
 {
+    private static string mapDataSavePath => Application.persistentDataPath + "/mapdata.json";
     public static void SaveInCheckpoint(Checkpoint spawnCheckpoint)
     {
 
@@ -14,6 +17,24 @@ public static class SaveManager
 
         PlayerPrefs.Save();
     }
+
+    public static void SaveMapData(MapSaveData saveData)
+    {
+        string json = JsonUtility.ToJson(saveData);
+        File.WriteAllText(mapDataSavePath, json);
+    }
+
+    
+
+    public static MapSaveData GetMapFromSave()
+    {
+        if (!File.Exists(mapDataSavePath))
+            return new MapSaveData();
+
+        string json = File.ReadAllText(mapDataSavePath);
+        return JsonUtility.FromJson<MapSaveData>(json);
+    }
+
 }
 
 

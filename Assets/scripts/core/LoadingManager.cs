@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 
 public class LoadingManager : MonoBehaviour
 {
@@ -22,6 +23,21 @@ public class LoadingManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        MapRoomManager.instance.RevealRoom();
     }
 
     public void TransitionToScene(LevelData levelData, float transitionTime, bool firstSceneLoad
