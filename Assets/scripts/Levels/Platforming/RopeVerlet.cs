@@ -16,8 +16,6 @@ public class RopeSegment
 }
 public class RopeVerlet : MonoBehaviour
 {
-    private Camera mainCamera;
-
     [Header("Rope vars")]
     [SerializeField] private int ropeSegmentsNumber = 50;
     [SerializeField] private float ropeSegmentLength = 0.225f;
@@ -25,9 +23,16 @@ public class RopeVerlet : MonoBehaviour
     [Header("Physics")]
     [SerializeField] private Vector2 gravityForce = new Vector2(0f, -2f);
     [SerializeField] private float dampingFactor = 0.98f;
+    [SerializeField] private LayerMask collisionMask;
+    [SerializeField] private float collisionRadius = 0.1f;
+    [SerializeField] private float bounceFactor = 0.1f;
+    [SerializeField] private float correctionClampAmount = 0.1f;
 
     [Header("Constraints")]
     [SerializeField] private int numOfConstraintRuns = 50;
+
+    [Header("Optimizations")]
+    public int _collisionSegmentInterval = 2;
 
     private List<RopeSegment> ropeSegments = new List<RopeSegment>();
     private LineRenderer ropeLineRenderer;
@@ -35,11 +40,10 @@ public class RopeVerlet : MonoBehaviour
 
     private void Awake()
     {
-        mainCamera = CinemachineCameraManager.instance.brain.GetComponent<Camera>();
         ropeLineRenderer = GetComponent<LineRenderer>();
         ropeLineRenderer.positionCount = ropeSegmentsNumber;
 
-        ropeStartPoint = mainCamera.ScreenToViewportPoint(Mouse.current.position.ReadValue());
+        ropeStartPoint = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         for (int i = 0; i < ropeSegmentsNumber; i++)
         {
@@ -58,7 +62,11 @@ public class RopeVerlet : MonoBehaviour
         SimulateRopePhysics();
         
         for (int i = 0;i < numOfConstraintRuns;i++)
+        {
             ApplySegmentsConstraints();
+            if (i % _collisionSegmentInterval == 0)
+                HandleCollisions();
+        }
     }
 
     private void DrawRope()
@@ -80,7 +88,7 @@ public class RopeVerlet : MonoBehaviour
 
     private void ApplySegmentsConstraints()
     {
-        ropeSegments[0].CurrentPosition = mainCamera.ScreenToViewportPoint(Mouse.current.position.ReadValue());
+        ropeSegments[0].CurrentPosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         for (int i = 0; i< ropeSegmentsNumber -1; i++)
         {
@@ -105,6 +113,41 @@ public class RopeVerlet : MonoBehaviour
 
             ropeSegments[i] = currentSeg;
             ropeSegments[i+1] = nextSeg;    
+        }
+    }
+
+    private void HandleCollisions()
+    {
+        // Skip the first segment (attached to the mouse) - for now
+        for (int i = 1; i < ropeSegments.Count; i++)
+        {
+            RopeSegment segment = ropeSegments[i];
+            Vector2 velocity = segment.CurrentPosition - segment.PreviousPosition;
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(segment.CurrentPosition, collisionRadius, collisionMask);
+
+            foreach (Collider2D collider in colliders)
+            {
+                Vector2 closestPoint = collider.ClosestPoint(segment.CurrentPosition);
+                float distance = Vector2.Distance(segment.CurrentPosition, closestPoint);
+
+                if (distance < collisionRadius)
+                {
+                    Vector2 normal = (segment.CurrentPosition - closestPoint).normalized;
+                    if (normal == Vector2.zero)
+                        normal = (segment.CurrentPosition - (Vector2)collider.transform.position).normalized;
+
+                    float CollisionRadiusPenetration = collisionRadius - distance;
+                    // Clamp correction to avoid large jumps
+                    //float correction = Mathf.Min(penetration, _correctionClampAmount);
+                    //segment.CurrentPosition += normal * correction;
+                    segment.CurrentPosition += normal * CollisionRadiusPenetration;
+
+                    velocity = Vector2.Reflect(velocity, normal) * bounceFactor;
+                }
+            }
+
+            segment.PreviousPosition = segment.CurrentPosition - velocity;
+            ropeSegments[i] = segment;
         }
     }
 }
