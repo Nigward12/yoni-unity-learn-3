@@ -752,7 +752,7 @@ GameObject:
   - component: {fileID: 400962699}
   - component: {fileID: 400962701}
   - component: {fileID: 400962700}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: HealthBarEmpty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,6 +1164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Test Player
       objectReference: {fileID: 0}
+    - target: {fileID: 952906478706934516, guid: 680a600ac68631845a9271853fc34f57, type: 3}
+      propertyPath: m_GravityScale
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1672485134068205966, guid: 680a600ac68631845a9271853fc34f57, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16
@@ -1449,7 +1453,7 @@ GameObject:
   - component: {fileID: 768171088}
   - component: {fileID: 768171090}
   - component: {fileID: 768171089}
-  m_Layer: 5
+  m_Layer: 10
   m_Name: HealthBarFull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
