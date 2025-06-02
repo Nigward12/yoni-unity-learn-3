@@ -82,7 +82,7 @@ public class PlayerBasicMovement : MovementScript
 
         UpdateStateSounds();
 
-        //SlopeCheck();
+        SlopeCheck();
 
         UpdateJumpState();
 

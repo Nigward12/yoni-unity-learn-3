@@ -14,6 +14,8 @@ public class RopeSegment
         PreviousPosition = pos;
     }
 }
+
+[RequireComponent(typeof(LineRenderer))]
 public class RopeVerlet : MonoBehaviour
 {
     // EITHER STAY WITH THE COLLIDER THING OR MOVE TO THE PROBE
@@ -38,23 +40,12 @@ public class RopeVerlet : MonoBehaviour
     [Header("Constraints")]
     [SerializeField] private int numOfConstraintRuns = 50;
 
-    [Header("Bridge")]
-    [SerializeField] private bool isBridge = false;
-    [SerializeField] private Transform StartTrans;
-    [SerializeField] private Transform EndTrans;
-    [SerializeField] private float bridgePullFactor = 300f;
-    [SerializeField] private float bridgeMaxPullDistance = 15f;
-    [SerializeField] private float ropeColliderRadius = 0.1f;
-    //make it so bridge has to be elastic maybe, make bridge and elastic
-    // properties only appear after setting it as true
-
     [Header("Optimizations")]
     public int collisionSegmentInterval = 2;
 
     private List<RopeSegment> ropeSegments = new List<RopeSegment>();
     private LineRenderer ropeLineRenderer;
     private Vector3 ropeStartPoint;
-    private EdgeCollider2D ropeCollider;
     private Vector3[] ropePositions;
 
     private void Awake()
@@ -64,8 +55,6 @@ public class RopeVerlet : MonoBehaviour
 
         if (RopeDangle)
             ropeStartPoint = transform.position;
-        else if (isBridge)
-            ropeStartPoint = StartTrans.position;
         else
             ropeStartPoint = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
@@ -75,21 +64,12 @@ public class RopeVerlet : MonoBehaviour
             ropeStartPoint.y -= ropeSegmentLength;
         }
 
-        if (isBridge)
-        {
-            ropeCollider = gameObject.AddComponent<EdgeCollider2D>();
-            ropeCollider.edgeRadius = ropeColliderRadius;
-            ropeCollider.points = new Vector2[ropeSegmentsNumber];
-            ropeCollider.isTrigger = false;
-        }
         ropePositions = new Vector3[ropeSegmentsNumber];
     }
 
     private void Update()
     {
         DrawRope();
-        if (isBridge)
-            UpdateEdgeCollider();
     }
 
     private void FixedUpdate()
@@ -99,7 +79,7 @@ public class RopeVerlet : MonoBehaviour
         for (int i = 0;i < numOfConstraintRuns;i++)
         {
             ApplySegmentsConstraints();
-            if (!isBridge && i % collisionSegmentInterval == 0)
+            if ( i % collisionSegmentInterval == 0)
                 HandleCollisions();
         }
     }
@@ -110,15 +90,6 @@ public class RopeVerlet : MonoBehaviour
             ropePositions[i] = ropeSegments[i].CurrentPosition;
 
         ropeLineRenderer.SetPositions(ropePositions);
-    }
-
-    private void UpdateEdgeCollider()
-    {
-        Vector2[] edgePoints = new Vector2[ropeSegmentsNumber];
-        for (int i = 0; i < ropeSegmentsNumber; i++)
-            edgePoints[i] = transform.InverseTransformPoint(ropeSegments[i].CurrentPosition);
-
-        ropeCollider.points = edgePoints;
     }
 
     private void SimulateRopePhysics()
@@ -137,11 +108,6 @@ public class RopeVerlet : MonoBehaviour
     {
         if (RopeDangle)
             ropeSegments[0].CurrentPosition = transform.position;
-        else if (isBridge)
-        {
-            ropeSegments[0].CurrentPosition = StartTrans.position;
-            ropeSegments[ropeSegmentsNumber - 1].CurrentPosition = EndTrans.position;
-        }
         else
             ropeSegments[0].CurrentPosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
@@ -158,14 +124,14 @@ public class RopeVerlet : MonoBehaviour
             Vector2 distanceChangeDir = vectorDist.normalized;
             Vector2 changeVector = distanceChangeDir * difference;
 
-            if (i == 0)
-                nextSeg.CurrentPosition += changeVector;
-            else if (isBridge && i == ropeSegmentsNumber - 2)
-                currentSeg.CurrentPosition -= changeVector;
-            else
+            if (i != 0)
             {
                 currentSeg.CurrentPosition -= (changeVector * 0.5f);
                 nextSeg.CurrentPosition += (changeVector * 0.5f);
+            }
+            else
+            {
+                nextSeg.CurrentPosition += changeVector;
             }
 
             ropeSegments[i] = currentSeg;
@@ -207,45 +173,5 @@ public class RopeVerlet : MonoBehaviour
         }
     }
 
-    public void ApplyExternalForce(int index, Vector2 externalVelocity)
-    {
-        if (index < 0 || index >= ropeSegments.Count) return;
-
-        print("here");
-        RopeSegment segment = ropeSegments[index];
-
-        // Use object's velocity and scale it for rope pull effect
-        Vector2 pullForce = externalVelocity * bridgePullFactor * Time.fixedDeltaTime;
-
-        segment.CurrentPosition += pullForce;
-        ropeSegments[index] = segment;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        var rb = collision.rigidbody;
-        if (rb != null)
-        {
-            Vector2 contactPoint = collision.GetContact(0).point;
-
-            float minDistance = float.MaxValue;
-            int closestIndex = -1;
-
-            for (int i = 0; i < ropeSegments.Count; i++)
-            {
-                float dist = Vector2.Distance(ropeSegments[i].CurrentPosition, contactPoint);
-                if (dist < minDistance)
-                {
-                    minDistance = dist;
-                    closestIndex = i;
-                }
-            }
-
-            if (closestIndex != -1)
-            {
-                ApplyExternalForce(closestIndex, rb.linearVelocity);
-            }
-        }
-    }
 }
 
