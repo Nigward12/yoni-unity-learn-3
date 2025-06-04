@@ -32,7 +32,10 @@ public class PlayerManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+    }
 
+    private void Start()
+    {
         if (GameManager.instance.testing)
         {
             IsPlayerSpawned = true;
@@ -40,15 +43,6 @@ public class PlayerManager : MonoBehaviour
             EnablePlayerMapIcon();
         }
     }
-
-    //private void Start()
-    //{
-    //    if (GameManager.instance.testing)
-    //    {
-    //        IsPlayerSpawned = true;
-    //        currentPlayer = GameObject.Find("Test Player");
-    //    }
-    //}
 
     public void SavePlayerSessionData()
     {

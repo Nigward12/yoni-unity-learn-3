@@ -6,57 +6,77 @@ using UnityEngine.SceneManagement;
 public class AdditiveSceneLoadTrigger : MonoBehaviour
 {
     [SerializeField] private SceneField[] _scenesToLoad;
-    [SerializeField] private SceneField[] _scenesToUnload;
+    [SerializeField] private float _activationOffset = 10f;
 
     private GameObject _player;
+    private Dictionary<string, AsyncOperation> _sceneLoadOperations = new();
 
     private void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
+
+        foreach (SceneField sceneField in _scenesToLoad)
+            if (!IsSceneLoaded(sceneField.SceneName))
+                StartCoroutine(LoadSceneGradually(sceneField));
+
+        UnloadAllScenesExcept(_scenesToLoad);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private IEnumerator LoadSceneGradually(SceneField sceneField)
     {
-        if (collision.gameObject == _player)
+        AsyncOperation loadOp = SceneManager.LoadSceneAsync(sceneField, LoadSceneMode.Additive);
+        loadOp.allowSceneActivation = false;
+        _sceneLoadOperations[sceneField.SceneName] = loadOp;
+
+        // Wait until the scene is mostly loaded
+        while (loadOp.progress < 0.9f)
         {
-            LoadScenes();
-            UnloadScenes();
+            yield return null;
         }
-    }
 
-    private void LoadScenes()
-    {
-        for (int i = 0; i < _scenesToLoad.Length; i++)
+        // Wait for player to get close enough to activate
+        while (!ShouldActivateScene())
         {
-            bool isSceneLoaded = false;
-            for (int j = 0; j < SceneManager.sceneCount; j++)
-            {
-                Scene loadedScene = SceneManager.GetSceneAt(j);
-                if (loadedScene.name == _scenesToLoad[i].SceneName)
-                {
-                    isSceneLoaded = true;
-                    break;
-                }
-            }
-
-            if (!isSceneLoaded)
-            {
-                SceneManager.LoadSceneAsync(_scenesToLoad[i], LoadSceneMode.Additive);
-            }
+            yield return null;
         }
+
+        // Now allow activation
+        loadOp.allowSceneActivation = true;
     }
 
-    private void UnloadScenes()
+    private bool ShouldActivateScene()
     {
-        for (int i = 0; i < _scenesToUnload.Length; i++)
+        if (_player == null) return false;
+
+        float playerX = _player.transform.position.x;
+        float triggerX = transform.position.x;
+
+        return playerX > triggerX + _activationOffset;
+    }
+
+    private bool IsSceneLoaded(string sceneName)
+    {
+        for (int i = 0; i < SceneManager.sceneCount; i++)
         {
-            for (int j = 0; j < SceneManager.sceneCount; j++)
+            Scene scene = SceneManager.GetSceneAt(i);
+            if (scene.name == sceneName)
+                return true;
+        }
+        return false;
+    }
+
+    private void UnloadAllScenesExcept(SceneField[] keepScenes)
+    {
+        HashSet<string> keepSceneNames = new();
+        foreach (var sf in keepScenes)
+            keepSceneNames.Add(sf.SceneName);
+
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            Scene loadedScene = SceneManager.GetSceneAt(i);
+            if (!keepSceneNames.Contains(loadedScene.name))
             {
-                Scene loadedScene = SceneManager.GetSceneAt(j);
-                if (loadedScene.name == _scenesToUnload[i].SceneName)
-                {
-                    SceneManager.UnloadSceneAsync(_scenesToUnload[i]);
-                }
+                SceneManager.UnloadSceneAsync(loadedScene);
             }
         }
     }

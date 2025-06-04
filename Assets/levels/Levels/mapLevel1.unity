@@ -547,7 +547,7 @@ Transform:
   m_GameObject: {fileID: 155272303}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.9, y: 44.5, z: 0}
+  m_LocalPosition: {x: 70.1, y: 44.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1803,7 +1803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &569532906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1865,9 +1865,7 @@ MonoBehaviour:
   _scenesToLoad:
   - _sceneAsset: {fileID: 102900000, guid: 6cd01414c59ccfa4ea84c03f93d5f9c3, type: 3}
     _sceneName: mapLevel2
-  _scenesToUnload:
-  - _sceneAsset: {fileID: 102900000, guid: f9b3b0cb2086f634ca118a03a7583811, type: 3}
-    _sceneName: mapLevel3
+  _activationOffset: 10
 --- !u!4 &569532908
 Transform:
   m_ObjectHideFlags: 0

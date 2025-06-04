@@ -25,20 +25,20 @@ public class LoadingManager : MonoBehaviour
         }
     }
 
-    private void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
+    //private void OnEnable()
+    //{
+    //    SceneManager.sceneLoaded += OnSceneLoaded;
+    //}
 
-    private void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
+    //private void OnDisable()
+    //{
+    //    SceneManager.sceneLoaded -= OnSceneLoaded;
+    //}
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        MapRoomManager.instance.RevealRoom();
-    }
+    //private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    MapRoomManager.instance.RevealRoom();
+    //}
 
     public void TransitionToScene(LevelData levelData, float transitionTime, bool firstSceneLoad
         , string spawnCheckpoint = "")
